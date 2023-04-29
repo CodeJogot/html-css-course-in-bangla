@@ -1,0 +1,174 @@
+.div-01 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: div01;
+  animation-duration: 8s;
+}
+
+@keyframes div01 {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+.div-02 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: div02;
+  animation-duration: 8s;
+  position: relative;
+}
+
+@keyframes div02 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.div-03 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: div03;
+  animation-duration: 8s;
+  position: relative;
+  animation-direction: reverse;
+}
+
+@keyframes div03 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+.div-04 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: div04;
+  animation-duration: 8s;
+  position: relative;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes div04 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.div-05 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  animation-name: div05;
+  animation-duration: 8s;
+  position: relative;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes div05 {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}

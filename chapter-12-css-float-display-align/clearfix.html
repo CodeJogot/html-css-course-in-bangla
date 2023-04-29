@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="clearfix.css" />
+    <title>Clearfix Hack</title>
+  </head>
+  <body>
+    <h1>Clearfix Hack</h1>
+    <h2>Without Clearfix</h2>
+    <p>
+      This image is floated to the right. It is also taller than the element
+      containing it, so it overflows outside of its container:
+    </p>
+    <div>
+      <img src="./images/abdul alim 3.jpg" alt="Abdul Alim" />
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+      exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Laboriosam, exercitationem.
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2>With Clearfix</h2>
+    <p>
+      We can fix this by adding a clearfix class with overflow: auto; to the
+      containing element:
+    </p>
+    <div class="clearfix">
+      <img src="./images/abdul alim 3.jpg" alt="Abdul Alim" /> Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Laboriosam, exercitationem.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+      exercitationem.
+    </div>
+    <br />
+    <br />
+    <br />
+    <h2>With New Modern Clearfix</h2>
+    <div class="clearfix">
+      <img src="./images/abdul alim 3.jpg" alt="Abdul Alim" /> Lorem, ipsum
+      dolor sit amet consectetur adipisicing elit. Laboriosam, exercitationem.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+      exercitationem.
+    </div>
+  </body>
+</html>

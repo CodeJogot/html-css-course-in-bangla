@@ -1,0 +1,23 @@
+a[target] {
+  color: red;
+}
+/* attribute with value */
+a[target="_blank"] {
+  background-color: aquamarine;
+}
+/* title text anywhere */
+img[title~="Alim"] {
+  border: 2px solid red;
+}
+/* start with*/
+a[href^="http"] {
+  font-size: 2rem;
+}
+/* end with */
+img[alt$="Alim"] {
+  border-radius: 50%;
+}
+/* substring */
+a[href*="google"] {
+  font-style: italic;
+}

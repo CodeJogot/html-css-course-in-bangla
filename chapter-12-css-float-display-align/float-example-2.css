@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  /* 32vw will create the boxes responsive or you may give 33.33% */
+  width: 32vw;
+  height: 20vh;
+  float: left;
+}
+.box1 {
+  background: brown;
+}
+.box2 {
+  background: burlywood;
+}
+.box3 {
+  background: darkorange;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

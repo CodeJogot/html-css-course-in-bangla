@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+.grid-container-p1 {
+  display: grid;
+  /* shorthand of grid-template-rows and grid-template-columns, grid-template: 100px 100px / 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  height: 100%;
+}
+
+.grid-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  font-size: 2rem;
+}
+
+.grid-items:nth-child(odd) {
+  background-color: chocolate;
+}
+
+.grid-container-p3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 5px 5px;
+  height: 100%;
+}
+.grid-container-p4 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 300px 50px;
+  gap: 5px 5px;
+  height: 100%;
+}
+
+.header {
+  grid-column: 2 / -1;
+}
+.menu {
+  grid-row: 1/ -2;
+}
+.footer {
+  grid-column: 1 / -1;
+}
+.content {
+  grid-column: 2/ -1;
+}
+
+.grid-container-p8 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 300px 50px;
+  /* if you want to give a blank, put a dot(.) */
+  grid-template-areas:
+    "m h h h h h h h h h h h"
+    "m c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+  gap: 5px 5px;
+  height: 100%;
+}
+.header1 {
+  grid-area: h;
+}
+.menu1 {
+  grid-area: m;
+}
+.footer1 {
+  grid-area: f;
+}
+.content1 {
+  grid-area: c;
+}

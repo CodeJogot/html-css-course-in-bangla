@@ -1,0 +1,35 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+  margin: 5px;
+  animation-name: my-animation;
+  animation-duration: 6s;
+  animation-iteration-count: 2;
+  position: relative;
+}
+
+.div-01 {
+  animation-timing-function: linear;
+}
+.div-02 {
+  animation-timing-function: ease;
+}
+.div-03 {
+  animation-timing-function: ease-in;
+}
+.div-04 {
+  animation-timing-function: ease-out;
+}
+.div-05 {
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes my-animation {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 300px;
+  }
+}

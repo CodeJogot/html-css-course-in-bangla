@@ -1,0 +1,48 @@
+/* Unvisited->Visited->Hover->Active, this css sequence should be maintained */
+
+* {
+  box-sizing: border-box;
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+/* Mouse over link */
+
+a:hover {
+  color: brown;
+}
+/* Selected Link */
+a:active {
+  color: blue;
+}
+
+a.my-class:hover {
+  color: #ff0000;
+  font-size: 22px;
+}
+
+.hover-div {
+  height: 5rem;
+  background-color: green;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hover-div:hover {
+  background-color: #ff0000;
+}
+.tool-tip {
+  display: none;
+  background-color: coral;
+}
+
+.simple-class-hover:hover p {
+  display: block;
+}

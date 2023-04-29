@@ -1,0 +1,10 @@
+div:nth-of-type(2) {
+  color: red;
+}
+li:nth-of-type(2) {
+  color: lightgreen;
+}
+
+:nth-of-type(3) {
+  color: blue;
+}

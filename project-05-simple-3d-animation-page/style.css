@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-container {
+  width: 90vw;
+  height: 90vh;
+  position: absolute;
+  /* the below 3 lines are used to make the container centered */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+
+.box {
+  height: 100%;
+  background: url("./images/background.jpg") center center / cover no-repeat;
+  position: relative;
+  transition: 1s;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover {
+  transform: rotateY(21deg) translateX(386px) translateY(-13px)
+    translateZ(-196px);
+}
+
+.box img {
+  position: absolute;
+  transition: 1s;
+}
+
+.box img:nth-child(1) {
+  width: 21vw;
+  height: 40vh;
+  left: 69%;
+  top: 36%;
+}
+
+.box:hover img:nth-child(1) {
+  transform: rotateX(0deg) rotateY(-3deg) rotateZ(0deg) translateX(-161px)
+    translateY(14px) translateZ(166px);
+}
+
+.box img:nth-child(2) {
+  width: 28vw;
+  height: 51vh;
+  left: 1%;
+  top: 32%;
+}
+
+.box:hover img:nth-child(2) {
+  transform: rotateX(0deg) rotateY(2deg) rotateZ(0deg) translateX(107px)
+    translateY(-11px) translateZ(109px);
+}
+
+.box img:nth-child(3) {
+  width: 20vw;
+  height: 55vh;
+  left: 33%;
+  top: 16%;
+}
+.box:hover img:nth-child(3) {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(44px)
+    translateY(59px) translateZ(159px);
+}

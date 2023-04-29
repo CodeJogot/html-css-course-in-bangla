@@ -1,0 +1,25 @@
+div {
+  width: 200px;
+  height: 100px;
+}
+
+.visible {
+  background: antiquewhite;
+  overflow: visible;
+  margin-bottom: 50px;
+}
+
+.hidden {
+  background: brown;
+  overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+  background: chartreuse;
+}
+
+.auto {
+  overflow: auto;
+  background: hotpink;
+}

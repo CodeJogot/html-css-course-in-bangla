@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css-grid.css" />
+    <title>CSS Grid</title>
+  </head>
+  <body>
+    <h1>CSS Grid Layout</h1>
+    <h2>Property: 1 - 2</h2>
+    <h3>grid-template-columns: 1fr 1fr 1fr;</h3>
+    <h3>grid-template-rows: 100px 100px;</h3>
+    <h3>
+      Shorthand, grid-template: grid-template-rows / grid-template-columns
+    </h3>
+    <div class="grid-container-p1">
+      <div class="grid-items">1</div>
+      <div class="grid-items">2</div>
+      <div class="grid-items">3</div>
+      <div class="grid-items">4</div>
+      <div class="grid-items">5</div>
+      <div class="grid-items">6</div>
+    </div>
+    <h2>Property: 3</h2>
+    <h3>gap: 5px;</h3>
+    <div class="grid-container-p3">
+      <div class="grid-items">1</div>
+      <div class="grid-items">2</div>
+      <div class="grid-items">3</div>
+      <div class="grid-items">4</div>
+      <div class="grid-items">5</div>
+      <div class="grid-items">6</div>
+    </div>
+    <h2>Property: 4-7</h2>
+    <h3>grid-column-start: 2;</h3>
+    <h3>grid-column-end: -1;</h3>
+    <h3>Shorthand, grid-column: grid-column-start / grid-column-end;</h3>
+    <h3>grid-row-start: 1;</h3>
+    <h3>grid-row-end: -2;</h3>
+    <h3>Shorthand, grid-row: grid-row-start / grid-row-end;</h3>
+    <div class="grid-container-p4">
+      <div class="grid-items header">HEADER</div>
+      <div class="grid-items menu">MENU</div>
+      <div class="grid-items content">CONTENT</div>
+      <div class="grid-items footer">FOOTER</div>
+    </div>
+    <h2>Property: 8-9</h2>
+    <h3>grid-area:</h3>
+    <h3>grid-template-areas:</h3>
+    <div class="grid-container-p8">
+      <div class="grid-items header1">HEADER</div>
+      <div class="grid-items menu1">MENU</div>
+      <div class="grid-items content1">CONTENT</div>
+      <div class="grid-items footer1">FOOTER</div>
+    </div>
+  </body>
+</html>

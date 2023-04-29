@@ -1,0 +1,20 @@
+p::before {
+  content: "Name: ";
+}
+
+p::after {
+  content: " Country: Bangladesh ";
+}
+
+p::first-letter {
+  font-size: 5rem;
+  color: pink;
+}
+
+p::first-line {
+  background-color: lightcyan;
+}
+
+p::selection {
+  background-color: red;
+}

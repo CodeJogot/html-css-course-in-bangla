@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.box1 {
+  width: 30%;
+  height: 100px;
+  background: bisque;
+  /* margin: auto, this line is responsible for centering the element box1. */
+  margin: auto;
+}
+
+.box2 {
+  width: 30%;
+  height: 100px;
+  background: darkgray;
+  /* margin: auto, this line is responsible for centering the element box2. */
+  margin: auto;
+  /* text-align: center, will center the text */
+  text-align: center;
+  /* line-height: 80px, will align the text in the middle location. */
+  line-height: 80px;
+}
+img {
+  width: 33.33%;
+  height: auto;
+  display: block;
+  /* margin: auto, this line is responsible for centering the image. */
+  margin: auto;
+}

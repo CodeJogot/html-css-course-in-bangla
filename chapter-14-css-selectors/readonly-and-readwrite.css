@@ -1,0 +1,7 @@
+input:read-only {
+  background-color: yellow;
+}
+
+input:read-write {
+  background-color: aliceblue;
+}

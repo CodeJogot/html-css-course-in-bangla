@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 15vh;
+  background-color: dodgerblue;
+  /* margin: auto, will make the container element aligned on center */
+  margin: auto;
+}
+
+.item {
+  width: 20%;
+  height: 80%;
+  background-color: beige;
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+  text-align: center;
+  padding-top: 2rem;
+}

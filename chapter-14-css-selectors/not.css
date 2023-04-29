@@ -1,0 +1,7 @@
+p {
+  color: black;
+}
+
+:not(p) {
+  color: darkorange;
+}

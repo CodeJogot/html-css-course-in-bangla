@@ -1,0 +1,19 @@
+.grid-container {
+  height: 100%;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  background-color: aqua;
+  font-size: 2rem;
+}
+
+.grid-item:nth-child(even) {
+  background-color: chocolate;
+}

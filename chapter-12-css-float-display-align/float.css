@@ -1,0 +1,52 @@
+img {
+  width: 170px;
+  height: 170px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+.clearfix {
+  clear: both;
+}
+
+div {
+  width: 100px;
+  height: 50px;
+  margin-left: 5px;
+  margin-bottom: 50px;
+}
+.div1 {
+  background: aquamarine;
+  float: left;
+}
+.div2 {
+  background: brown;
+  float: left;
+}
+.div3 {
+  background: blueviolet;
+  float: left;
+}
+
+.box1 {
+  height: 50px;
+  border: 2px solid greenyellow;
+  float: left;
+}
+.box2 {
+  border: 2px solid red;
+  height: 50px;
+  width: auto;
+  float: left;
+}
+
+.box3 {
+  height: 50px;
+  border: 2px solid greenyellow;
+  clear: both;
+}
+.box4 {
+  height: 50px;
+  border: 2px solid red;
+  width: auto;
+}

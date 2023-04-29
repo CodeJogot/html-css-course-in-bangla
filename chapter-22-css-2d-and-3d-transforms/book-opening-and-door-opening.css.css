@@ -1,0 +1,40 @@
+.parent {
+  width: 300px;
+  height: 400px;
+  background-color: black;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  perspective: 1000px;
+}
+
+.child1 {
+  width: 250px;
+  height: 350px;
+  background-color: lightgreen;
+  border-radius: 8px;
+  position: absolute;
+  left: 8%;
+  top: 6%;
+  transition: 1s;
+  transform-origin: left center;
+}
+
+.child1:hover {
+  transform: rotateY(-60deg);
+}
+.child2 {
+  width: 250px;
+  height: 350px;
+  background-color: lightgreen;
+  border-radius: 8px;
+  position: absolute;
+  left: 8%;
+  top: 6%;
+  transition: 1s;
+  transform-origin: left center;
+}
+
+.child2:hover {
+  transform: rotateY(60deg);
+}

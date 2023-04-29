@@ -1,0 +1,6 @@
+p:first-of-type {
+  background-color: greenyellow;
+}
+p:last-of-type {
+  background-color: burlywood;
+}

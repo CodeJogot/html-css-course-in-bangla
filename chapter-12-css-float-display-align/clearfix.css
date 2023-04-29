@@ -1,0 +1,19 @@
+div {
+  border: 2px solid rgb(128, 105, 255);
+  padding: 5px;
+}
+img {
+  width: 150px;
+  height: 150px;
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+}
+/* new and modern clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

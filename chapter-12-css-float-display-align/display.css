@@ -1,0 +1,30 @@
+.a {
+  /* default property for span */
+  display: inline;
+  /* width and height won't work for display: inline */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid salmon;
+  background-color: aqua;
+}
+
+.b {
+  display: inline-block;
+  /* this time, width and height will work without containing new line  */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid salmon;
+  background-color: aqua;
+}
+
+.c {
+  display: block;
+  /* this time, width and height will work containing new line  */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid salmon;
+  background-color: aqua;
+}

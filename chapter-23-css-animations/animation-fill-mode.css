@@ -1,0 +1,90 @@
+.div-01 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: div01;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes div01 {
+  0% {
+    background-color: yellow;
+    left: 100px;
+  }
+  25% {
+    background-color: blue;
+    left: 200px;
+  }
+  50% {
+    background-color: green;
+    left: 300px;
+  }
+  100% {
+    background-color: black;
+    left: 400px;
+  }
+}
+
+.div-02 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: div02;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 2;
+}
+
+@keyframes div02 {
+  0% {
+    background-color: yellow;
+    left: 100px;
+  }
+  25% {
+    background-color: blue;
+    left: 200px;
+  }
+  50% {
+    background-color: green;
+    left: 300px;
+  }
+  100% {
+    background-color: black;
+    left: 400px;
+  }
+}
+.div-03 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: div03;
+  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: 2;
+}
+
+@keyframes div03 {
+  0% {
+    background-color: yellow;
+    left: 100px;
+  }
+  25% {
+    background-color: blue;
+    left: 200px;
+  }
+  50% {
+    background-color: green;
+    left: 300px;
+  }
+  100% {
+    background-color: black;
+    left: 400px;
+  }
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "l l l g g g o o"
+    "l l l g g g o o"
+    "l l l g g g o o"
+    "p p p g g g o o"
+    "b b b b b b o o"
+    "b b b b b b o o"
+    "r r r r r r r r"
+    "r r r r r r r r";
+}
+
+.item {
+  background-color: lightgreen;
+}
+
+.item1 {
+  grid-area: l;
+  background-color: lightskyblue;
+}
+
+.item2 {
+  grid-area: g;
+  background-color: green;
+}
+.item3 {
+  grid-area: o;
+  background-color: orange;
+}
+.item4 {
+  grid-area: p;
+  background-color: peru;
+}
+.item5 {
+  grid-area: b;
+  background-color: blue;
+}
+.item6 {
+  grid-area: r;
+  background-color: red;
+}

@@ -1,0 +1,56 @@
+.div1 {
+  height: 300px;
+  background-image: linear-gradient(red, yellow);
+}
+.div2 {
+  height: 300px;
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+.div3 {
+  height: 300px;
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+.div4 {
+  height: 300px;
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+.div5 {
+  height: 300px;
+  background-image: linear-gradient(90deg, red, yellow);
+}
+.div6 {
+  height: 300px;
+  background-image: linear-gradient(#feffff 0%, #ddf1f9 35%, #a0d8ef 100%);
+}
+.div7 {
+  height: 300px;
+  background-image: linear-gradient(red 20%, yellow 70%);
+}
+.div8 {
+  height: 300px;
+  background-image: linear-gradient(to top right, red 50%, yellow 50%);
+}
+.div9 {
+  height: 300px;
+  background-image: linear-gradient(
+    to top right,
+    red 20%,
+    green 20% 80%,
+    red 80%
+  );
+}
+.div10 {
+  height: 300px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0),
+    rgba(255, 0, 0, 1)
+  );
+}
+.div11 {
+  height: 300px;
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}

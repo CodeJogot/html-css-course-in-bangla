@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin-top: 1rem;
+}
+ul{
+    /* to remove the bullet sign we used, list-style-type: none */
+    
+    margin-left: 1rem;
+    list-style-type: none; 
+    width: 200px;
+    height: 100vh;
+    background-color: #f1f1f1;
+    position: fixed;
+    
+}
+
+
+a {
+    padding: 8px 16px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+li {
+    text-align: center;
+   
+}
+
+ .home {
+    background-color: #04AA6D;
+    color: white;
+} 
+
+a:hover:not(.home) {
+    background-color: #555;
+    color: white;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+.right-content {
+    position: absolute;
+    left: 225px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}

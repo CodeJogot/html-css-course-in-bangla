@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container-align-content {
+  width: 100px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.item {
+  width: 100px;
+  height: 150px;
+  background-color: lightblue;
+  margin: 3px;
+}
+
+.flex-container-align-items {
+  width: 100px;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
