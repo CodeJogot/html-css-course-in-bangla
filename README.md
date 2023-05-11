@@ -647,11 +647,11 @@ Another Example:
 
 ### Example of CSS Float Property (Source Codes)
 
-**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/YzJLNmm)**
+**&#9885; [Open Live Project in CodePen](https://codepen.io/CodeJogot/pen/LYgmJZv)**
 
 ### Another Example of CSS Float Property
 
-**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/poxVpaV)**
+**&#9885; [Open Live Project in CodePen](https://codepen.io/CodeJogot/pen/bGmMxwg)**
 
 ### Float যেসব প্রবলেম তৈরি করে
 
@@ -690,7 +690,7 @@ The `clear` property can have one of the following values:
 
 ### Example of Clearfix
 
-**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/QWrjMJP)**
+**&#9885; [Open Live Project in CodePen](https://codepen.io/CodeJogot/pen/mdzLGOJ)**
 
 ## CSS Display Property
 
