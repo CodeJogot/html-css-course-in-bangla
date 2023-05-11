@@ -474,7 +474,7 @@ Click to view the [Source Code](hyperlinks.html) which demonstrates all the exam
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
 
-# chapter-11: CSS Position, Z-index, Overflow
+# Chapter-11: CSS Position, Z-index, Overflow
 
 - [CSS Position](#css-position)
   - [Position Property Values](#position-property-values)
@@ -493,13 +493,13 @@ Click to view the [Source Code](hyperlinks.html) which demonstrates all the exam
 
 ### Position Property Values
 
-| **Value** |                                                                                                                                                                                                **Description**                                                                                                                                                                                                 |
-| :-------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  static   |                                 Default Value. অর্থাৎ কোন Element এর যদি কোন position property না দেয়া হয়, তাহলে by default, static সেট হয়ে যায়। এই Property এর বৈশিষ্ট্য হলো, element টি যে order এ আছে, সেই order এ document এ render এবং position সেট হবে। কোন Element এর Position Static থাকা অবস্থায় ওই Element এ Left, Right, Top, Bottom এর Property গুলো কাজ করবে না।                                  |
-| absolute  |                                                                       The element is positioned relative to its first positioned (not static) ancestor element. অর্থাৎ position absolute একা একা কাজ করতে পারে না, তাকে কোন একটা Parent Element এর Under এ থাকতে হয়, এবং ওই Parent Element এর Position থেকে সে তার Position Change করে।                                                                        |
-|   fixed   |                                                                                      The element is positioned relative to the browser window. এবং element টি একেবারে Fixed থাকে, আমার Document এ হাজার হাজার লাইন Text ও থাকে, তাহলেও fixed element তার Position কোনমতেও Change করবে না। একেবারে ঘারত্যারা যাকে বলে ! :D                                                                                      |
-| relative  |                                   The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's left position. অর্থাৎ Relative Element স্বাধীন। তাকে কোন Parent Element এর Under এ থাকতে হবে বিষয় টা সেরকম নয়। যখনি কোন Element এর Property Relative করা হবে, তখন ওই Element এ Left, Right, Top, Down Properties গুলো কাজ করবে।                                    |
-|  sticky   | যদি element এ top: 100px; দেয়া হয়, তাহলে এই element যে Position এ Normally থাকার কথা সেই Position এই থাকবে, কিন্তু Users Scroll করে ওই Position এর নিচে চলে যাবে, তখন এই Sticky element ও সাথে সাথে নিচে চলে যাবে। আর যখন নিচে যাবে তখন top থেকে 100px নিচে থাকবে। Fixed আর Sticky কখনই এক নয়। Fixed হলে element টি তার Normal Position এ না থেকে তার Parent Element থেকে Left, Right, Top, Bottom Count করবে। |
+| **Value** |                                                                                                                                                                                                          **Description**                                                                                                                                                                                                          |
+| :-------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|  static   |                                           Default Value. অর্থাৎ কোন Element এর যদি কোন position property না দেয়া হয়, তাহলে by default, static সেট হয়ে যায়। এই Property এর বৈশিষ্ট্য হলো, element টি যে order এ আছে, সেই order এ document এ render এবং position সেট হবে। কোন Element এর Position Static থাকা অবস্থায় ওই Element এ Left, Right, Top, Bottom এর Property গুলো কাজ করবে না।                                           |
+| absolute  | The element is positioned relative to its first positioned (not static) ancestor element. অর্থাৎ position absolute একা একা কাজ করতে পারে না, তাকে কোন একটা Positioned Ancestor Element অর্থাৎ এমন একটা Ancestor এর Under এ থাকতে হয় যার Static বাদে অন্য যেকোনো Position Property আছে, এবং ওই Ancestor Element এর Position থেকে সে তার Position Change করে। যদি এমন কোন Ancestor Element না থাকে, তাহলে Body এর সাপেক্ষে মুভ করে। |
+|   fixed   |                                                                                               The element is positioned relative to the browser window. এবং element টি একেবারে Fixed থাকে, আমার Document এ হাজার হাজার লাইন Text ও থাকে, তাহলেও fixed element তার Position কোনমতেও Change করবে না। একেবারে ঘারত্যারা যাকে বলে ! :D                                                                                                |
+| relative  |                                             The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's left position. অর্থাৎ Relative Element স্বাধীন। তাকে কোন Parent Element এর Under এ থাকতে হবে বিষয় টা সেরকম নয়। যখনি কোন Element এর Property Relative করা হবে, তখন ওই Element এ Left, Right, Top, Down Properties গুলো কাজ করবে।                                             |
+|  sticky   |          যদি element এ top: 100px; দেয়া হয়, তাহলে এই element যে Position এ Normally থাকার কথা সেই Position এই থাকবে, কিন্তু Users Scroll করে ওই Position এর নিচে চলে যাবে, তখন এই Sticky element ও সাথে সাথে নিচে চলে যাবে। আর যখন নিচে যাবে তখন top থেকে 100px নিচে থাকবে। Fixed আর Sticky কখনই এক নয়। Fixed হলে element টি তার Normal Position এ না থেকে তার Parent Element থেকে Left, Right, Top, Bottom Count করবে।           |
 
 ### Static
 
@@ -577,10 +577,13 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
 
-# chapter-12: CSS Float, Display, Alignment
+# Chapter-12: CSS Float, Display, Alignment
 
 - [CSS Float](#css-float-property)
   - [CSS Float Property](#css-float-property)
+  - [CSS Float Property কেন ব্যবহার করা হয়?](#css-float-property-কেন-ব্যবহার-করা-হয়)
+  - [কি ঘটে যখন কোন Element এ Float Property থাকে?](#কি-ঘটে-যখন-কোন-element-এ-float-property-থাকে)
+  - [Float এবং Position Absolute এর Document Flow তুলনা](#float-এবং-position-absolute-এর-document-flow-তুলনা)
   - [Example of CSS Float Property (Scource Codes)](#example-of-css-float-property-source-codes)
   - [Example of CSS Float Property (Screenshot)](#example-of-css-float-property-sreenshot)
   - [Another Example of CSS Float Property](#another-example-of-css-float-property)
@@ -600,28 +603,56 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
 
 ## CSS Float Property
 
-**Note: CSS Float Property is now deprecated in modern programming concept.**
+**Note: CSS Float Property is now deprecated in modern web-programming concept.**
 
-The `float` property is used for positioning and formatting content e.g. let an image float left to the text in a container. The float property can have one of the following values:
+CSS `float` property কোন একটা Element কে তাঁর Container এর ডানে বা বামে নিয়ে যায়। এবং Text বা অন্যান্য Elements যাতে ঐ Floated Element কে Wrap করতে পারে বা জড়িয়ে ধরে থাকতে পারে সেই Permission দেয়।
+
+**Float Value**
 
 - `left` - The element floats to the left of its container.
 - `right` - The element floats to the right of its container.
 - `none` - This is default. The element does not float (will be displayed just where it occurs in the text).
 - `inherit` - The element inherits the float value of its parent.
 
-The simplest use of `float` property is to to wrap text around images.
+### CSS Float Property কেন ব্যবহার করা হয়?
+
+- সাধারণত একটা Image এর চারপাশে Text কে Wrap করার জন্য।
+- কোন Inline Element কে Text বা অন্য কোন Element দিয়ে Wrap করার জন্য।
+- Horizontally কোন Element এর Position Left থেকে Right বা Right থেকে Left করার জন্য।
+- Horizontally অনেকগুলো Elements কে একটার পর একটা সাঁজাতে।
+
+### কি ঘটে যখন কোন Element এ Float Property থাকে?
+
+- Element টির Parent এর Height শুন্য হয়ে যায়।
+- Element টি যদি একটি Block Element হয় এবং Width দেয়া না হয় তাহলে আমরা জানি সেটি by default width 100% নেয়। কিন্তু ঐ Element এ যদি Float Property থাকে, তাহলে by default কোন Width থাকে না। সুতরাং কোন Block Element এ Float use করলে অবশ্যই ঐ Element এ width property দেয়া বাধ্যতামূলক।
+- Normal Document Flow থেকে উঠে যায়।
+- Element টি যদি Block-ও হয়, তবুও Inline এর মতই আচরণ করে।
+
+### Float এবং Position Absolute এর Document Flow তুলনা
+
+কোন Element এ যখন Float বা Position Absolute Property ব্যবহার করা হয়, তখন উভয় ক্ষেত্রেই ঐ Element টি Webpage এর Normal Document Flow থেকে উঠে যায়। তবে Float এবং Position Absolute এর ক্ষেত্রে Element টির Document Flow থেকে উঠে যাওয়ার সামান্য পার্থক্য আছে। কোন Element এ যখন Float ব্যবহার করা হয়, তখন সে Normal Document Flow থেকে 100% উঠে যায় না। এটা আমরা বুঝতে পারি যখন ঠিক তাঁর পরে কোন text থাকে এবং ঐ text তাঁকে Wrap করে বা জড়িয়ে ধরে থাকে কিন্তু Overlap করে না।
+অপরদিকে কোন Element এ Position Absolute ব্যবহার করলে ঐ Element টি সম্পূর্ণরূপে Normal Document Flow থেকে উঠে যায় এবং তাঁর পরে কোন Element থাকলে সেটা তার নিচে চলে আসে অর্থাৎ Overlap করে।
+
+Floated Element Example:
+![floated](./chapter-12-css-float-display-align/images/2.png)
+
+Absolute Positioned Element:
+![abs](./chapter-12-css-float-display-align/images/3.png)
 
 ### Example of CSS Float Property (Screenshot)
 
 ![float example](./chapter-12-css-float-display-align/images/1.png)
 
+Another Example:
+![float example](./chapter-12-css-float-display-align/images/4.png)
+
 ### Example of CSS Float Property (Source Codes)
 
-**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/zYjvzXQ)**
+**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/YzJLNmm)**
 
 ### Another Example of CSS Float Property
 
-**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/XWqmVVJ)**
+**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/poxVpaV)**
 
 ### Clear Property
 
@@ -688,7 +719,7 @@ The following example shows the different behavior of `display: inline`, `displa
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
 
-# chapter-13: CSS Flexbox
+# Chapter-13: CSS Flexbox
 
 - [CSS Flexbox](#css-flexbox)
   - [CSS Flexbox Layout Module](#css-flexbox-layout-module)
@@ -705,6 +736,12 @@ The following example shows the different behavior of `display: inline`, `displa
 - [কিছু গুরুত্বপূর্ণ Flex Items Property](#কিছু-গুরুত্বপূর্ণ-flex-items-property)
 
 ## CSS Flexbox
+
+### What is Flexbox?
+
+Flexbox is a CSS box model to easily **layout**, **align** and **distribute** space among items within a **container** either horizontally or vertically.
+
+অর্থাৎ ফ্লেক্সবক্স হলো একটা CSS Box Model যে Horizontally বা Vertically কতোগুলো ITEMS গুলোকে Layout দেয়, Align করে এবং তাদের মধ্যে Space Distribute করে।
 
 ### CSS Flexbox Layout Module
 

@@ -1,23 +1,30 @@
-* {
-  box-sizing: border-box;
+div {
+    width: 120px;
+    height: 45px;
+    margin: 3px;
+    border-radius: 5px;
 }
-.box {
-  /* 32vw will create the boxes responsive or you may give 33.33% */
-  width: 32vw;
-  height: 20vh;
-  float: left;
+.box1{
+    background-color: #9b59b6;
+    float: left;
 }
-.box1 {
-  background: brown;
+.box2{
+    background-color: #2ecc71;
+    float: left;
 }
-.box2 {
-  background: burlywood;
+.box3{
+    background-color: #34495e;
+    float: left;
 }
-.box3 {
-  background: darkorange;
+.box4{
+    background-color: #e67e22;
+    float: left;
 }
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.box5{
+    background-color: #2980b9;
+    float: left;
+}
+.box6{
+    background-color: #ffeaa7;
+    float: left;
 }
