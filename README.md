@@ -587,10 +587,10 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
   - [Example of CSS Float Property (Scource Codes)](#example-of-css-float-property-source-codes)
   - [Example of CSS Float Property (Screenshot)](#example-of-css-float-property-sreenshot)
   - [Another Example of CSS Float Property](#another-example-of-css-float-property)
+  - [Float যেসব প্রবলেম তৈরি করে](#float-যেসব-প্রবলেম-তৈরি-করে)
   - [Clear Property](#clear-property)
-  - [Example of Clear Property](#example-of-css-clear-property)
+  - [Example of Clearfix](#example-of-clearfix)
   - [Clearfix Hack](#clearfix-hack)
-  - [Example of CSS Clearfix Hack](#example-of-css-clear-property)
 - [CSS Display](#css-display-property)
   - [Basic Concepts of Inline-block](#basic-concepts-of-inline-block)
   - [Inline, Block and Inline-block Examples](#inline-block-and-inline-block-examples)
@@ -654,24 +654,42 @@ Another Example:
 
 **&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/poxVpaV)**
 
+### Float যেসব প্রবলেম তৈরি করে
+
+কোন একটা Element কে যখন Float property দেয়া হয়, তখন ঐ Element টি তার নিচের সব Elements গুলোকে Affect করে। ধরি, X একটি Element. আমরা যদি চাই ঐ Floated Element টি X element এবং X element এর নিচে যত Element আছে তার উপর কোন প্রভাব ফেলতে পারবে না, তাহলে X Element এ Clear property ব্যবহার করতে হবে। Float এর এই প্রবলেম এর সমাধান হলো Clear Property.
+
 ### Clear Property
 
-When we use the `float` property, and we want the next element below (not on right or left), we will have to use the `clear` property.
-The `clear` property specifies what should happen with the element that is next to a floating element.
+কোন একটা Floated Element এর পাশের Element টির কি হবে সেটা নির্ধারণ করে Clear Property. 
+
 The `clear` property can have one of the following values:
 
 - This is default. `none` - The element is not pushed below left or right floated elements.
-- `left` - The element is pushed below left floated elements.
+- `left` - The element is pushed below left floated elements. অর্থাৎ ধরি A element একটি Floated Element, যার Property `float: left` দেয়া। ঠিক তার নিচে আছে B element, যার property `clear: left` দেয়া। তাহলে এই B element টি A element এর নিচে pushed হবে। B element এ যদি `clear: left` না দেয়া হতো, তাহলে B element টি A element এর কারনে Unexpected bahavior করতো। 
 - `right` - The element is pushed below right floated elements.
 - `both` - The element is pushed below both left and right floated elements. This is safe to use when you are in a confusion between `left` and 'right'.
 - `inherit` - The element inherits the clear value from its parent.
 
 ### Clearfix Hack
 
-If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem.
-The overflow: auto clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages.
+**Clearfix Hack কেন ব্যবহার করবো?**
 
-### Example of CSS Clear Property
+- একটা Floated Element যদি তার Container এর চেয়ে বড় হয়, তাহলে এটি Overflow করবে। এই প্রবলেম সমাধান করার জন্য। 
+- একটি Element Floated থাকার কারনে তার নিচের Element এ যেন প্রভাব ফেলতে না পারে। 
+
+**Clearfix কিভাবে তৈরি করা হয়**
+- Floated Element এর Container/Parent Element এর `::after` Pseudo Element তৈরি করতে হয়। এই Pseudo Element এ নিচের Code টি বসালে এটি Clearfix হিসেবে কাজ করবে।
+
+ ```css
+ .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+```
+**Note: অনেক ক্ষেত্রে আমাদের `display: block`-ও ব্যবহার করা লাগতে পারে, এটা Requirement এর উপর নির্ভর করবে।** 
+
+### Example of Clearfix
 
 **&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/QWrjMJP)**
 
@@ -880,7 +898,7 @@ The align-items property is used to align the flex items.
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
 
-# chapter-14: CSS Selectors
+# Chapter-14: CSS Selectors
 
 - [CSS Selectors](#css-selectors)
   - [What is CSS Selectors](#what-is-css-selectors)
@@ -1811,12 +1829,18 @@ Screenshot:
 
 ### 04. All CSS Pseudo Elements
 
+**Pseudo Element কি**
+
+Pseudo Element হলো একটা Keyword যেটা কোন একটা Selector এর Specific একটা অংশকে Style করে, নতুন কোন Element তৈরি করা ছাড়াই। অর্থাৎ আমরা যে Specific অংশকে Style করতে চাচ্ছি, ঐ অংশকে একটা Element এর মধ্যে নিয়ে Style করা যেত, তবে এক্ষেত্রে নতুন আরও একটি Element তৈরি করা লাগতো। Pseudo Element এর মাধ্যমে আমরা নতুন কোন Element তৈরি করা ছাড়াই ঐ Specific অংশকে ধরতে পারি এবং Style করতে পারি। যেমনঃ কোন একটা Paragraph এর প্রথম লাইন বা প্রথম Letter কে ধরতে আমরা Pseudo Element ব্যবহার করতে পারি। 
+
+**Note:** ::before, ::after এগুলো সবই কিন্তু একেকটা Element. অর্থাৎ CSS এ Div, Span, Section এগুলো যেমন Element তেমনি ঐগুলাও (::before, ::after, ::first-letter) একেকটা Element. এবং by default এগুলো Inline Element.
+
 | **Selector No.** | **Selector Name** |   **Example**   |                   **Example Description**                    |
 | :--------------: | :---------------: | :-------------: | :----------------------------------------------------------: |
-|        01        |      ::after      |    p::after     |            Insert content after every <p> element            |
-|        02        |     ::before      |    p::before    |           Insert content before every <p> element            |
-|        03        |  ::first-letter   | p::first-letter |        Selects the first letter of every <p> element         |
-|        04        |   ::first-line    |  p::first-line  |         Selects the first line of every <p> element          |
+|        01        |      ::after      |    p::after     |            Insert content after  `<p>` element            |
+|        02        |     ::before      |    p::before    |           Insert content before  `<p>` element            |
+|        03        |  ::first-letter   | p::first-letter |        Selects the first letter of `<p>` element         |
+|        04        |   ::first-line    |  p::first-line  |         Selects the first line of `<p>` element          |
 |        05        |    ::selection    |  p::selection   | Selects the portion of an element that is selected by a user |
 
 #### Example
