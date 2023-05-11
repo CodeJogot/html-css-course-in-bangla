@@ -623,9 +623,8 @@ CSS `float` property কোন একটা Element কে তাঁর Containe
 
 ### কি ঘটে যখন কোন Element এ Float Property থাকে?
 
-- Element টির Parent এর Height শুন্য হয়ে যায়।
+- Normal Document Flow থেকে উঠে যায় এবং এই Element তার Parent এ কোন Height দেয় না। অর্থাৎ আমরা জানি, Parent এর Height হলো Childs এর Height এর যোগফল। কিন্তু Floated Element এর Height Parent এ যোগ হয় না। 
 - Element টি যদি একটি Block Element হয় এবং Width দেয়া না হয় তাহলে আমরা জানি সেটি by default width 100% নেয়। কিন্তু ঐ Element এ যদি Float Property থাকে, তাহলে by default কোন Width থাকে না। সুতরাং কোন Block Element এ Float use করলে অবশ্যই ঐ Element এ width property দেয়া বাধ্যতামূলক।
-- Normal Document Flow থেকে উঠে যায়।
 - Element টি যদি Block-ও হয়, তবুও Inline এর মতই আচরণ করে।
 
 ### Float এবং Position Absolute এর Document Flow তুলনা

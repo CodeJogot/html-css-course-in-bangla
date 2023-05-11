@@ -1,4 +1,8 @@
-div {
+
+.parent {
+    background-color: #34495e;
+}
+.parent div {
     width: 120px;
     height: 45px;
     margin: 3px;
@@ -14,17 +18,17 @@ div {
 }
 .box3{
     background-color: #34495e;
-    float: left;
+    
 }
 .box4{
     background-color: #e67e22;
-    float: left;
+    
 }
 .box5{
     background-color: #2980b9;
-    float: left;
+   
 }
 .box6{
     background-color: #ffeaa7;
-    float: left;
+    
 }
