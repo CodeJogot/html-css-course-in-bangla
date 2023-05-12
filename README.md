@@ -799,11 +799,17 @@ div {
 ### CSS Alignment Examples
 
 **&#9885; [How to Center A Block Element Horizontally Way-01](https://codepen.io/CodeJogot/pen/VwEdePJ)**
+
 **&#9885; [How to Center A Block Element Horizontally Way-02](https://codepen.io/CodeJogot/pen/BaqVjwQ)**
+
 **&#9885; [How to Center A Block Element Horizontally Way-03](https://codepen.io/CodeJogot/pen/VwEdeyZ)**
+
 **&#9885; [How to Center A Block Element Horizontally Way-04](https://codepen.io/CodeJogot/pen/BaqVjYp)**
+
 **&#9885; [How to Center A Block Element Horizontally & Vertically Way-01](https://codepen.io/CodeJogot/pen/vYVrLjO)**
+
 **&#9885; [How to Center A Block Element Horizontally & Vertically Way-02](https://codepen.io/CodeJogot/pen/QWZxyxO)**
+
 **&#9885; [How to Center A Block Element Horizontally & Vertically Way-03](https://codepen.io/CodeJogot/pen/RweJrBr)**
 
 <div align="right">
