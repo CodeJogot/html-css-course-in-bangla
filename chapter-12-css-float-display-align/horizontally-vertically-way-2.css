@@ -1,0 +1,11 @@
+.parent-div {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.target-div {
+    width: 300px;
+    height: 100px;
+    background-color: #2ecc71;
+}

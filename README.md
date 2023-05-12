@@ -592,10 +592,11 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
   - [Example of Clearfix](#example-of-clearfix)
   - [Clearfix Hack](#clearfix-hack)
 - [CSS Display](#css-display-property)
-  - [Basic Concepts of Inline-block](#basic-concepts-of-inline-block)
+  - [Concept of Inline Elements](#concepts-of-inline-element)
   - [Inline, Block and Inline-block Examples](#inline-block-and-inline-block-examples)
 - [CSS Alignment of Elements, Texts and Images](#css-alignment-of-elements-texts-and-images)
-  - [How to Center A Block Element](#how-to-center-a-block-element)
+  - [How to Horizontally Center A Block Element](#how-to-horizontally-center-a-block-element)
+  - [How to Horizontally & Vertically Center a Block Element](#how-to-horizontally--vertically-center-a-block-element)
   - [How to Center Texts Inside An Element](#how-to-center-texts-inside-an-element)
   - [How to Center an Image](#how-to-center-an-image)
   - [How to Align an Element - Using Position](#how-to-align-an-element---using-position)
@@ -623,7 +624,7 @@ CSS `float` property কোন একটা Element কে তাঁর Containe
 
 ### কি ঘটে যখন কোন Element এ Float Property থাকে?
 
-- Normal Document Flow থেকে উঠে যায় এবং এই Element তার Parent এ কোন Height দেয় না। অর্থাৎ আমরা জানি, Parent এর Height হলো Childs এর Height এর যোগফল। কিন্তু Floated Element এর Height Parent এ যোগ হয় না। 
+- Normal Document Flow থেকে উঠে যায় এবং এই Element তার Parent এ কোন Height দেয় না। অর্থাৎ আমরা জানি, Parent এর Height হলো Childs এর Height এর যোগফল। কিন্তু Floated Element এর Height Parent এ যোগ হয় না।
 - Element টি যদি একটি Block Element হয় এবং Width দেয়া না হয় তাহলে আমরা জানি সেটি by default width 100% নেয়। কিন্তু ঐ Element এ যদি Float Property থাকে, তাহলে by default কোন Width থাকে না। সুতরাং কোন Block Element এ Float use করলে অবশ্যই ঐ Element এ width property দেয়া বাধ্যতামূলক।
 - Element টি যদি Block-ও হয়, তবুও Inline এর মতই আচরণ করে।
 
@@ -659,12 +660,12 @@ Another Example:
 
 ### Clear Property
 
-কোন একটা Floated Element এর পাশের Element টির কি হবে সেটা নির্ধারণ করে Clear Property. 
+কোন একটা Floated Element এর পাশের Element টির কি হবে সেটা নির্ধারণ করে Clear Property.
 
 The `clear` property can have one of the following values:
 
 - This is default. `none` - The element is not pushed below left or right floated elements.
-- `left` - The element is pushed below left floated elements. অর্থাৎ ধরি A element একটি Floated Element, যার Property `float: left` দেয়া। ঠিক তার নিচে আছে B element, যার property `clear: left` দেয়া। তাহলে এই B element টি A element এর নিচে pushed হবে। B element এ যদি `clear: left` না দেয়া হতো, তাহলে B element টি A element এর কারনে Unexpected bahavior করতো। 
+- `left` - The element is pushed below left floated elements. অর্থাৎ ধরি A element একটি Floated Element, যার Property `float: left` দেয়া। ঠিক তার নিচে আছে B element, যার property `clear: left` দেয়া। তাহলে এই B element টি A element এর নিচে pushed হবে। B element এ যদি `clear: left` না দেয়া হতো, তাহলে B element টি A element এর কারনে Unexpected bahavior করতো।
 - `right` - The element is pushed below right floated elements.
 - `both` - The element is pushed below both left and right floated elements. This is safe to use when you are in a confusion between `left` and 'right'.
 - `inherit` - The element inherits the clear value from its parent.
@@ -673,20 +674,22 @@ The `clear` property can have one of the following values:
 
 **Clearfix Hack কেন ব্যবহার করবো?**
 
-- একটা Floated Element যদি তার Container এর চেয়ে বড় হয়, তাহলে এটি Overflow করবে। এই প্রবলেম সমাধান করার জন্য। 
-- একটি Element Floated থাকার কারনে তার নিচের Element এ যেন প্রভাব ফেলতে না পারে। 
+- একটা Floated Element যদি তার Container এর চেয়ে বড় হয়, তাহলে এটি Overflow করবে। এই প্রবলেম সমাধান করার জন্য।
+- একটি Element Floated থাকার কারনে তার নিচের Element এ যেন প্রভাব ফেলতে না পারে।
 
 **Clearfix কিভাবে তৈরি করা হয়**
+
 - Floated Element এর Container/Parent Element এর `::after` Pseudo Element তৈরি করতে হয়। এই Pseudo Element এ নিচের Code টি বসালে এটি Clearfix হিসেবে কাজ করবে।
 
- ```css
- .clearfix::after {
+```css
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 ```
-**Note: অনেক ক্ষেত্রে আমাদের `display: block`-ও ব্যবহার করা লাগতে পারে, এটা Requirement এর উপর নির্ভর করবে।** 
+
+**Note: অনেক ক্ষেত্রে আমাদের `display: block`-ও ব্যবহার করা লাগতে পারে, এটা Requirement এর উপর নির্ভর করবে।**
 
 ### Example of Clearfix
 
@@ -694,25 +697,96 @@ The `clear` property can have one of the following values:
 
 ## CSS Display Property
 
-### Basic Concepts of Inline-block
+### Concepts of Inline Element
 
-- Compared to `display: inline`, the major difference is that `display: inline-block` allows to set a width and height on the element.
-- Also, with `display: inline-block`, the top and bottom margins/paddings are respected, but with `display: inline` they are not.
-- Compared to `display: block`, the major difference is that `display: inline-block` does not add a line-break after the element, so the element can sit next to other elements.
-- 'display: inline' Property দিলে তখন height ও width property দিলেও কাজ করবে না। 'display: inline-block' ও 'display: block' Property তে height ও width property কাজ করবে। তবে, যখন 'display: block' দেয়া হবে তখন ওই Element টি পুরো লাইন জুরে জায়গা নিবে। নিচের উদাহরণ টি দেখলেই বিষয়টি পরিষ্কার হয়ে যাবে।
-
-The following example shows the different behavior of `display: inline`, `display: inline-block` and `display: block`:
+- Inline Elements এ Width এবং Height কাজ করে না। এমনকি margin padding এগুলোও মাঝে মাঝে কাজ করে না। যদি Inline Elements এ Width বা Height এর প্রয়োজন হয় বা Margin Padding দেয়ার দরকার হয়, তাহলে এই Inline Elements কে আমরা চাইলে Inline-block Elements তৈরি করতে পারি। `display: inline-block` এই property দিলে element টি inline-block element হয়ে যাবে এবং তখন width, height, margin, padding এগুলো কাজ করবে।
 
 ### Inline, Block and Inline-block Examples
 
-**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/XWqmBYy)**
+**&#9885; [Open Live Project in CodePen](https://codepen.io/CodeJogot/pen/poxKjKE)**
 
 ## CSS Alignment of Elements, Texts and Images
 
-### How to Center A Block Element
+### How to Horizontally Center A Block Element
 
-- To horizontally center a block element (like `<div>`, `<h1>`, `<p>`), use `margin: auto`;
-- **Note:** Center aligning has no effect if the width property is not set (or set to 100%).
+There are several ways:
+**_Way-01: Using Margin Auto_**
+
+```css
+div {
+  margin: 0 auto;
+}
+```
+
+**_Way-02: Using Flexbox_**
+
+```css
+.parent-div {
+  display: flex;
+  justify-content: center;
+}
+.target-div {
+}
+```
+
+**_Way-03: Using Positioning and Transform_**
+
+```css
+div {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+```
+
+**_Way-04: Using Inline-block Concept_**
+
+```css
+.parent-div {
+  text-align: center;
+}
+.target-div {
+  display: inline-block;
+}
+```
+
+### How to Horizontally & Vertically Center A Block Element
+
+There are several ways:
+
+**_Way-01: Using Flexbox_**
+
+```css
+.parent-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.target-div {
+}
+```
+
+**_Way-02: Using CSS Grid_**
+
+```css
+.parent-div {
+  display: grid;
+  place-items: center;
+}
+.target-div {
+}
+```
+
+**_Way-03: Using Positioning and Transform_**
+
+```css
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
 
 ### How to Center Texts Inside An Element
 
@@ -720,17 +794,17 @@ The following example shows the different behavior of `display: inline`, `displa
 
 ### How to Center an Image
 
-- To center an image, set left and right margin to `auto` and make it into a `block` element:
-
-### How to Align an Element - Using Position
-
-- One method for aligning elements is to use `position: absolute;`
-- **Note:** Absolute positioned elements are removed from the normal flow, and can overlap elements.
-- Another method for aligning elements is to use the `float` property.
+- To center an image, first make it a `block` element and then use `margin: 0 auto`
 
 ### CSS Alignment Examples
 
-**&#9885; [Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/BaxjQoG)**
+**&#9885; [How to Center A Block Element Horizontally Way-01](https://codepen.io/CodeJogot/pen/VwEdePJ)**
+**&#9885; [How to Center A Block Element Horizontally Way-02](https://codepen.io/CodeJogot/pen/BaqVjwQ)**
+**&#9885; [How to Center A Block Element Horizontally Way-03](https://codepen.io/CodeJogot/pen/VwEdeyZ)**
+**&#9885; [How to Center A Block Element Horizontally Way-04](https://codepen.io/CodeJogot/pen/BaqVjYp)**
+**&#9885; [How to Center A Block Element Horizontally & Vertically Way-01](https://codepen.io/CodeJogot/pen/vYVrLjO)**
+**&#9885; [How to Center A Block Element Horizontally & Vertically Way-02](https://codepen.io/CodeJogot/pen/QWZxyxO)**
+**&#9885; [How to Center A Block Element Horizontally & Vertically Way-03](https://codepen.io/CodeJogot/pen/RweJrBr)**
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
@@ -1830,16 +1904,16 @@ Screenshot:
 
 **Pseudo Element কি**
 
-Pseudo Element হলো একটা Keyword যেটা কোন একটা Selector এর Specific একটা অংশকে Style করে, নতুন কোন Element তৈরি করা ছাড়াই। অর্থাৎ আমরা যে Specific অংশকে Style করতে চাচ্ছি, ঐ অংশকে একটা Element এর মধ্যে নিয়ে Style করা যেত, তবে এক্ষেত্রে নতুন আরও একটি Element তৈরি করা লাগতো। Pseudo Element এর মাধ্যমে আমরা নতুন কোন Element তৈরি করা ছাড়াই ঐ Specific অংশকে ধরতে পারি এবং Style করতে পারি। যেমনঃ কোন একটা Paragraph এর প্রথম লাইন বা প্রথম Letter কে ধরতে আমরা Pseudo Element ব্যবহার করতে পারি। 
+Pseudo Element হলো একটা Keyword যেটা কোন একটা Selector এর Specific একটা অংশকে Style করে, নতুন কোন Element তৈরি করা ছাড়াই। অর্থাৎ আমরা যে Specific অংশকে Style করতে চাচ্ছি, ঐ অংশকে একটা Element এর মধ্যে নিয়ে Style করা যেত, তবে এক্ষেত্রে নতুন আরও একটি Element তৈরি করা লাগতো। Pseudo Element এর মাধ্যমে আমরা নতুন কোন Element তৈরি করা ছাড়াই ঐ Specific অংশকে ধরতে পারি এবং Style করতে পারি। যেমনঃ কোন একটা Paragraph এর প্রথম লাইন বা প্রথম Letter কে ধরতে আমরা Pseudo Element ব্যবহার করতে পারি।
 
 **Note:** ::before, ::after এগুলো সবই কিন্তু একেকটা Element. অর্থাৎ CSS এ Div, Span, Section এগুলো যেমন Element তেমনি ঐগুলাও (::before, ::after, ::first-letter) একেকটা Element. এবং by default এগুলো Inline Element.
 
 | **Selector No.** | **Selector Name** |   **Example**   |                   **Example Description**                    |
 | :--------------: | :---------------: | :-------------: | :----------------------------------------------------------: |
-|        01        |      ::after      |    p::after     |            Insert content after  `<p>` element            |
-|        02        |     ::before      |    p::before    |           Insert content before  `<p>` element            |
-|        03        |  ::first-letter   | p::first-letter |        Selects the first letter of `<p>` element         |
-|        04        |   ::first-line    |  p::first-line  |         Selects the first line of `<p>` element          |
+|        01        |      ::after      |    p::after     |              Insert content after `<p>` element              |
+|        02        |     ::before      |    p::before    |             Insert content before `<p>` element              |
+|        03        |  ::first-letter   | p::first-letter |          Selects the first letter of `<p>` element           |
+|        04        |   ::first-line    |  p::first-line  |           Selects the first line of `<p>` element            |
 |        05        |    ::selection    |  p::selection   | Selects the portion of an element that is selected by a user |
 
 #### Example

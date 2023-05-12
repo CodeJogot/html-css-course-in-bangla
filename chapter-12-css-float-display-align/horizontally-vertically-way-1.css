@@ -1,0 +1,12 @@
+.parent-div {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.target-div {
+    width: 300px;
+    height: 100px;
+    background-color: #2ecc71;
+}

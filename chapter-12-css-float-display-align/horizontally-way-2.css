@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.item {
+    width: 300px;
+    height: 100px;
+    background-color: #e67e22;
+}

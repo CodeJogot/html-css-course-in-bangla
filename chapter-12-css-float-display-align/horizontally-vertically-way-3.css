@@ -1,0 +1,9 @@
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: #8e44ad;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
