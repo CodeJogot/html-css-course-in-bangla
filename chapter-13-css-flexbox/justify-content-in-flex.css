@@ -1,42 +1,44 @@
 .flex-item {
-  width: 15%;
-  height: 30%;
-  background-color: chartreuse;
+  width: 200px;
+  height: 100px;
+  background-color: #9b59b6;
   margin: 0.5rem;
+  font-size: 40px;
+  color: white;
+  text-align: center;
 }
 .flex-container-jc {
   display: flex;
   justify-content: center;
-  width: 90vw;
-  height: 30vh;
-  background-color: darksalmon;
+ 
+  height: 500px;
+  background-color: #34495e;
 }
 .flex-container-fs {
   display: flex;
   justify-content: flex-start;
-  width: 90vw;
-  height: 30vh;
-  background-color: darksalmon;
+ 
+  height: 500px;
+    background-color: #34495e;
 }
 
 .flex-container-fe {
   display: flex;
   justify-content: flex-end;
-  width: 90vw;
-  height: 30vh;
-  background-color: darksalmon;
+  
+  height: 500px;
+  background-color: #34495e;
 }
 .flex-container-sa {
   display: flex;
   justify-content: space-around;
-  width: 90vw;
-  height: 30vh;
-  background-color: darksalmon;
+
+  height: 500px;
+    background-color: #34495e;
 }
 .flex-container-sb {
   display: flex;
   justify-content: space-between;
-  width: 90vw;
-  height: 30vh;
-  background-color: darksalmon;
+  height: 500px;
+  background-color: #34495e;
 }

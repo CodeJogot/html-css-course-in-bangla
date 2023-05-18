@@ -1,13 +1,6 @@
-
-.child {
-    width: 400px;
-    height: 200px;
-    background-color: blueviolet;
-    margin: 5px;
-    
-}
-.parent {
-    height: 100vh;
-    display: grid;
-    place-items: center;
+img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
 }

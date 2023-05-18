@@ -863,7 +863,7 @@ Before the Flexbox Layout module, there were four layout modes:
 
 এখানে Flex Container হলো Blue Area Element. এবং তিনটি Flex Items হলো 1, 2 এবং 3.
 
-Example: [Open in CodePen](https://codepen.io/travelerabdulalim/pen/xxjZLrx)
+Example: [Open in CodePen](https://codepen.io/CodeJogot/pen/WNaaXwJ)
 
 #### Tips
 
@@ -889,7 +889,7 @@ Example: [Open in CodePen](https://codepen.io/travelerabdulalim/pen/xxjZLrx)
 
 ### Flex Direction Example
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/yLjepNq)
+[Open Live Project in CodePen](https://codepen.io/CodeJogot/pen/XWxxzMv)
 
 ### Justify Content Property in Flex
 
@@ -907,7 +907,7 @@ Example: [Open in CodePen](https://codepen.io/travelerabdulalim/pen/xxjZLrx)
 
 ### JUSTIFY CONTENT Property in Flex Example
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/abGNoMy)
+[Open Live Project in CodePen](https://codepen.io/CodeJogot/pen/wvYYPem)
 
 ### ALIGN ITEMS Property in Flex
 
@@ -926,7 +926,7 @@ The align-items property is used to align the flex items.
 
 ### ALIGN ITEMS Property in Flex Example
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/zYjqxdQ)
+[Open Live Project in CodePen](https://codepen.io/CodeJogot/pen/mdzzqBM)
 
 ### The CSS Flexbox Container Properties Summary
 

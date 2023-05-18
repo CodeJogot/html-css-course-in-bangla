@@ -1,86 +1,78 @@
-* {
-  box-sizing: border-box;
-}
 
 .item {
-  width: 15vw;
-  height: 10vh;
+  width: 200px;
+  height: 100px;
   background-color: beige;
-  margin-left: 1rem;
-  margin-top: 0.7rem;
+  margin: 2px;
   text-align: center;
-  padding-top: 2rem;
 }
 .flex-container-r {
   display: flex;
   flex-direction: row;
-  width: 90vw;
-  height: 50vh;
+  height: 500px;
   background-color: dodgerblue;
-  margin: auto;
-  /* justify-content: center, will make your flex items in the center position in the container */
+  font-size: 40px;
+  text-align: center;
   justify-content: center;
 }
 .flex-container-c {
   display: flex;
-  flex-direction: column;
-  padding-top: 0.6rem;
-  width: 50vw;
-  height: 70vh;
+  flex-direction: row;
+  height: 500px;
   background-color: dodgerblue;
-  margin: auto;
-  /* justify-content: center, will make your flex items in the center position in the container */
+  font-size: 40px;
+  text-align: center;
   justify-content: center;
+  flex-direction: column;
 }
 .flex-container-rr {
   display: flex;
-  flex-direction: row-reverse;
-  width: 90vw;
-  height: 50vh;
+  flex-direction: row;
+  height: 500px;
   background-color: dodgerblue;
-  margin: auto;
-  /* justify-content: center, will make your flex items in the center position in the container */
+  font-size: 40px;
+  text-align: center;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .flex-container-cr {
   display: flex;
-  flex-direction: column-reverse;
-  padding-top: 0.6rem;
-  width: 50vw;
-  height: 70vh;
+  flex-direction: row;
+  height: 500px;
   background-color: dodgerblue;
-  margin: auto;
-  /* justify-content: center, will make your flex items in the center position in the container */
+  font-size: 40px;
+  text-align: center;
   justify-content: center;
+  flex-direction: column-reverse;
 }
 .flex-container-wrap {
   display: flex;
-  flex-wrap: wrap;
-  width: 90vw;
-  height: 50vh;
+  flex-direction: row;
+  height: 500px;
   background-color: dodgerblue;
-  margin: auto;
-  /* justify-content: center, will make your flex items in the center position in the container */
+  font-size: 40px;
+  text-align: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .flex-container-nowrap {
   display: flex;
-  flex-wrap: nowrap;
-  width: 90vw;
-  height: 50vh;
+  flex-direction: row;
+  height: 500px;
   background-color: dodgerblue;
-  margin: auto;
-  /* justify-content: center, will make your flex items in the center position in the container */
+  font-size: 40px;
+  text-align: center;
   justify-content: center;
+  flex-wrap: nowrap;
 }
 .flex-container-wrap-reverse {
   display: flex;
-  flex-wrap: wrap-reverse;
-  width: 90vw;
-  height: 50vh;
+  flex-direction: row;
+  height: 500px;
   background-color: dodgerblue;
-  margin: auto;
-  /* justify-content: center, will make your flex items in the center position in the container */
+  font-size: 40px;
+  text-align: center;
   justify-content: center;
+  flex-wrap: wrap-reverse;
 }

@@ -1,0 +1,22 @@
+.flex-container {
+    height: 500px;
+    background-color: #34495e;
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    /* flex-basis: 600px;
+    flex-grow: 1;
+    flex-shrink: 1; */
+    flex: 1 1 600px;
+    height: 100px;
+    background-color: #27ae60;
+    margin: 2px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    
+}
