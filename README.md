@@ -2018,16 +2018,16 @@ Note: This table has some type because of vs-code extensions, plz visit https://
   >
   <a href="http://google.com">Google</a>
   <img
-    src="/chapter-14-css-selectors/images/codejogot.jpd"
-    title="CodeJogot"
+    src="/chapter-14-css-selectors/images/logo.png"
+    title="Codejogot Logo"
     alt="CodeJogot"
     width="300px"
     height="300px"
   />
   <img
-    src="/chapter-14-css-selectors/images/codejogot2.jpg"
+    src="/chapter-14-css-selectors/images/fb-cover.png"
     title=" at Dhaka"
-    alt="Codejogot 2"
+    alt="CodeJogot"
     width="300px"
     height="300px"
   />
@@ -2043,7 +2043,7 @@ a[target="_blank"] {
   background-color: aquamarine;
 }
 /* title text anywhere */
-img[title~="Alim"] {
+img[title~="Logo"] {
   border: 2px solid red;
 }
 /* start with*/
@@ -2051,7 +2051,7 @@ a[href^="http"] {
   font-size: 2rem;
 }
 /* end with */
-img[alt$="Alim"] {
+img[alt$="Jogot"] {
   border-radius: 50%;
 }
 /* substring */
