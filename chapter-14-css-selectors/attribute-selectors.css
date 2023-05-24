@@ -6,7 +6,7 @@ a[target="_blank"] {
   background-color: aquamarine;
 }
 /* title text anywhere */
-img[title~="Alim"] {
+img[title~="Logo"] {
   border: 2px solid red;
 }
 /* start with*/
@@ -14,7 +14,7 @@ a[href^="http"] {
   font-size: 2rem;
 }
 /* end with */
-img[alt$="Alim"] {
+img[alt$="Jogot"] {
   border-radius: 50%;
 }
 /* substring */

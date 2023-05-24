@@ -1359,9 +1359,8 @@ Example:
   </div>
   <article>
     <h2 id="article-01">Article-01</h2>
-    Hi there, I'm Abdul Alim from Sirajganj, Bangladesh. Farming 🌾 and
-    Travelling ✈️ are my passion and profession. I love to share my farming and
-    travel experience through my YouTube Channel.
+    Codejogot is an programming platform. It helps the students learn with fun.
+    Codejogot is an programming platform. It helps the students learn with fun.
   </article>
   <article>
     <h2 id="article-02">Article-02</h2>
@@ -2019,16 +2018,16 @@ Note: This table has some type because of vs-code extensions, plz visit https://
   >
   <a href="http://google.com">Google</a>
   <img
-    src="/chapter-14-css-selectors/images/Abdul Alim.jpg"
-    title="Abdul Alim at Coxs Bazar"
-    alt="Abdul Alim"
+    src="/chapter-14-css-selectors/images/codejogot.jpd"
+    title="CodeJogot"
+    alt="CodeJogot"
     width="300px"
     height="300px"
   />
   <img
-    src="/chapter-14-css-selectors/images/abdul alim 4.jpg"
+    src="/chapter-14-css-selectors/images/codejogot2.jpg"
     title=" at Dhaka"
-    alt="New Abdul Alim"
+    alt="Codejogot 2"
     width="300px"
     height="300px"
   />
