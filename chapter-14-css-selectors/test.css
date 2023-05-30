@@ -1,8 +1,3 @@
-p, h1 {
-    font-size: 30px;
-    text-align: center;
-}
-
-p:only-child {
-    color: red;
+[alt~=]{
+    border-radius: 50%;
 }

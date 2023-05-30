@@ -287,7 +287,7 @@ While `<em>` is used to change the meaning of a sentence as spoken emphasis does
 - [HTML Entities](#html-entities)
 - [Hyperlinks](#hyperlinks)
 
-### HTML Entities
+## HTML Entities
 
 Some characters are reserved in HTML. If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
 Character entities are used to display reserved characters in HTML.
@@ -2073,6 +2073,10 @@ a[href*="google"] {
 </div>
 
 # Chapter-15: CSS Text, Fonts & Icons
+
+- [CSS Text]
+
+### CSS
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
 
