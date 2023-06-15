@@ -2080,6 +2080,9 @@ a[href*="google"] {
   - [Text Tranformation](#text-tranformation)
   - [Text Spacing](#text-spacing)
   - [Text Shadow](#text-shadow)
+- [CSS Fonts](#css-fonts)
+  - [Font Family](#)
+  - [Font Style, Weight, Variant, Size]()
 
 ## CSS Text
 
@@ -2100,6 +2103,13 @@ a[href*="google"] {
 ### Text Spacing
 
 ### Text Shadow
+
+## CSS Fonts
+
+### Font Family
+
+### Font Style, Weight, Variant, Size
+
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
 
