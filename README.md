@@ -2120,8 +2120,10 @@ a[href*="google"] {
 ## Assignments
 
 ### Problem-01
+![Problem 01](./chapter-15-css-text-fonts-icons/assignments/problem-01/problem/problem-01.png)
 
 ### Problem-02
+![Problem 02](./chapter-15-css-text-fonts-icons/assignments/problem-02/problem/problem-02.png)
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
 
