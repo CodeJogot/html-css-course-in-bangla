@@ -2085,6 +2085,9 @@ a[href*="google"] {
   - [Font Style, Weight, Variant, Size]()
 - [CSS Icons](#css-icons)
   - [How to Use Icons]()
+- [Assignments](#assignments)
+  - [Problem 01](#problem-01)
+  - [Problem 02](#problem-02)
 
 ## CSS Text
 
@@ -2113,6 +2116,12 @@ a[href*="google"] {
 ### Font Style, Weight, Variant, Size
 
 ## CSS Icons
+
+## Assignments
+
+### Problem-01
+
+### Problem-02
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
 
