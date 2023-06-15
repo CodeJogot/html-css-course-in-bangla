@@ -1,0 +1,4 @@
+h1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}

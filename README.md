@@ -21,7 +21,7 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 |         [12](#chapter-12-css-float-display-alignment)          |                 [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                  |     Watch Now     |
 |                 [13](#chapter-13-css-flexbox)                  |                                    [CSS Flexbox](#chapter-13-css-flexbox)                                    |     Watch Now     |
 |                [14](#chapter-14-css-selectors)                 |                                  [CSS Selectors](#chapter-14-css-selectors)                                  |     Watch Now     |
-|                              [15]                              |                                         [CSS Text, Fonts and Icons]                                          |     Watch Now     |
+|            [15](#chapter-15-css-text-fonts--icons)             |                        [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                        |     Watch Now     |
 |       [16](#chapter-16-css-navigation-bar-and-dropdowns)       |               [CSS Navigation Bar and Dropdowns](#chapter-16-css-navigation-bar-and-dropdowns)               |     Watch Now     |
 |     [17](#chapter-17-css-image-gallery-and-image-sprites)      |            [CSS Image Gallery and Image Sprites](#chapter-17-css-image-gallery-and-image-sprites)            |     Watch Now     |
 |                               18                               |                                                                                                              |     Watch Now     |
@@ -2076,19 +2076,30 @@ a[href*="google"] {
 
 - [CSS Text](#css-text)
   - [Text Alignment & Text Direction Properties](#text-alignment--text-direction-properties)
+  - [Text Decoration](#text-decoration)
+  - [Text Tranformation](#text-tranformation)
+  - [Text Spacing](#text-spacing)
+  - [Text Shadow](#text-shadow)
 
 ## CSS Text
 
 ### Text Alignment & Text Direction Properties
 
-| **Property Name** | **Property Values**                                              | **Role/Task**                                                           | **Example**                                                                                                         |
-|-------------------|------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| `text-align`      | left, right, center, justify                                     | কোন টেক্সটকে Horizontally Align করার জন্য এই Property ব্যবহার করা যায়।  | `text-align: center`. কোন element এ যদি এই প্রপার্টি দেয়া হয়, তাহলে ঐ Element এর সমস্ত টেক্সট মাঝখানে চলে যাবে।     |
-| `text-align-last` | left, right, center, justify                                     | কোন Text এর লাস্ট লাইনকে Align করতে ব্যবহার করা হয়।                     | `text-align-last: right` এটা যদি কোন একটা P element কে দেয়া হয়, তাহলে ঐ P element এর লাস্ট লাইন ডান দিকে align হবে। |
-| `direction`       | ltr, rtl                                                         |                                                                         |                                                                                                                     |
-| `unicode-bidi`    | normal, embed, bidi-override                                     |                                                                         |                                                                                                                     |
-| `vertical-align`  | baseline, length, sub, super, top, text-top, middle, text-bottom | inline বা inline-block or table-cell box কে Vertically Align করে        |                                                                                                                     |
+| **Property Name** | **Property Values**                                              | **Role/Task**                                                          | **Example**                                                                                                         |
+| ----------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `text-align`      | left, right, center, justify                                     | কোন টেক্সটকে Horizontally Align করার জন্য এই Property ব্যবহার করা যায়। | `text-align: center`. কোন element এ যদি এই প্রপার্টি দেয়া হয়, তাহলে ঐ Element এর সমস্ত টেক্সট মাঝখানে চলে যাবে।     |
+| `text-align-last` | left, right, center, justify                                     | কোন Text এর লাস্ট লাইনকে Align করতে ব্যবহার করা হয়।                    | `text-align-last: right` এটা যদি কোন একটা P element কে দেয়া হয়, তাহলে ঐ P element এর লাস্ট লাইন ডান দিকে align হবে। |
+| `direction`       | ltr, rtl                                                         |                                                                        |                                                                                                                     |
+| `unicode-bidi`    | normal, embed, bidi-override                                     |                                                                        |                                                                                                                     |
+| `vertical-align`  | baseline, length, sub, super, top, text-top, middle, text-bottom | inline বা inline-block or table-cell box কে Vertically Align করে       |                                                                                                                     |
 
+### Text Decoration
+
+### Text Tranformation
+
+### Text Spacing
+
+### Text Shadow
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
 
