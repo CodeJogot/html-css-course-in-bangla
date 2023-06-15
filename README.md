@@ -2083,6 +2083,8 @@ a[href*="google"] {
 - [CSS Fonts](#css-fonts)
   - [Font Family](#)
   - [Font Style, Weight, Variant, Size]()
+- [CSS Icons](#css-icons)
+  - [How to Use Icons]()
 
 ## CSS Text
 
@@ -2110,6 +2112,7 @@ a[href*="google"] {
 
 ### Font Style, Weight, Variant, Size
 
+## CSS Icons
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
 
