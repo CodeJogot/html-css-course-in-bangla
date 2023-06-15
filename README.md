@@ -308,7 +308,7 @@ Character entities are used to display reserved characters in HTML.
 **Note:** Entities names are case-sensitive.
 Here is the [HTML](table.html) and [CSS](table.css) code that generates all the entites listed above.
 
-### Hyperlinks
+## Hyperlinks
 
 ### What is Hyperlinks?
 
@@ -2074,9 +2074,21 @@ a[href*="google"] {
 
 # Chapter-15: CSS Text, Fonts & Icons
 
-- [CSS Text]
+- [CSS Text](#css-text)
+  - [Text Alignment & Text Direction Properties](#text-alignment--text-direction-properties)
 
-### CSS
+## CSS Text
+
+### Text Alignment & Text Direction Properties
+
+| **Property Name** | **Property Values**                                              | **Role/Task**                                                           | **Example**                                                                                                         |
+|-------------------|------------------------------------------------------------------|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| `text-align`      | left, right, center, justify                                     | কোন টেক্সটকে Horizontally Align করার জন্য এই Property ব্যবহার করা যায়।  | `text-align: center`. কোন element এ যদি এই প্রপার্টি দেয়া হয়, তাহলে ঐ Element এর সমস্ত টেক্সট মাঝখানে চলে যাবে।     |
+| `text-align-last` | left, right, center, justify                                     | কোন Text এর লাস্ট লাইনকে Align করতে ব্যবহার করা হয়।                     | `text-align-last: right` এটা যদি কোন একটা P element কে দেয়া হয়, তাহলে ঐ P element এর লাস্ট লাইন ডান দিকে align হবে। |
+| `direction`       | ltr, rtl                                                         |                                                                         |                                                                                                                     |
+| `unicode-bidi`    | normal, embed, bidi-override                                     |                                                                         |                                                                                                                     |
+| `vertical-align`  | baseline, length, sub, super, top, text-top, middle, text-bottom | inline বা inline-block or table-cell box কে Vertically Align করে        |                                                                                                                     |
+
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
 
