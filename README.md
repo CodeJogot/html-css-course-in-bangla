@@ -11,7 +11,7 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 |     [02](#chapter-02-commonly-used-html-tags--their-usage)     |          [Commonly Used HTML Tags & Their Usage](#chapter-02-commonly-used-html-tags--their-usage)           |     Watch Now     |
 | [03](#chapter-03-html-entities-hyperlinks-images-audio-videos) | [HTML Entities, Hyperlinks, Images, Audio, Videos](#chapter-03-html-entities-hyperlinks-images-audio-videos) |     Watch Now     |
 |                               04                               |                                                                                                              |     Watch Now     |
-|                               05                               |                                                                                                              |     Watch Now     |
+|                [05](#chapter-05-html-projects)                 |                                  [HTML Projects](#chapter-05-html-projects)                                  |     Watch Now     |
 |                               06                               |                                                                                                              |     Watch Now     |
 |                               07                               |                                                                                                              |     Watch Now     |
 |                               08                               |                                                                                                              |     Watch Now     |
@@ -113,15 +113,35 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 # Chapter-01: Introduction
 
 - [What is HTML?](#what-is-html)
+- [Environment Setup]()
 - [HTML Basics](#html-basics)
+- [HTMLElements](#html-element)
 - [How Web Works?](#how-web-works)
+- [HTML Attributes]()
 
-### What is HTML?
+## What is HTML?
 
-The full meaning of HTML is **_Hyper Text Transfer Protocol_**. HTML is a Markup language.  
-HTML is used to buld the **_STRUCTURE_** of the web pages.
+The full meaning of HTML is **_Hyper Text Transfer Protocol_**. HTML is a _Markup language_.  
+HTML is used to build the **_STRUCTURE_** of the web pages.
 
-### HTML Basics
+## Environment Setup
+
+- To download VS Code [Visit Here](https://code.visualstudio.com/). Download the VS Code according to your Operating Stytem.
+- For Windows, Click the marked button.
+  ![vscode](./chapter-01-introduction/images/vscode.png)
+- Now install the following extensions.
+  - Auto Close Tag
+  - Auto Rename Tag
+  - Code Runner
+  - IntelliSense for CSS class names
+  - JavaScript Code Snippets
+  - Live Preview
+  - Live Server
+  - Prettier - Code Formatter
+
+**_Congratulations! you're ready to code now!_**
+
+## HTML Basics
 
 - **`<DOCTYPE html>`** is used to **tell** the browser, this is an HTML5 document.
 - **`<html>`** is the **container** of all HTML elements. This tag is used to **indicate** the beginning and end of all HTML elements in an HTML Document.
@@ -148,21 +168,36 @@ HTML is used to buld the **_STRUCTURE_** of the web pages.
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="TravellerAlim, Alim, Travel, AlimTheTraveller"
-    />
+    <meta name="keywords" content="CodeJogot, CodeJogot Course" />
     <meta
       name="description"
-      content="Alim is an passionate traveler who travels around the world and loves to make adventures"
+      content="CodeJogot - A game-based learning platform!"
     />
-    <title>TravellerAlim</title>
+    <title>CodeJogot</title>
   </head>
   <body></body>
 </html>
 ```
 
-### How Web Works?
+## HTML Element
+
+- An HTML element is defined by a start tag, some content, and an end tag.
+- যে Element এর কোন Content থাকে না, তাকে Empty Element বলে। যেমনঃ `<br>`
+
+- HTML Tags are not case-sensitive. অর্থাৎ `<DIV>` এবং `<div>` এই দুটোর অর্থ একই। কিন্তু W3C(World Wide Web Consortium) recommend করে Lowercase এ লিখার জন্য।
+
+### Structure of an Element/Tag
+
+![tag](./chapter-01-introduction/images/tag.jpg)
+
+### HTML Attributes
+
+- HTML Attributes, HTML Element কে আরও Features যোগ করার ক্ষমতা দেয়, ফলে Element টি আরও শক্তিশালী হয়ে উঠে!
+- Element এর প্রথম Tag এ Attributes লিখতে হয়।
+- Format: `name: "value"`
+- Example: `<p title="CodeJogot.Com">CodeJogot is an educational platform<p>`
+
+## How Web Works?
 
 Hey, rather wasting some time, I'm gonna provide you some useful resources to learn how the web works!
 Here we go:
@@ -282,7 +317,7 @@ While `<em>` is used to change the meaning of a sentence as spoken emphasis does
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
 
-# chapter-03: HTML Entities, Hyperlinks, Images, Audio, Videos
+# Chapter-03: HTML Entities, Hyperlinks, Images, Audio, Videos
 
 - [HTML Entities](#html-entities)
 - [Hyperlinks](#hyperlinks)
@@ -473,6 +508,8 @@ Click to view the [Source Code](hyperlinks.html) which demonstrates all the exam
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
+
+# Chapter-05: HTML Projects
 
 # Chapter-11: CSS Position, Z-index, Overflow
 
@@ -2120,9 +2157,11 @@ a[href*="google"] {
 ## Assignments
 
 ### Problem-01
+
 ![Problem 01](./chapter-15-css-text-fonts-icons/assignments/problem-01/problem/problem-01.png)
 
 ### Problem-02
+
 ![Problem 02](./chapter-15-css-text-fonts-icons/assignments/problem-02/problem/problem-02.png)
 
 # Chapter-16: CSS Navigation Bar and Dropdowns
