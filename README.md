@@ -22,7 +22,7 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 |                 [13](#chapter-13-css-flexbox)                  |                                    [CSS Flexbox](#chapter-13-css-flexbox)                                    |     Watch Now     |
 |                [14](#chapter-14-css-selectors)                 |                                  [CSS Selectors](#chapter-14-css-selectors)                                  |     Watch Now     |
 |            [15](#chapter-15-css-text-fonts--icons)             |                        [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                        |     Watch Now     |
-|       [16](#chapter-16-css-navigation-bar-and-dropdowns)       |               [CSS Navigation Bar and Dropdowns](#chapter-16-css-navigation-bar-and-dropdowns)               |     Watch Now     |
+|  [16](#chapter-16-css-links-lists-tables-display--max-width)   |    [CSS Links, Lists, Tables, Display, Max-width](#chapter-16-css-links-lists-tables-display--max-width)     |     Watch Now     |
 |     [17](#chapter-17-css-image-gallery-and-image-sprites)      |            [CSS Image Gallery and Image Sprites](#chapter-17-css-image-gallery-and-image-sprites)            |     Watch Now     |
 |                               18                               |                                                                                                              |     Watch Now     |
 |    [19](#chapter-19-visualize-and-play-with-css-properties)    |         [Visualize and Play with CSS Properties](#chapter-19-visualize-and-play-with-css-properties)         |     Watch Now     |
@@ -2164,55 +2164,70 @@ a[href*="google"] {
 
 ![Problem 02](./chapter-15-css-text-fonts-icons/assignments/problem-02/problem/problem-02.png)
 
-# Chapter-16: CSS Navigation Bar and Dropdowns
+# Chapter-16: CSS Links, Lists, Tables, Display & Max-width
 
-- [Introduction to CSS Navbar](#introduction-to-css-navbar)
-- [Simple Project to Create a Vertical Navbar](#simple-project-to-create-a-vertical-navbar)
-- [Simple Project to Create a Horizontal Navbar](#simple-project-to-create-a-horizontal-navbar)
-- [CSS Dropdowns Simple Project](#css-dropdowns-simple-project)
+- [CSS Links](#css-links)
+  - [Four States of Links](#four-states-of-links)
+  - [How To Create Link Boxes and Buttons](#how-to-create-link-boxesbuttons)
+  - [Different Types of Cursors on Links](#different-types-of-cursors-on-links)
 
-## Introduction to CSS Navbar
+## CSS Links
 
-CSS Navigation Bar কিভাবে তৈরি করতে হয়, তা শিখার জন্য আমরা দুটি প্রোজেক্ট করবো। সেগুলো হলোঃ
+- আমরা জানি লিংক তৈরি করতে হয় `<a>` ট্যাগ দিয়ে। HTML এ লিংক তৈরি করার সাথে সাথে By Default কিছু Styles Generate হয়। যেগুলা আমরা CSS দিয়ে Customize করতে পারি।
 
-- এক, আমরা খুব সাধারন একটা Vertical Navbar তৈরি করবো।
-- দুই, আমরা আরও একটা খুব সাধারন Horizontal Navbar তৈরি করবো।
+### Four States of Links
 
-## Simple Project to Create a Vertical Navbar
+Link এর চারটা States আছে। যেগুলো আমরা চারটা Pseudo-class দিয়ে CSS থেকে ধরতে পারি।
 
-এই প্রোজেক্ট এ বুঝার মতো যে কাজগুলো করা হয়েছে তা নিচে দেয়া হলোঃ
+- `a:link` - a normal, unvisited link.
+- `a:visited` - a link the user has visited.
+- `a:hover` - a link when the user mouses over it.
+- `a:active` - a link the moment it is clicked.
 
-1. আমরা ul element এর css এ `list-style-type: none` লিখে লিস্ট এর যে Bullet Sign ছিলো তা সরিয়ে ফেলেছি।
-2. a element এর মধ্যে `display: block` এবং `width: 80px` দিয়েছি, এর ফলে যেটা হলো তা হলো, শুধু Text ই না, পুরো 80px width জুড়েই জায়গাটা Clickable হয়ে গেলো।
-3. যেহেতু আমাদের সবগুলো লিঙ্ক ul element এর মধ্যে আছে, তাই 2 no point এ আমরা যে কাজ করেছি, তা যদি আমরা a এর মধ্যে `width: 80px` না দিয়ে যদি ul element এর মধ্যে দেই, তাহলে Same কাজই করবে।
+_Note: CSS এ Code লিখার সময় অবশ্যই link এবং visited Pseudo-class এর পর hover Pseudo-class দিতে হবে এবং active hover এর পর দিতে হবে।_
 
-### Project Screenshot
+Example:
 
-![vertical Navbar](./chapter-16-css-navigation-bar-and-dropdowns/images/1.png)
+![links](./chapter-16/images/link.png)
 
-### Vertical Navbar Live Project
+Source Codes:
+[Open in CodePen](https://codepen.io/CodeJogot/pen/XWyVZdP)
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/LYmjqYx)
+### How To Create Link Boxes/Buttons
 
-## Simple Project to Create a Horizontal Navbar
+```css
+a:link,
+a:visited {
+  background-color: white;
+  border: 2px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 8px 24px;
+  text-align: center;
+  border-radius: 4px;
+}
 
-### Project Screenshot
+a:hover,
+a:active {
+  background-color: black;
+  color: white;
+}
+```
 
-![Horizontal Navbar](./chapter-16-css-navigation-bar-and-dropdowns/images/2.png)
+Example:
 
-### Horizontal Navbar Live Project
+![link-box](./chapter-16/images/link-box.png)
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/eYrGdyx)
+Source Codes:
+[Open in CodePen](https://codepen.io/CodeJogot/pen/ZEmvoQB)
 
-## CSS Dropdowns Simple Project
+### Different Types of Cursors on Links
 
-### Project Screenshot
+Example:
 
-![dropdown](./chapter-16-css-navigation-bar-and-dropdowns/images/3.png)
+![different-cursors](./chapter-16/images/cursor.png)
 
-### Open Source Codes in CodePen
-
-[Open Source Codes in CodePen](https://codepen.io/travelerabdulalim/pen/qBYPqLV)
+Source Codes: [Open in CodePen](https://codepen.io/CodeJogot/pen/OJazEjW)
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>

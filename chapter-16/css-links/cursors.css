@@ -1,0 +1,28 @@
+h2 {
+    text-align: center;
+}
+.link-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #000000;
+    border: 2px solid #000000;
+    width: 96px;
+    height: 32px;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover, a:active {
+    background-color: #000000;
+    color: #ffffff;
+}
