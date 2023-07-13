@@ -2179,6 +2179,9 @@ a[href*="google"] {
 - [CSS Tables](#css-tables)
 - [CSS Display Propery](#css-display-propery)
 - [CSS Max-width](#css-max-width)
+- [Assignments](#assignments)
+  - [Assignment 1](#assignment-1)
+  - [Assignment 2](#assignment-2)
 
 ## CSS Links
 
@@ -2311,14 +2314,21 @@ ul {
 
 ## CSS Display Propery
 
-- Layout Control করার জন্য CSS Display Property অনেক গুরুত্বপূর্ণ ভূমিকা পালন করে। 
+- Layout Control করার জন্য CSS Display Property অনেক গুরুত্বপূর্ণ ভূমিকা পালন করে।
 
 ## CSS Max-width
+
+## Assignments
+
+### Assignment 1
+![Assignment 1](./chapter-16/images/assignment-1.png)
+
+### Assignment 2
+![Assignment 2](./chapter-16/images/assignment-02.png)
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
-
 
 # Chapter-17: CSS Image Gallery and Image Sprites
 
