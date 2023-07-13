@@ -2177,6 +2177,8 @@ a[href*="google"] {
   - [How to Remove Default Settings](#how-to-remove-default-settings)
   - [List Style Shortand Property](#list-style-shortand-property)
 - [CSS Tables](#css-tables)
+- [CSS Display Propery](#css-display-propery)
+- [CSS Max-width](#css-max-width)
 
 ## CSS Links
 
@@ -2307,9 +2309,16 @@ ul {
 
 [Open in CodePen](https://codepen.io/CodeJogot/pen/ExOoqeQ)
 
+## CSS Display Propery
+
+- Layout Control করার জন্য CSS Display Property অনেক গুরুত্বপূর্ণ ভূমিকা পালন করে। 
+
+## CSS Max-width
+
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
+
 
 # Chapter-17: CSS Image Gallery and Image Sprites
 
