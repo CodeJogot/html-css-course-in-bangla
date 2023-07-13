@@ -2170,6 +2170,12 @@ a[href*="google"] {
   - [Four States of Links](#four-states-of-links)
   - [How To Create Link Boxes and Buttons](#how-to-create-link-boxesbuttons)
   - [Different Types of Cursors on Links](#different-types-of-cursors-on-links)
+- [CSS Lists](#css-lists)
+  - [List Style Type Property](#list-style-type-property)
+  - [Image as An Marker](#image-as-an-marker)
+  - [Item Position](#item-position)
+  - [How to Remove Default Settings](#how-to-remove-default-settings)
+  - [List Style Shortand Property](#list-style-shortand-property)
 
 ## CSS Links
 
@@ -2186,11 +2192,12 @@ Link এর চারটা States আছে। যেগুলো আমরা 
 
 _Note: CSS এ Code লিখার সময় অবশ্যই link এবং visited Pseudo-class এর পর hover Pseudo-class দিতে হবে এবং active hover এর পর দিতে হবে।_
 
-Example:
+#### Example:
 
 ![links](./chapter-16/images/link.png)
 
-Source Codes:
+#### Source Codes:
+
 [Open in CodePen](https://codepen.io/CodeJogot/pen/XWyVZdP)
 
 ### How To Create Link Boxes/Buttons
@@ -2228,6 +2235,64 @@ Example:
 ![different-cursors](./chapter-16/images/cursor.png)
 
 Source Codes: [Open in CodePen](https://codepen.io/CodeJogot/pen/OJazEjW)
+
+## CSS Lists
+
+- HTML এ দুই ধরনের লিস্ট আছে। Ordered List and Unordered List.
+- Ordered List Bullet দ্বারা মার্ক করা হয়।
+- Unordered List Number অথবা Letters দ্বারা মার্ক করা হয়।
+
+### List Style Type Property
+
+- `list-style-type` Property দিয়ে কোন একটা Marker কি Type এর সেটা বলে দেয়া যায়। যেমনঃ `list-style-type: circle`, `list-style-type: square`, `list-style-type: upper-roman`, `list-style-type: lower-alpha`.
+
+#### Example:
+
+![list-style-type](./chapter-16/images/list-item-style.png)
+
+#### Source Codes: [Open in CodePen](https://codepen.io/CodeJogot/pen/VwVyJjP)
+
+### Image as An Marker
+
+- আমরা চাইলে Marker হিসেবে Image বা Gradient-ও ব্যবহার করতে পারি।
+
+#### Example
+
+![image-as-an-marker](./chapter-16/images/image-as-an-marker.png)
+
+#### Source Codes: [Open in CodePen](https://codepen.io/CodeJogot/pen/VwVyJzb)
+
+### Item Position
+
+- `list-style-position` মার্কারের Position নির্ধারণ করে।
+- `list-style-position: outside` এর অর্থ হলো বুলেট বা মার্কার লিস্ট Items এর বাইরে থাকবে।
+- `list-style-position: inside` এর অর্থ হলো বুলেট বা মার্কার লিস্ট Items এর ভিতরে থাকবে।
+- বুলেট পয়েন্ট ভিতরে না বাইরে আছে, তা আমরা একটা Border অ্যাড করে খুব সহজেই বুঝতে পারি।
+
+#### Example
+
+![marker position](./chapter-16/images/inside-outside.png)
+
+#### Source Codes
+
+[Open in CodePen](https://codepen.io/CodeJogot/pen/MWzrMGg)
+
+### How to Remove Default Settings
+
+- আমরা যখনি একটা লিস্ট তৈরি করি, তখনই প্রত্যেকটা লিস্ট এর সাথে একটা করে বুলেট এবং কিছু Default Margin Padding অ্যাড হয়, আমরা চাইলে এই সেটিং Remove করতে পারি। সেক্ষেত্রে নিচের Code টা লিখলেই হয়ে যাবেঃ
+
+```css
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+```
+
+### List Style Shortand Property
+
+- `list-style` হলো `list-style-type`, `list-style-position` এবং `list-style-image` এর Shorthand Property.
+  যেমনঃ `list-style: square inside url('sqpurple.gif')`
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
