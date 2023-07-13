@@ -2179,9 +2179,9 @@ a[href*="google"] {
 - [CSS Tables](#css-tables)
 - [CSS Display Propery](#css-display-propery)
 - [CSS Max-width](#css-max-width)
-- [Assignments](#assignments)
-  - [Assignment 1](#assignment-1)
-  - [Assignment 2](#assignment-2)
+- [Assignments on Chapter-16](#assignments-on-chapter-16)
+  - [Assignment 1](#assignment-1-for-chapter-16)
+  - [Assignment 2](#assignment-2-for-chapter-16)
 
 ## CSS Links
 
@@ -2318,12 +2318,14 @@ ul {
 
 ## CSS Max-width
 
-## Assignments
+## Assignments on Chapter-16
 
-### Assignment 1
+### Assignment 1 for Chapter-16
+
 ![Assignment 1](./chapter-16/images/assignment-1.png)
 
-### Assignment 2
+### Assignment 2 for Chapter-16
+
 ![Assignment 2](./chapter-16/images/assignment-02.png)
 
 <div align="right">
