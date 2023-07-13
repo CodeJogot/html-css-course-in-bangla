@@ -1,7 +1,5 @@
-
-div {
-    margin-top: 16px;
-    display: flex;
-    flex-direction: column;
+.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-

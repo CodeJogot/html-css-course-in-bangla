@@ -2176,6 +2176,7 @@ a[href*="google"] {
   - [Item Position](#item-position)
   - [How to Remove Default Settings](#how-to-remove-default-settings)
   - [List Style Shortand Property](#list-style-shortand-property)
+- [CSS Tables](#css-tables)
 
 ## CSS Links
 
@@ -2293,6 +2294,18 @@ ul {
 
 - `list-style` হলো `list-style-type`, `list-style-position` এবং `list-style-image` এর Shorthand Property.
   যেমনঃ `list-style: square inside url('sqpurple.gif')`
+
+## CSS Tables
+
+- HTML এ `<table>`, `<th>`, `<tr>` এবং `<td>` Tags গুলো ব্যবহার করে টেবিল তৈরি করা হয়।
+
+### Example
+
+![table](./chapter-16/images/table.png)
+
+### Source Codes
+
+[Open in CodePen](https://codepen.io/CodeJogot/pen/ExOoqeQ)
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
