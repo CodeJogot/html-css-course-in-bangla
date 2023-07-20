@@ -115,11 +115,12 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 - [What is HTML?](#what-is-html)
 - [Environment Setup](#environment-setup)
 - [HTML Basics](#html-basics)
-- [HTMLElements](#html-element)
-- [How Web Works?](#how-web-works)
+- [HTML Elements](#html-element)
 - [HTML Attributes](#html-attributes)
 - [HTML Style Attribute](#html-style-attribute)
 - [HTML Text Formatting](#html-text-formatting)
+- [Assignments for Chapter 01](#assignments-for-chapter-01)
+- [How Web Works? (Optional for Right Now)](#how-web-works)
 
 ## What is HTML?
 
@@ -201,26 +202,28 @@ HTML is used to build the **_STRUCTURE_** of the web pages.
 
 ## HTML Style Attribute
 
-- কোন একটা Element কে Style করতে Style Attribute ব্যবহার করা হয়। যেমনঃ Element এর color, font-size, width, height ইত্যাদি। 
-- Syntax: `<tagname style="property:value;">` এখানে Property এবং Value কি সেটা আমরা CSS এ শিখবো। 
+- কোন একটা Element কে Style করতে Style Attribute ব্যবহার করা হয়। যেমনঃ Element এর color, font-size, width, height ইত্যাদি।
+- Syntax: `<tagname style="property:value;">` এখানে Property এবং Value কি সেটা আমরা CSS এ শিখবো।
 - Example: `<p style="color:blue;">I am blue</p>`
 
 ## HTML Text Formatting
-- HTML এ বেশ কয়েকটি Element আছে যেগুলো দিয়ে বিভিন্ন ধরনের Text Display করতে পারি। যেমনঃ 
 
-| **No.** | **Element Name** | **Element Role**                                                                                                                                                                  |
-|---------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1       | `<b>`            | Text Bold করার জন্য। (without SEO concern)                                                                                                                                        |
-| 2       | `<strong>`       | Text Bold করার জন্য। (with SEO concern)                                                                                                                                           |
-| 3       | `<i>`            | Text Italic করার জন্য। (without SEO concern)                                                                                                                                      |
-| 4       | `<em>`           | Text Italic/Emphasized  করার জন্য। (with SEO concern)                                                                                                                             |
-| 5       | `<mark>`         | Text Mark করার জন্য।                                                                                                                                                              |
-| 6       | `<small>`        | খুব ছোট্ট টেক্সট এর জন্য।                                                                                                                                                         |
-| 7       | `<del>`          | টেক্সট এর মাঝখানে একটা লাইন দিয়ে এটা Deleted সেটা বুঝানোর জন্য।                                                                                                                   |
-| 8       | `<ins>`          | কোন Text কে Document এ Insert করার জন্য।                                                                                                                                          |
-| 9       | `<sub>`          | Subscript Text এর জন্য। এটি Normal Line থেকে একটু নিচে চলে যায়। সারারনত Chemical Formula যেমন পানির সংকেত, সালফিউরিক এসিডের সংকেত ইত্যাদি এগুলোর জন্য এই Element ব্যবহার করা হয়।  |
-| 10      | `<sup>`          | Superscript Text এর জন্য। এই Element সাধারনত Mathematical Formula লিখতে ব্যবহার করা হয়।                                                                                           |
+- HTML এ বেশ কয়েকটি Element আছে যেগুলো দিয়ে বিভিন্ন ধরনের Text Display করতে পারি। যেমনঃ
 
+| **No.** | **Element Name** | **Element Role**                                                                                                                                                                 |
+| ------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1       | `<b>`            | Text Bold করার জন্য। (without SEO concern)                                                                                                                                       |
+| 2       | `<strong>`       | Text Bold করার জন্য। (with SEO concern)                                                                                                                                          |
+| 3       | `<i>`            | Text Italic করার জন্য। (without SEO concern)                                                                                                                                     |
+| 4       | `<em>`           | Text Italic/Emphasized করার জন্য। (with SEO concern)                                                                                                                             |
+| 5       | `<mark>`         | Text Mark করার জন্য।                                                                                                                                                             |
+| 6       | `<small>`        | খুব ছোট্ট টেক্সট এর জন্য।                                                                                                                                                        |
+| 7       | `<del>`          | টেক্সট এর মাঝখানে একটা লাইন দিয়ে এটা Deleted সেটা বুঝানোর জন্য।                                                                                                                  |
+| 8       | `<ins>`          | কোন Text কে Document এ Insert করার জন্য।                                                                                                                                         |
+| 9       | `<sub>`          | Subscript Text এর জন্য। এটি Normal Line থেকে একটু নিচে চলে যায়। সারারনত Chemical Formula যেমন পানির সংকেত, সালফিউরিক এসিডের সংকেত ইত্যাদি এগুলোর জন্য এই Element ব্যবহার করা হয়। |
+| 10      | `<sup>`          | Superscript Text এর জন্য। এই Element সাধারনত Mathematical Formula লিখতে ব্যবহার করা হয়।                                                                                          |
+
+## Assignments for Chapter 01
 
 ## How Web Works?
 
