@@ -4,69 +4,69 @@
 
 While you complete the 60-chapter module, jump in the [Projects Section](#20-html--css-projects).
 
-|                            Chapter                             |                                                    Topics                                                    | Video Explanation |
-| :------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------: | :---------------: |
-|          [00](#chapter-00-how-the-course-is-designed)          |                     [How The Course is Designed](#chapter-00-how-the-course-is-designed)                     |     Watch Now     |
-|                 [01](#chapter-01-introduction)                 |                                   [Introduction](#chapter-01-introduction)                                   |     Watch Now     |
-|     [02](#chapter-02-commonly-used-html-tags--their-usage)     |          [Commonly Used HTML Tags & Their Usage](#chapter-02-commonly-used-html-tags--their-usage)           |     Watch Now     |
-| [03](#chapter-03-html-entities-hyperlinks-images-audio-videos) | [HTML Entities, Hyperlinks, Images, Audio, Videos](#chapter-03-html-entities-hyperlinks-images-audio-videos) |     Watch Now     |
-|                               04                               |                                                                                                              |     Watch Now     |
-|                [05](#chapter-05-html-projects)                 |                                  [HTML Projects](#chapter-05-html-projects)                                  |     Watch Now     |
-|                               06                               |                                                                                                              |     Watch Now     |
-|                               07                               |                                                                                                              |     Watch Now     |
-|                               08                               |                                                                                                              |     Watch Now     |
-|                               09                               |                                                                                                              |     Watch Now     |
-|                               10                               |                                                                                                              |     Watch Now     |
-|        [11](#chapter-11-css-position-z-index-overflow)         |                 [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                 |     Watch Now     |
-|         [12](#chapter-12-css-float-display-alignment)          |                 [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                  |     Watch Now     |
-|                 [13](#chapter-13-css-flexbox)                  |                                    [CSS Flexbox](#chapter-13-css-flexbox)                                    |     Watch Now     |
-|                [14](#chapter-14-css-selectors)                 |                                  [CSS Selectors](#chapter-14-css-selectors)                                  |     Watch Now     |
-|            [15](#chapter-15-css-text-fonts--icons)             |                        [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                        |     Watch Now     |
-|  [16](#chapter-16-css-links-lists-tables-display--max-width)   |    [CSS Links, Lists, Tables, Display, Max-width](#chapter-16-css-links-lists-tables-display--max-width)     |     Watch Now     |
-|     [17](#chapter-17-css-image-gallery-and-image-sprites)      |            [CSS Image Gallery and Image Sprites](#chapter-17-css-image-gallery-and-image-sprites)            |     Watch Now     |
-|                               18                               |                                                                                                              |     Watch Now     |
-|    [19](#chapter-19-visualize-and-play-with-css-properties)    |         [Visualize and Play with CSS Properties](#chapter-19-visualize-and-play-with-css-properties)         |     Watch Now     |
-|               [20](#chapter-20-css-grid-layout)                |                                [CSS Grid Layout](#chapter-20-css-grid-layout)                                |     Watch Now     |
-|                 [21](#chapter-21-css-gradient)                 |                                  [CSS Gradients](#chapter-21-css-gradient)                                   |     Watch Now     |
-|           [22](#chapter-22-css-2d-and-3d-transforms)           |                       [CSS 2D and 3D Transforms](#chapter-22-css-2d-and-3d-transforms)                       |     Watch Now     |
-|                [23](#chapter-23-css-animations)                |                                 [CSS Animations](#chapter-23-css-animations)                                 |     Watch Now     |
-|                               24                               |                                                                                                              |     Watch Now     |
-|                               25                               |                                                                                                              |     Watch Now     |
-|                               26                               |                                                                                                              |     Watch Now     |
-|                               27                               |                                                                                                              |     Watch Now     |
-|                               28                               |                                                                                                              |     Watch Now     |
-|                               29                               |                                                                                                              |     Watch Now     |
-|                               30                               |                                                                                                              |     Watch Now     |
-|                               31                               |                                                                                                              |     Watch Now     |
-|                               32                               |                                                                                                              |     Watch Now     |
-|                               33                               |                                                                                                              |     Watch Now     |
-|                               34                               |                                                                                                              |     Watch Now     |
-|                               35                               |                                                                                                              |     Watch Now     |
-|                               36                               |                                                                                                              |     Watch Now     |
-|                               37                               |                                                                                                              |     Watch Now     |
-|                               38                               |                                                                                                              |     Watch Now     |
-|                               39                               |                                                                                                              |     Watch Now     |
-|                               40                               |                                                                                                              |     Watch Now     |
-|                               41                               |                                                                                                              |     Watch Now     |
-|                               42                               |                                                                                                              |     Watch Now     |
-|                               43                               |                                                                                                              |     Watch Now     |
-|                               44                               |                                                                                                              |     Watch Now     |
-|                               45                               |                                                                                                              |     Watch Now     |
-|                               46                               |                                                                                                              |     Watch Now     |
-|                               47                               |                                                                                                              |     Watch Now     |
-|                               48                               |                                                                                                              |     Watch Now     |
-|                               49                               |                                                                                                              |     Watch Now     |
-|                               50                               |                                                                                                              |     Watch Now     |
-|                               51                               |                                                                                                              |     Watch Now     |
-|                               52                               |                                                                                                              |     Watch Now     |
-|                               53                               |                                                                                                              |     Watch Now     |
-|                               54                               |                                                                                                              |     Watch Now     |
-|                               55                               |                                                                                                              |     Watch Now     |
-|                               56                               |                                                                                                              |     Watch Now     |
-|                               57                               |                                                                                                              |     Watch Now     |
-|                               58                               |                                                                                                              |     Watch Now     |
-|                               59                               |                                                                                                              |     Watch Now     |
-|                               60                               |                                                                                                              |     Watch Now     |
+|                                   Chapter                                    |                                                                 Topics                                                                  | Video Explanation |
+| :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
+|                 [00](#chapter-00-how-the-course-is-designed)                 |                                  [How The Course is Designed](#chapter-00-how-the-course-is-designed)                                   |     Watch Now     |
+| [01](#chapter-01-environment-setup-html-elements-attributes-text-formatting) | [Environment Setup, HTML Elements, Attributes, Text Formatting](#chapter-01-environment-setup-html-elements-attributes-text-formatting) |     Watch Now     |
+|            [02](#chapter-02-commonly-used-html-tags--their-usage)            |                        [Commonly Used HTML Tags & Their Usage](#chapter-02-commonly-used-html-tags--their-usage)                        |     Watch Now     |
+|        [03](#chapter-03-html-entities-hyperlinks-images-audio-videos)        |              [HTML Entities, Hyperlinks, Images, Audio, Videos](#chapter-03-html-entities-hyperlinks-images-audio-videos)               |     Watch Now     |
+|                                      04                                      |                                                                                                                                         |     Watch Now     |
+|                       [05](#chapter-05-html-projects)                        |                                               [HTML Projects](#chapter-05-html-projects)                                                |     Watch Now     |
+|                                      06                                      |                                                                                                                                         |     Watch Now     |
+|                                      07                                      |                                                                                                                                         |     Watch Now     |
+|                                      08                                      |                                                                                                                                         |     Watch Now     |
+|                                      09                                      |                                                                                                                                         |     Watch Now     |
+|                                      10                                      |                                                                                                                                         |     Watch Now     |
+|               [11](#chapter-11-css-position-z-index-overflow)                |                              [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                               |     Watch Now     |
+|                [12](#chapter-12-css-float-display-alignment)                 |                               [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                               |     Watch Now     |
+|                        [13](#chapter-13-css-flexbox)                         |                                                 [CSS Flexbox](#chapter-13-css-flexbox)                                                  |     Watch Now     |
+|                       [14](#chapter-14-css-selectors)                        |                                               [CSS Selectors](#chapter-14-css-selectors)                                                |     Watch Now     |
+|                   [15](#chapter-15-css-text-fonts--icons)                    |                                     [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                                      |     Watch Now     |
+|         [16](#chapter-16-css-links-lists-tables-display--max-width)          |                  [CSS Links, Lists, Tables, Display, Max-width](#chapter-16-css-links-lists-tables-display--max-width)                  |     Watch Now     |
+|            [17](#chapter-17-css-image-gallery-and-image-sprites)             |                         [CSS Image Gallery and Image Sprites](#chapter-17-css-image-gallery-and-image-sprites)                          |     Watch Now     |
+|                                      18                                      |                                                                                                                                         |     Watch Now     |
+|           [19](#chapter-19-visualize-and-play-with-css-properties)           |                      [Visualize and Play with CSS Properties](#chapter-19-visualize-and-play-with-css-properties)                       |     Watch Now     |
+|                      [20](#chapter-20-css-grid-layout)                       |                                             [CSS Grid Layout](#chapter-20-css-grid-layout)                                              |     Watch Now     |
+|                        [21](#chapter-21-css-gradient)                        |                                                [CSS Gradients](#chapter-21-css-gradient)                                                |     Watch Now     |
+|                  [22](#chapter-22-css-2d-and-3d-transforms)                  |                                    [CSS 2D and 3D Transforms](#chapter-22-css-2d-and-3d-transforms)                                     |     Watch Now     |
+|                       [23](#chapter-23-css-animations)                       |                                              [CSS Animations](#chapter-23-css-animations)                                               |     Watch Now     |
+|                                      24                                      |                                                                                                                                         |     Watch Now     |
+|                                      25                                      |                                                                                                                                         |     Watch Now     |
+|                                      26                                      |                                                                                                                                         |     Watch Now     |
+|                                      27                                      |                                                                                                                                         |     Watch Now     |
+|                                      28                                      |                                                                                                                                         |     Watch Now     |
+|                                      29                                      |                                                                                                                                         |     Watch Now     |
+|                                      30                                      |                                                                                                                                         |     Watch Now     |
+|                                      31                                      |                                                                                                                                         |     Watch Now     |
+|                                      32                                      |                                                                                                                                         |     Watch Now     |
+|                                      33                                      |                                                                                                                                         |     Watch Now     |
+|                                      34                                      |                                                                                                                                         |     Watch Now     |
+|                                      35                                      |                                                                                                                                         |     Watch Now     |
+|                                      36                                      |                                                                                                                                         |     Watch Now     |
+|                                      37                                      |                                                                                                                                         |     Watch Now     |
+|                                      38                                      |                                                                                                                                         |     Watch Now     |
+|                                      39                                      |                                                                                                                                         |     Watch Now     |
+|                                      40                                      |                                                                                                                                         |     Watch Now     |
+|                                      41                                      |                                                                                                                                         |     Watch Now     |
+|                                      42                                      |                                                                                                                                         |     Watch Now     |
+|                                      43                                      |                                                                                                                                         |     Watch Now     |
+|                                      44                                      |                                                                                                                                         |     Watch Now     |
+|                                      45                                      |                                                                                                                                         |     Watch Now     |
+|                                      46                                      |                                                                                                                                         |     Watch Now     |
+|                                      47                                      |                                                                                                                                         |     Watch Now     |
+|                                      48                                      |                                                                                                                                         |     Watch Now     |
+|                                      49                                      |                                                                                                                                         |     Watch Now     |
+|                                      50                                      |                                                                                                                                         |     Watch Now     |
+|                                      51                                      |                                                                                                                                         |     Watch Now     |
+|                                      52                                      |                                                                                                                                         |     Watch Now     |
+|                                      53                                      |                                                                                                                                         |     Watch Now     |
+|                                      54                                      |                                                                                                                                         |     Watch Now     |
+|                                      55                                      |                                                                                                                                         |     Watch Now     |
+|                                      56                                      |                                                                                                                                         |     Watch Now     |
+|                                      57                                      |                                                                                                                                         |     Watch Now     |
+|                                      58                                      |                                                                                                                                         |     Watch Now     |
+|                                      59                                      |                                                                                                                                         |     Watch Now     |
+|                                      60                                      |                                                                                                                                         |     Watch Now     |
 
 # 20 HTML & CSS Projects
 
@@ -110,7 +110,7 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 
 - HTML সম্পর্কে অল্প ধারনা থাকলে ভালো, না থাকলেও সমস্যা নেই।
 
-# Chapter-01: Introduction
+# Chapter-01: Environment Setup, HTML Elements, Attributes, Text Formatting
 
 - [What is HTML?](#what-is-html)
 - [Environment Setup](#environment-setup)
