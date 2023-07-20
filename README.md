@@ -131,7 +131,7 @@ HTML is used to build the **_STRUCTURE_** of the web pages.
 
 - To download VS Code [Visit Here](https://code.visualstudio.com/). Download the VS Code according to your Operating Stytem.
 - For Windows, Click the marked button.
-  ![vscode](./chapter-01-introduction/images/vscode.png)
+  ![vscode](./chapter-01/images/vscode.png)
 - Now install the following extensions.
   - Auto Close Tag
   - Auto Rename Tag
@@ -191,7 +191,7 @@ HTML is used to build the **_STRUCTURE_** of the web pages.
 
 ### Structure of an Element/Tag
 
-![tag](./chapter-01-introduction/images/tag.jpg)
+![tag](./chapter-01/images/tag.jpg)
 
 ### HTML Attributes
 
