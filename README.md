@@ -113,6 +113,9 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 # Chapter-01: Environment Setup, HTML Elements, Attributes, Text Formatting
 
 - [What is HTML?](#what-is-html)
+- [History of HTML](#history-of-html)
+  - [The World’s First Website](#the-worlds-first-website)
+- [What is CSS?](#what-is-css)
 - [Environment Setup](#environment-setup)
 - [HTML Basics](#html-basics)
 - [HTML Elements](#html-element)
@@ -124,8 +127,57 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 
 ## What is HTML?
 
-The full meaning of HTML is **_Hyper Text Transfer Protocol_**. HTML is a _Markup language_.  
-HTML is used to build the **_STRUCTURE_** of the web pages.
+- The full meaning of HTML is **_Hyper Text Transfer Protocol_**. HTML is a _Markup language_.  
+  HTML is used to build the **_STRUCTURE_** of the web pages.
+- একটি ভাষা শিখতে যেমন বর্ণমালা দিয়ে শুরু করতে হয়, ঠিক তেমনি Web Developement শিখতেও HTML, CSS দিয়ে শুরু করতে হয়। 
+- এইচটিএমএল এর মার্ক আপ ট্যাগ সমূহ ব্যবহার করে ওয়েবপেজ এর বেসিক কাঠামো তৈরি করা হয়। কঙ্কাল যেমন মানুষের দেহ গঠন করে , তেমনি এইচটিএমএল একটি ওয়েবসাইটের কাঠামো তৈরি করে ।
+- HTML কোনো প্রোগ্রামিং ল্যাংগুয়েজ নয় বরং একটি মার্কআপ ল্যাংগুয়েজ যা কতগুলো মার্কআপ ট্যাগ এর সমন্বয় গঠিত।
+- HTML ফাইলের এক্সটেনশন **_.html_** অথবা **_.htm_** দিতে হয়।
+
+## History of HTML
+
+- ১৯৯১ সালে ব্রিটিশ পদার্থবিদ ও কম্পিউটার বিজ্ঞানী **টিম বার্নার্স-লি**, CERN(European Council for Nuclear Research) এ কর্মরত ছিলেন। ঐ সময় CERN এর কর্মীদের মাঝে বিভিন্ন Documents Share করার জন্য সর্বপ্রথম HTML আবিষ্কার করেন। পরবর্তীতে ১৯৯৩ সালে HTML 1.0 Officially Released করা হয়।
+- ঐ সময় HTML এর ট্যাগ ছিল মাত্র ১৮ টা। বর্তমানে ১৪২ টা ট্যাগ আছে।
+- HTML এর বিভিন্ন Versions and Release Year
+
+| **Version** | **Release Year** |
+| ----------- | ---------------- |
+| HTML 1.0    | 1993             |
+| HTML 2.0    | 1995             |
+| HTML 3.0    | 1997             |
+| HTML 4.0    | 1999             |
+| HTML 5.0    | 2014             |
+
+### The World’s First Website
+- To Visit the World's First Website: [Click Here](http://info.cern.ch/hypertext/WWW/TheProject.html)
+- Screenshot:
+![first-website](./chapter-01/images/first-website.png)
+
+## What is CSS?
+- CSS (Cascading Style Sheet ) হল একটি Style Sheet Lanuage যা HTML এ লিখিত ডকুমেন্ট কীভাবে উপস্থাপিত ও সজ্জিত হবে তা নির্ধারণ করে। অর্থাৎ HTML দিয়ে Website এর Structure এবং CSS দিয়ে Design করা হয়। 
+- CSS File এর Extension হলো **_.css_**
+
+## History of CSS
+- CSS আসার আগে, যেকোনো ওয়েব ডকুমেন্ট (web document) এর কোনো style বা design ছিলোনা। মানে, যখন একটি ওয়েবসাইট বা ওয়েব পেজের মধ্যে ভিসিট করা হতো, তখন সেখানে কেবল **বিচ্ছিন্ন কিছু TEXT** ছাড়া কিছুই থাকতোনা। এই সমস্যার সমাধান করতে গিয়ে HTML `<style></style>` tag এর বিকাশ হলো। কিন্তু এরও কিছু সীমাবদ্ধতা থেকে গেলো। 
+- অবশেষে ১৯৯৪ সালে Håkon Wium Lie নামে একজন Computer Scientist CSS আবিষ্কার করেন। ১৯৯৬ সালে Officially CSS 1.0 Version Release করা হয়। তিনিও **টিম বার্নার্স-লি** এর মত CERN(European Council for Nuclear Research) এ কর্মরত ছিলেন।
+- Version History: 
+
+| **Version** | **Release Year** |
+| ----------- | ---------------- |
+| CSS 1.0    | 1996             |
+| CSS 2.0    | 1998             |
+| CSS 3.0    | 1999 (Draft)             |
+
+- CSS3 Single Version এ Released হয়নি, বরং বিভিন্ন Module এ Release হয়েছে। যেমনঃ 
+- ২০০১ সালে CSS3 তে Selector Level 3 আসে। 
+- ২০০২ সালে Box Model, Background, Borders আসে। 
+- ২০০৯ সালে আসে Media Queries, Transitions, Animation এবং Flexbox.
+- ২০১১ সালে আসে Grid Layout, Multi Column Layout.
+
+CSS এর Details Version History দেখতে [এখানে](https://www.w3.org/Style/CSS20/) ক্লিক করুন।  
+
+
+
 
 ## Environment Setup
 
