@@ -259,6 +259,8 @@ CSS এর Details Version History দেখতে [এখানে](https://www
 
 ## Assignments for Chapter 01
 
+![assignment for chapter 01](./chapter-01/images/assignment.png)
+
 ## How Web Works?
 
 Hey, rather wasting some time, I'm gonna provide you some useful resources to learn how the web works!
