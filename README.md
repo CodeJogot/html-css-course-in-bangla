@@ -1,8 +1,8 @@
-# Learn HTML and CSS in 60 Chapters
+# Learn HTML and CSS in 30 Chapters
 
 ### After completing this course, we'll build [20 Projects](#20-html--css-projects) with HTML and CSS.
 
-While you complete the 60-chapter module, jump in the [Projects Section](#20-html--css-projects).
+While you complete the 30-chapter module, jump in the [Projects Section](#20-html--css-projects).
 
 |                                   Chapter                                    |                                                                 Topics                                                                  | Video Explanation |
 | :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
@@ -37,36 +37,8 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 |                                      28                                      |                                                                                                                                         |     Watch Now     |
 |                                      29                                      |                                                                                                                                         |     Watch Now     |
 |                                      30                                      |                                                                                                                                         |     Watch Now     |
-|                                      31                                      |                                                                                                                                         |     Watch Now     |
-|                                      32                                      |                                                                                                                                         |     Watch Now     |
-|                                      33                                      |                                                                                                                                         |     Watch Now     |
-|                                      34                                      |                                                                                                                                         |     Watch Now     |
-|                                      35                                      |                                                                                                                                         |     Watch Now     |
-|                                      36                                      |                                                                                                                                         |     Watch Now     |
-|                                      37                                      |                                                                                                                                         |     Watch Now     |
-|                                      38                                      |                                                                                                                                         |     Watch Now     |
-|                                      39                                      |                                                                                                                                         |     Watch Now     |
-|                                      40                                      |                                                                                                                                         |     Watch Now     |
-|                                      41                                      |                                                                                                                                         |     Watch Now     |
-|                                      42                                      |                                                                                                                                         |     Watch Now     |
-|                                      43                                      |                                                                                                                                         |     Watch Now     |
-|                                      44                                      |                                                                                                                                         |     Watch Now     |
-|                                      45                                      |                                                                                                                                         |     Watch Now     |
-|                                      46                                      |                                                                                                                                         |     Watch Now     |
-|                                      47                                      |                                                                                                                                         |     Watch Now     |
-|                                      48                                      |                                                                                                                                         |     Watch Now     |
-|                                      49                                      |                                                                                                                                         |     Watch Now     |
-|                                      50                                      |                                                                                                                                         |     Watch Now     |
-|                                      51                                      |                                                                                                                                         |     Watch Now     |
-|                                      52                                      |                                                                                                                                         |     Watch Now     |
-|                                      53                                      |                                                                                                                                         |     Watch Now     |
-|                                      54                                      |                                                                                                                                         |     Watch Now     |
-|                                      55                                      |                                                                                                                                         |     Watch Now     |
-|                                      56                                      |                                                                                                                                         |     Watch Now     |
-|                                      57                                      |                                                                                                                                         |     Watch Now     |
-|                                      58                                      |                                                                                                                                         |     Watch Now     |
-|                                      59                                      |                                                                                                                                         |     Watch Now     |
-|                                      60                                      |                                                                                                                                         |     Watch Now     |
+
+|
 
 # 20 HTML & CSS Projects
 
