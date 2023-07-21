@@ -129,7 +129,7 @@ While you complete the 60-chapter module, jump in the [Projects Section](#20-htm
 
 ## What is HTML?
 
-- The full meaning of HTML is **_Hyper Text Transfer Protocol_**. HTML is a _Markup language_.  
+- The full meaning of HTML is **_Hyper Text Markup Language_**. HTML হলো একটি _Markup language_.  
   HTML is used to build the **_STRUCTURE_** of the web pages.
 - একটি ভাষা শিখতে যেমন বর্ণমালা দিয়ে শুরু করতে হয়, ঠিক তেমনি Web Developement শিখতেও HTML, CSS দিয়ে শুরু করতে হয়।
 - এইচটিএমএল এর মার্ক আপ ট্যাগ সমূহ ব্যবহার করে ওয়েবপেজ এর বেসিক কাঠামো তৈরি করা হয়। কঙ্কাল যেমন মানুষের দেহ গঠন করে , তেমনি এইচটিএমএল একটি ওয়েবসাইটের কাঠামো তৈরি করে ।
