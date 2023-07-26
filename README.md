@@ -8,7 +8,7 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 | :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
 |                 [00](#chapter-00-how-the-course-is-designed)                 |                                  [How The Course is Designed](#chapter-00-how-the-course-is-designed)                                   |   [Watch Now]()   |
 | [01](#chapter-01-environment-setup-html-elements-attributes-text-formatting) | [Environment Setup, HTML Elements, Attributes, Text Formatting](#chapter-01-environment-setup-html-elements-attributes-text-formatting) |   [Watch Now]()   |
-|            [02](#chapter-02-commonly-used-html-tags--their-usage)            |                        [Commonly Used HTML Tags & Their Usage](#chapter-02-commonly-used-html-tags--their-usage)                        |     Watch Now     |
+|      [02](#chapter-02-html-quotation-link-image-favicon-table-and-list)      |          [HTML Quotation, Link, Image, Favicon, Table and List](#chapter-02-html-quotation-link-image-favicon-table-and-list)           |     Watch Now     |
 |        [03](#chapter-03-html-entities-hyperlinks-images-audio-videos)        |              [HTML Entities, Hyperlinks, Images, Audio, Videos](#chapter-03-html-entities-hyperlinks-images-audio-videos)               |     Watch Now     |
 |                                      04                                      |                                                                                                                                         |     Watch Now     |
 |                       [05](#chapter-05-html-projects)                        |                                               [HTML Projects](#chapter-05-html-projects)                                                |     Watch Now     |
@@ -277,108 +277,172 @@ Here we go:
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
 
-# Chapter-02: Commonly Used HTML Tags & Their Usage
+# Chapter-02: HTML Quotation, Link, Image, Favicon, Table and List
 
-- [&lt;em&gt;](#em)
-- [&lt;i&gt; vs &lt;em&gt;](#i-vs-em)
-- [&lt;strong&gt;](#strong)
-- [&lt;b&gt; vs &lt;strong&gt;](#b-vs-strong)
+- [HTML Quotation](#html-quotation)
+  - [Blockquote Element](#blockquote-element)
+  - [Q Element](#q-element)
+  - [ABBR Element](#abbr-element)
+  - [Address Element](#address-element)
+  - [Cite Element](#cite-element)
+  - [BDO Element](#bdo-element)
+- [HTML Link](#html-link)
+  - [Absolute URL vs Relative URL](#absolute-url-vs-relative-url)
+  - [Image as A Link](#image-as-a-link)
+  - [Link to An Email Address](#link-to-an-email-address)
+  - [Button As A Link](#button-as-a-link)
+  - [Link Bookmark](#link-bookmark)
+- [HTML Image](#html-image)
+  - [Image Map](#image-map)
+  - [Image As Background](#image-as-background)
 
-### em
+## HTML Quotation
 
-The **`<em>`** element is used to define emphasized text. By default, emphasized text is displayed in _italic_. However, it should not be used to apply italic styling; use the CSS `font-style` property for that purpose. Use the `<cite>` element to mark the title of a work (book, play, song, etc.). Use the `<i>` element to mark text that is in an alternate tone or mood, which covers many common situations for italics such as scientific names or words in other languages. Use the `<strong>` element to mark text that has greater importance than surrounding text.<br>
-Visit [HERE](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em) for learning more about this element.
+### Blockquote Element
 
-**Example:**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="TravellerAlim, Alim, Travel, AlimTheTraveller"
-    />
-    <meta
-      name="description"
-      content="Alim is an passionate traveler who travels around the world and loves to make adventures"
-    />
-    <title>TravellerAlim</title>
-  </head>
-  <body>
-    <article>
-      Cox’s Bazar is a town on the southeast coast of <em>Bangladesh</em>.
-    </article>
-  </body>
-</html>
-```
-
-**Output:**
-Cox’s Bazar is a town on the southeast coast of _Bangladesh_.
-
-### i vs em
-
-New developers are often confused at seeing multiple elements that produce similar results. `<em>` and `<i>` are a common example, since they both italicize text. What's the difference? Which should you use?
-
-By default, the visual result is the same. However, the semantic meaning is different. The `<em>` element represents stress emphasis of its contents, while the `<i>` element represents text that is set off from the normal prose, such a foreign word, fictional character thoughts, or when the text refers to the definition of a word instead of representing its semantic meaning. (The title of a work, such as the name of a book or movie, should use `<cite>`.)
-
-This means the right one to use depends on the situation. Neither is for purely decorative purposes, that's what CSS styling is for.
-
-An example for `<em>` could be: "Just _do_ it already!", or: "We _had_ to do something about it". A person or software reading the text would pronounce the words in italics with an emphasis, using verbal stress.
-
-An example for `<i>` could be: "The _Queen Mary_ sailed last night". Here, there is no added emphasis or importance on the word "Queen Mary". It is merely indicated that the object in question is not a queen named Mary, but a ship named _Queen Mary_. Another example for `<i>` could be: "The word _the_ is an article".
-
-**Example:**
+- সাধারণত কোন Section (Text, Images etc) যদি অন্য কোন Source থেকে আসে, তাহলে ঐ Section কে Quote করার জন্য আমরা `<blockquote>` Element টি ব্যবহার করে থাকি। Section টি যে Source থেকে এসেছে, সেই Source এর লিংক _cite_ Attribute এ দিতে হয়। যেমনঃ
 
 ```html
-<p>
-  In HTML 5, what was previously called
-  <em>block-level</em> content is now called <em>flow</em> content.
-</p>
+<blockquote cite="https://en.wikipedia.org/wiki/Cox%27s_Bazar">
+  Cox's Bazar is a city, fishing port, tourism centre, and district headquarters
+  in Southeastern Bangladesh. It is located 150 km (93 mi) south of the city of
+  Chittagong.
+</blockquote>
 ```
 
-**Result/Output:**
-In HTML 5, what was previously called _block-level_ content is now called _flow_ content.
+- Blockquote Element টি by default বাম ও ডান দিক থেকে কিছু Margin নেয়।
 
-Thanks [Mozilla Developer Network-MDN](https://developer.mozilla.org/en-US/docs/MDN/About) for [this awesome documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em).
+### Q Element
 
-### strong
+- Short Quote এর জন্য এই Element টি ব্যবহার করা হয়।
+- `<q>` element টি তার Content এর উভয় দিকে double quotation("") sign দিয়ে দেয়।
 
-The `<strong>` element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.
+### ABBR Element
 
-The `<strong>` element is for content that is of "strong importance," including things of great seriousness or urgency (such as warnings). This could be a sentence that is of great importance to the whole page, or you could merely try to point out that some words are of greater importance compared to nearby content.
+- Abbreviation or Acronym এর জন্য `<abbr>` element টি ব্যবহার করা হয়। যেমন: HTML, CSS, ATM, IP, WHO etc.
+- এই Element এর _title_ attribute এ যা দেয়া হবে সেটা Mouse Hover করলে দেখা যাবে।
 
-Typically this element is rendered by default using a bold font weight. However, it should not be used to apply bold styling; use the CSS `font-weight` property for that purpose. Use the `<b>` element to draw attention to certain text without indicating a higher level of importance. Use the `<em>` element to mark text that has stress emphasis.
+### Address Element
 
-Another accepted use for `<strong>` is to denote the labels of paragraphs which represent notes or warnings within the text of a page.
+- Contact Information এর জন্য `<address>` element টি ব্যবহার করা হয়।
+- Contact Information যেকোনো কিছুই হতে পারে যেমনঃ Email Address, Phone Number, URL, Physical Address, Social Media Handle etc.
+- Address Element এর Content by default Italic থাকে।
 
-### b vs strong
+### Cite Element
 
-It is often confusing to new developers why there are so many ways to express the same thing on a rendered website. `<b>` and `<strong>` are perhaps one of the most common sources of confusion, causing developers to ask "Should I use `<b>` or `<strong>`? Don't they both do the same thing?"
+- কোন একটা Creative কাজের (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.) Title দেবার জন্য `<cite>` element টি ব্যবহার করা হয়। যেমনঃ
 
-Not exactly. The `<strong>` element is for content that is of greater importance, while the `<b>` element is used to draw attention to text without indicating that it's more important.
+```html
+<cite>Paradoxical Sajid</cite> by Arif Azad, first published in 2018.
+```
 
-It may help to realize that both are valid and semantic elements in HTML5 and that it's a coincidence that they both have the same default styling (boldface) in most browsers (although some older browsers actually underline `<strong>`).
+### BDO Element
 
-Each element is meant to be used in certain types of scenarios, and if you want to bold text for decoration, you should instead actually use the CSS `font-weight` property.
+- BDO(Bi-directional Override) Element টি বর্তমান Text Direction কে Override করে। _dir_ নামে Attribute এ যে Direction দেয়া থাকে সেই Direction অনুযায়ী Browser এ Render হয়।
 
-The intended meaning or purpose of the enclosed text should be what determines which element you use. Communicating meaning is what semantics are all about.
+যেমনঃ
 
-### em vs strong
+```html
+<bdo dir="rtl">CodeJogot is an online educational platform</bdo>
+```
 
-While `<em>` is used to change the meaning of a sentence as spoken emphasis does ("I _love carrots_" vs. "I love _carrots_"), `<strong>` is used to give portions of a sentence added importance (e.g., "**Warning**! This is **very dangerous**.") Both `<strong>` and `<em>` can be nested to increase the relative degree of importance or stress emphasis, respectively.
+## HTML Link
 
-### Example:
+- এক পেইজ থেকে অন্য পেইজে Visit করার জন্য লিংক ব্যবহার করা হয়।
+- লিংক কেবলমাত্র Text ই হবে এমনটা নয়, Images বা যেকোনো HTML Element-ও হতে পারে।
+- `<a>` Anchor Element দিয়ে লিংক তৈরি করতে হয়।
+- Anchor Element এর সবচেয়ে গুরুত্বপূর্ণ Attribute হলো _href_ attribute. এই Attribute এর মাধ্যমে বলে দিতে হয় লিংক এর destination কোথায়।
+- By default Anchor Element এর কিছু বৈশিষ্ট থাকেঃ
+  - An unvisited link is underlined and blue.
+  - A visited link is underlined and purple.
+  - An active link is underlined and red.
+- _target_ attribute এর Value `_blank` দিলে নতুন Window/Tab এ পেজ Open হবে।
+- _title_ attribute এ Extra Information দেয়া যায়, যা Tooltip আঁকারে Display হয়। যেমনঃ
 
-**Hope** is a good thing, maybe the best of things and no good thing ever dies.
+```html
+<a href="https://github.com/CodeJogot" title="Go to CodeJogot GitHub"
+  >Visit CodeJogot GitHub</a
+>
+```
 
-[Visit here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong) to learn more.
+### Absolute URL vs Relative URL
+
+- Absolute Link হলো একটা Complete URL যেটা Internet এ থাকা Resources কে Exactly Point করে। Absolute Link শুরু হয় **_http://_** or **_https://_**, এরপর Domain Name, এরপর Resource Path. অর্থাৎ **_Absolute Link = https:// + www.example.com + Resources Path_**
+
+  - Example:
+
+  ```html
+  <a href="https://www.example.com/resources/document.pdf">Download PDF</a>
+  ```
+
+- A relative link, on the other hand, specifies the path to the linked resource relative to the current location of the HTML file. Instead of providing the entire URL, a relative link only includes the path to the resource from the current directory or position. Here's an example:
+  - Example:
+  ```html
+  <a href="../resources/document.pdf">Download PDF</a>
+  ```
+  - `..` দিলে Directory এক লেভেল উপরে চলে যাবে।
+
+### Image as a Link
+
+- Image কে চাইলে লিংক হিসেবে ব্যবহার করা যায়। যে Image কে আমরা লিংক হিসেবে ব্যবহার করতে চাই, ঐ Image কে Anchor Tag এর মধ্যে দিতে হয়। Example:
+
+```html
+<a href="https://www.codejogot.com">
+  <img src="codejogot-logo.jpg" alt="CodeJogot Logo" />
+</a>
+```
+
+### Link to An Email Address
+
+- Email Link তৈরি করার জন্য আমাদের **_href_** attribute এর মধ্যে **_mailto:_** ব্যবহার করতে হয়। Example:
+
+```html
+<a href="mailto:support@codejogot.com">Send email</a>
+```
+
+### Button As A Link
+
+- আমরা চাইলে একটা Button কেও লিংক হিসেবে ব্যবহার করতে পারি। সেক্ষেত্রে Button এ ক্লিক করলে কি হবে সেটা _onclick_ attribute এ আমরা বলে দিতে পারি।
+  যেমনঃ
+
+```html
+<button onclick="document.location='https://github.com/CodeJogot'">
+  CodeJogot GitHub
+</button>
+```
+
+### Link Bookmark
+
+- একটা Webpage এ যদি অনেক বেশি Contents থাকে, তাহলে চাইলে নির্দিষ্ট একটা Section এ Jump করতে পারি।
+
+## HTML Image
+
+- Image এর চারটা গুরুত্বপূর্ণ Attribute হলো: **_src, alt, width, height_**.
+
+### Image Map
+
+- একটা Image এর মধ্যে বিভিন্ন Region Clickable করার জন্য Image Map Concept ব্যবহার করা হয়।
+- Image Map তৈরি করার Steps:
+  - একটা Image Element তৈরি করতে হবে যার **_usemap_** নামে একটা Attribute থাকতে হবে।
+  - `<map>` element তৈরি করতে হবে যার **_name_** নামে একটা Attribute থাকতে হবে।
+  - `<map>` elements এর মধ্যে `<area>` elements তৈরি করতে হবে। যতগুলো Regions কে Clickable করা প্রয়োজন ঠিক ততগুলো `<area>` elements তৈরি করতে হবে।
+  - প্রত্যেকটা Area Elements এ **_shape_**, **_coords_**, এবং **_href_** attributes দিতে হবে।
+
+### Image As Background
+
+### Picture Element
+
+- Picture Element এর মধ্যে `<source>` এবং `<img>` element ব্যবহার করতে হয়। Image Element টি শেষ Child হিসেবে দিতে হয়, যাতে কোন Browser যদি Picture Element Support না করে, তাহলে Image Element এর Image টি Render/Display করতে পারে। 
+
+### The Purpose of Picture Element
+
+- যখন আমরা ভিন্ন ভিন্ন Screen Size এ ভিন্ন ভিন্ন Image Display করতে চাই, তখন Picture Element ব্যবহার করে কাজটি সহজে করতে পারি। 
+- অনেক সময় Browser বা Devices এর কারনে Specific Image Type Display হয় না, সেক্ষেত্রে আমরা সবগুলো Image Type `<source>` element এর মধ্যে দিয়ে দিতে পারি। এই সমস্যা সমাধানের জন্য Picutre Element খুবই Effective.
+- ছোট Device এর জন্য বড় Size এর Image Render হওয়া জরুরী নয়। তাই ছোট Device এ কেমন Size এর Image Render হবে সেটা আমরা এই Picture Element দিয়ে বলে দিতে পারি। 
+
 
 <div align="right">
-    <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
 </div>
 
 # Chapter-03: HTML Entities, Hyperlinks, Images, Audio, Videos
