@@ -311,6 +311,7 @@ Here we go:
 ```
 
 - Blockquote Element টি by default বাম ও ডান দিক থেকে কিছু Margin নেয়।
+- সাধারণত বড় Quote বা Section কে `<blockquote>` দিয়ে এবং ছোট Quote কে `<q>` দিয়ে Express করা হয়।
 
 ### Q Element
 
@@ -432,14 +433,13 @@ Here we go:
 
 ### Picture Element
 
-- Picture Element এর মধ্যে `<source>` এবং `<img>` element ব্যবহার করতে হয়। Image Element টি শেষ Child হিসেবে দিতে হয়, যাতে কোন Browser যদি Picture Element Support না করে, তাহলে Image Element এর Image টি Render/Display করতে পারে। 
+- Picture Element এর মধ্যে `<source>` এবং `<img>` element ব্যবহার করতে হয়। Image Element টি শেষ Child হিসেবে দিতে হয়, যাতে কোন Browser যদি Picture Element Support না করে, তাহলে Image Element এর Image টি Render/Display করতে পারে।
 
 ### The Purpose of Picture Element
 
-- যখন আমরা ভিন্ন ভিন্ন Screen Size এ ভিন্ন ভিন্ন Image Display করতে চাই, তখন Picture Element ব্যবহার করে কাজটি সহজে করতে পারি। 
+- যখন আমরা ভিন্ন ভিন্ন Screen Size এ ভিন্ন ভিন্ন Image Display করতে চাই, তখন Picture Element ব্যবহার করে কাজটি সহজে করতে পারি।
 - অনেক সময় Browser বা Devices এর কারনে Specific Image Type Display হয় না, সেক্ষেত্রে আমরা সবগুলো Image Type `<source>` element এর মধ্যে দিয়ে দিতে পারি। এই সমস্যা সমাধানের জন্য Picutre Element খুবই Effective.
-- ছোট Device এর জন্য বড় Size এর Image Render হওয়া জরুরী নয়। তাই ছোট Device এ কেমন Size এর Image Render হবে সেটা আমরা এই Picture Element দিয়ে বলে দিতে পারি। 
-
+- ছোট Device এর জন্য বড় Size এর Image Render হওয়া জরুরী নয়। তাই ছোট Device এ কেমন Size এর Image Render হবে সেটা আমরা এই Picture Element দিয়ে বলে দিতে পারি।
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
