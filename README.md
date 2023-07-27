@@ -8,7 +8,7 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 | :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
 |                 [00](#chapter-00-how-the-course-is-designed)                 |                                  [How The Course is Designed](#chapter-00-how-the-course-is-designed)                                   |   [Watch Now]()   |
 | [01](#chapter-01-environment-setup-html-elements-attributes-text-formatting) | [Environment Setup, HTML Elements, Attributes, Text Formatting](#chapter-01-environment-setup-html-elements-attributes-text-formatting) |   [Watch Now]()   |
-|      [02](#chapter-02-html-quotation-link-image-favicon-table-and-list)      |          [HTML Quotation, Link, Image, Favicon, Table and List](#chapter-02-html-quotation-link-image-favicon-table-and-list)           |     Watch Now     |
+|             [02](#chapter-02-html-quotation-link-image-favicon)              |                        [HTML Quotation, Link, Image and Favicon](#chapter-02-html-quotation-link-image-favicon)                         |     Watch Now     |
 |        [03](#chapter-03-html-entities-hyperlinks-images-audio-videos)        |              [HTML Entities, Hyperlinks, Images, Audio, Videos](#chapter-03-html-entities-hyperlinks-images-audio-videos)               |     Watch Now     |
 |                                      04                                      |                                                                                                                                         |     Watch Now     |
 |                       [05](#chapter-05-html-projects)                        |                                               [HTML Projects](#chapter-05-html-projects)                                                |     Watch Now     |
@@ -277,7 +277,7 @@ Here we go:
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
 
-# Chapter-02: HTML Quotation, Link, Image, Favicon, Table and List
+# Chapter-02: HTML Quotation, Link, Image and Favicon
 
 - [HTML Quotation](#html-quotation)
   - [Blockquote Element](#blockquote-element)
@@ -295,6 +295,7 @@ Here we go:
 - [HTML Image](#html-image)
   - [Image Map](#image-map)
   - [Image As Background](#image-as-background)
+- [HTML Favicon](#html-favicon)
 
 ## HTML Quotation
 
@@ -440,6 +441,10 @@ Here we go:
 - যখন আমরা ভিন্ন ভিন্ন Screen Size এ ভিন্ন ভিন্ন Image Display করতে চাই, তখন Picture Element ব্যবহার করে কাজটি সহজে করতে পারি।
 - অনেক সময় Browser বা Devices এর কারনে Specific Image Type Display হয় না, সেক্ষেত্রে আমরা সবগুলো Image Type `<source>` element এর মধ্যে দিয়ে দিতে পারি। এই সমস্যা সমাধানের জন্য Picutre Element খুবই Effective.
 - ছোট Device এর জন্য বড় Size এর Image Render হওয়া জরুরী নয়। তাই ছোট Device এ কেমন Size এর Image Render হবে সেটা আমরা এই Picture Element দিয়ে বলে দিতে পারি।
+
+## HTML Favicon
+
+- Webpage এর Page Title এর পাশে ছোট্ট যে Image ব্যবহার করা হয় তাকে Favicon বলে।
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
