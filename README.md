@@ -462,7 +462,7 @@ Here we go:
 - [Code Tag](#code-tag)
 - [HTML Semantic Element](#html-semantic-element)
 - [HTML Entities](#html-entities)
-- [Assignment for Chapter 3](#assignment-for-chapter-3)
+- [Assignment for Chapter 3](#assignments-for-chapter-3)
 
 ## HTML Table
 
