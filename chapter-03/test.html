@@ -1,58 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chapter-03</title>
+    <title>My Portfolio</title>
     <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-        table {
-            border-collapse: collapse;
-            text-align: center;
-        }
-        th, td {
-            padding: 5px;
-        }
-        th {
-            background-color: brown;
-            color: white;
-        }
+      
     </style>
   </head>
   <body>
-    <table width="100%">
-        <caption>Student Information</caption>
-        <colgroup>
-            <col span="1">
-            <col span="1" style="background-color: blue;">
-            <col span="1" style="visibility: collapse;">
-        </colgroup>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Abdur Rahim</td>
-                <td>019999999</td>
-                <td>rahim@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Sheikh Momin</td>
-                <td width="50%">017777777</td>
-                <td>momin@gmail.com</td>
-            </tr>
-            <tr>
-                <td>Kaniz Fatema</td>
-                <td>016666666</td>
-                <td>fatema@gmail.com</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Header with navigation -->
+    <header>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main content section -->
+    <main>
+      <!-- About Me section -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello, I'm [Your Name], a passionate web developer with a keen
+          interest in building interactive and user-friendly websites. I have
+          experience in HTML, CSS, JavaScript, and various frontend frameworks.
+          I love to explore new technologies and keep up with the latest trends
+          in web development.
+        </p>
+      </section>
+
+      <!-- Projects section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <h3>Project 1: Awesome Website</h3>
+            <p>
+              A visually appealing website built with HTML, CSS, and JavaScript
+              to showcase various features and animations.
+            </p>
+          </li>
+          <li>
+            <h3>Project 2: Portfolio Gallery</h3>
+            <p>
+              An interactive gallery of my work, demonstrating different
+              projects and skills I've acquired over time.
+            </p>
+          </li>
+          <li>
+            <h3>Project 3: Cool Web App</h3>
+            <p>
+              A web application that allows users to perform specific tasks or
+              calculations efficiently.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Embed a video using an iframe -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/your_video_id"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Footer section -->
+    <footer>&copy; 2023 [Your Name]. All rights reserved.</footer>
   </body>
 </html>

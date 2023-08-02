@@ -462,6 +462,7 @@ Here we go:
 - [Code Tag](#code-tag)
 - [HTML Semantic Element](#html-semantic-element)
 - [HTML Entities](#html-entities)
+- [Assignment for Chapter 3](#assignment-for-chapter-3)
 
 ## HTML Table
 
@@ -598,6 +599,24 @@ Character entities are used to display reserved characters in HTML.
 
 **Note:** Entities names are case-sensitive.
 Here is the [HTML](table.html) and [CSS](table.css) code that generates all the entites listed above.
+
+## Assignments for Chapter 3
+
+### Assignment 01
+
+Create a simple HTML page that contains a table to display information about your favorite fruits. The table should have four columns: Fruit Name, Color, Taste, and Rating. Add at least five rows of data to the table.
+
+### Assignment 02
+
+Build an HTML page that showcases a collection of your favorite books, movies, or places to visit. Create an ordered list for books/movies or an unordered list for places to visit. Include at least eight items in the list and add appropriate descriptions for each.
+
+### Assignment 03
+
+Create a webpage that explains the basics of a programming language of your choice (e.g., Python, JavaScript, or HTML). Use the `<code>` tag to highlight and display example code snippets that demonstrate different programming concepts. Include a brief explanation of each code snippet.
+
+### Assignment 04
+
+Develop an HTML page that contains text about a foreign country or city. Use HTML entities to represent special characters, currency symbols, or other symbols that are relevant to the location you're describing. Ensure that the entities are accurately used throughout the text.
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
