@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter-03</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            padding: 5px;
+        }
+        th {
+            background-color: brown;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <table width="100%">
+        <caption>Student Information</caption>
+        <colgroup>
+            <col span="1">
+            <col span="1" style="background-color: blue;">
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Abdur Rahim</td>
+                <td>019999999</td>
+                <td>rahim@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Sheikh Momin</td>
+                <td width="50%">017777777</td>
+                <td>momin@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Kaniz Fatema</td>
+                <td>016666666</td>
+                <td>fatema@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
