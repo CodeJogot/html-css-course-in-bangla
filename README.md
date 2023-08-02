@@ -4,39 +4,39 @@
 
 While you complete the 30-chapter module, jump in the [Projects Section](#20-html--css-projects).
 
-|                                   Chapter                                    |                                                                 Topics                                                                  | Video Explanation |
-| :--------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
-|                 [00](#chapter-00-how-the-course-is-designed)                 |                                  [How The Course is Designed](#chapter-00-how-the-course-is-designed)                                   |   [Watch Now]()   |
-| [01](#chapter-01-environment-setup-html-elements-attributes-text-formatting) | [Environment Setup, HTML Elements, Attributes, Text Formatting](#chapter-01-environment-setup-html-elements-attributes-text-formatting) |   [Watch Now]()   |
-|           [02](#chapter-02-html-quotation-link-image-and-favicon)            |                      [HTML Quotation, Link, Image and Favicon](#chapter-02-html-quotation-link-image-and-favicon)                       |     Watch Now     |
-|        [03](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities)        |              [HTML Table, List, Iframes, Code Tag, Semantic Element and Entities](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities)               |     Watch Now     |
-|                                      04                                      |                                                                                                                                         |     Watch Now     |
-|                       [05](#chapter-05-html-projects)                        |                                               [HTML Projects](#chapter-05-html-projects)                                                |     Watch Now     |
-|                                      06                                      |                                                                                                                                         |     Watch Now     |
-|                                      07                                      |                                                                                                                                         |     Watch Now     |
-|                                      08                                      |                                                                                                                                         |     Watch Now     |
-|                                      09                                      |                                                                                                                                         |     Watch Now     |
-|                                      10                                      |                                                                                                                                         |     Watch Now     |
-|               [11](#chapter-11-css-position-z-index-overflow)                |                              [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                               |     Watch Now     |
-|                [12](#chapter-12-css-float-display-alignment)                 |                               [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                               |     Watch Now     |
-|                        [13](#chapter-13-css-flexbox)                         |                                                 [CSS Flexbox](#chapter-13-css-flexbox)                                                  |     Watch Now     |
-|                       [14](#chapter-14-css-selectors)                        |                                               [CSS Selectors](#chapter-14-css-selectors)                                                |     Watch Now     |
-|                   [15](#chapter-15-css-text-fonts--icons)                    |                                     [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                                      |     Watch Now     |
-|         [16](#chapter-16-css-links-lists-tables-display--max-width)          |                  [CSS Links, Lists, Tables, Display, Max-width](#chapter-16-css-links-lists-tables-display--max-width)                  |     Watch Now     |
-|            [17](#chapter-17-css-image-gallery-and-image-sprites)             |                         [CSS Image Gallery and Image Sprites](#chapter-17-css-image-gallery-and-image-sprites)                          |     Watch Now     |
-|                                      18                                      |                                                                                                                                         |     Watch Now     |
-|           [19](#chapter-19-visualize-and-play-with-css-properties)           |                      [Visualize and Play with CSS Properties](#chapter-19-visualize-and-play-with-css-properties)                       |     Watch Now     |
-|                      [20](#chapter-20-css-grid-layout)                       |                                             [CSS Grid Layout](#chapter-20-css-grid-layout)                                              |     Watch Now     |
-|                        [21](#chapter-21-css-gradient)                        |                                                [CSS Gradients](#chapter-21-css-gradient)                                                |     Watch Now     |
-|                  [22](#chapter-22-css-2d-and-3d-transforms)                  |                                    [CSS 2D and 3D Transforms](#chapter-22-css-2d-and-3d-transforms)                                     |     Watch Now     |
-|                       [23](#chapter-23-css-animations)                       |                                              [CSS Animations](#chapter-23-css-animations)                                               |     Watch Now     |
-|                                      24                                      |                                                                                                                                         |     Watch Now     |
-|                                      25                                      |                                                                                                                                         |     Watch Now     |
-|                                      26                                      |                                                                                                                                         |     Watch Now     |
-|                                      27                                      |                                                                                                                                         |     Watch Now     |
-|                                      28                                      |                                                                                                                                         |     Watch Now     |
-|                                      29                                      |                                                                                                                                         |     Watch Now     |
-|                                      30                                      |                                                                                                                                         |     Watch Now     |
+|                                     Chapter                                      |                                                                      Topics                                                                      | Video Explanation |
+| :------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------: | :---------------: |
+|                   [00](#chapter-00-how-the-course-is-designed)                   |                                       [How The Course is Designed](#chapter-00-how-the-course-is-designed)                                       |   [Watch Now]()   |
+|   [01](#chapter-01-environment-setup-html-elements-attributes-text-formatting)   |     [Environment Setup, HTML Elements, Attributes, Text Formatting](#chapter-01-environment-setup-html-elements-attributes-text-formatting)      |   [Watch Now]()   |
+|             [02](#chapter-02-html-quotation-link-image-and-favicon)              |                           [HTML Quotation, Link, Image and Favicon](#chapter-02-html-quotation-link-image-and-favicon)                           |     Watch Now     |
+| [03](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities) | [HTML Table, List, Iframes, Code Tag, Semantic Element and Entities](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities) |     Watch Now     |
+|                                        04                                        |                                                                                                                                                  |     Watch Now     |
+|                         [05](#chapter-05-html-projects)                          |                                                    [HTML Projects](#chapter-05-html-projects)                                                    |     Watch Now     |
+|                                        06                                        |                                                                                                                                                  |     Watch Now     |
+|                                        07                                        |                                                                                                                                                  |     Watch Now     |
+|                                        08                                        |                                                                                                                                                  |     Watch Now     |
+|                                        09                                        |                                                                                                                                                  |     Watch Now     |
+|                                        10                                        |                                                                                                                                                  |     Watch Now     |
+|                 [11](#chapter-11-css-position-z-index-overflow)                  |                                   [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                                   |     Watch Now     |
+|                  [12](#chapter-12-css-float-display-alignment)                   |                                   [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                                    |     Watch Now     |
+|                          [13](#chapter-13-css-flexbox)                           |                                                      [CSS Flexbox](#chapter-13-css-flexbox)                                                      |     Watch Now     |
+|                         [14](#chapter-14-css-selectors)                          |                                                    [CSS Selectors](#chapter-14-css-selectors)                                                    |     Watch Now     |
+|                     [15](#chapter-15-css-text-fonts--icons)                      |                                          [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                                          |     Watch Now     |
+|           [16](#chapter-16-css-links-lists-tables-display--max-width)            |                      [CSS Links, Lists, Tables, Display, Max-width](#chapter-16-css-links-lists-tables-display--max-width)                       |     Watch Now     |
+|              [17](#chapter-17-css-image-gallery-and-image-sprites)               |                              [CSS Image Gallery and Image Sprites](#chapter-17-css-image-gallery-and-image-sprites)                              |     Watch Now     |
+|                                        18                                        |                                                                                                                                                  |     Watch Now     |
+|             [19](#chapter-19-visualize-and-play-with-css-properties)             |                           [Visualize and Play with CSS Properties](#chapter-19-visualize-and-play-with-css-properties)                           |     Watch Now     |
+|                        [20](#chapter-20-css-grid-layout)                         |                                                  [CSS Grid Layout](#chapter-20-css-grid-layout)                                                  |     Watch Now     |
+|                          [21](#chapter-21-css-gradient)                          |                                                    [CSS Gradients](#chapter-21-css-gradient)                                                     |     Watch Now     |
+|                    [22](#chapter-22-css-2d-and-3d-transforms)                    |                                         [CSS 2D and 3D Transforms](#chapter-22-css-2d-and-3d-transforms)                                         |     Watch Now     |
+|                         [23](#chapter-23-css-animations)                         |                                                   [CSS Animations](#chapter-23-css-animations)                                                   |     Watch Now     |
+|                                        24                                        |                                                                                                                                                  |     Watch Now     |
+|                                        25                                        |                                                                                                                                                  |     Watch Now     |
+|                                        26                                        |                                                                                                                                                  |     Watch Now     |
+|                                        27                                        |                                                                                                                                                  |     Watch Now     |
+|                                        28                                        |                                                                                                                                                  |     Watch Now     |
+|                                        29                                        |                                                                                                                                                  |     Watch Now     |
+|                                        30                                        |                                                                                                                                                  |     Watch Now     |
 
 |
 
@@ -459,6 +459,9 @@ Here we go:
   - [Unordered List](#unordered-list)
   - [Ordered List](#ordered-list)
 - [HTML Iframe](#html-iframe)
+- [Code Tag](#code-tag)
+- [HTML Semantic Element](#html-semantic-element)
+- [HTML Entities](#html-entities)
 
 ## HTML Table
 
@@ -544,22 +547,22 @@ Here we go:
     </table>
   </body>
 </html>
-
 ```
+
 ### এক নজরে সবগুলো প্রয়োজনীয় টেবিল ট্যাগস
 
-| **নং** | **ট্যাগ**    | **যে কারনে ব্যবহার করা হয়**                            |
-|--------|--------------|--------------------------------------------------------|
-| 1      | `<table>`    | টেবিল তৈরি করার জন্য।                                  |
-| 2      | `<th>`       | টেবিলের মধ্যে Cell তৈরি করার জন্য। (Header Cell)       |
-| 3      | `<tr>`       | টেবিলের Row তৈরি করার জন্য ।                           |
-| 4      | `<td>`       | টেবিলের মধ্যে Cell তৈরি করার জন্য। (Data Cell)         |
-| 5      | `<caption>`  | টেবিলের ক্যাপশন দেয়ার জন্য।                            |
-| 6      | `<colgroup>` | এক বা একাধিক Columns কে গ্রুপ করার জন্য।               |
-| 7      | `<col>`      | `<colgroup>` এর মধ্যে প্রতিটা কলাম Specify করার জন্য।  |
-| 8      | `<thead>`    | টেবিলের Header Contents কে গ্রুপ করার জন্য।            |
-| 9      | `<tbody>`    | টেবিলের Body Contents কে গ্রুপ করার জন্য।              |
-| 10     | `<tfoot>`    | টেবিলের Footer Contents কে গ্রুপ করার জন্য।            |
+| **নং** | **ট্যাগ**    | **যে কারনে ব্যবহার করা হয়**                           |
+| ------ | ------------ | ----------------------------------------------------- |
+| 1      | `<table>`    | টেবিল তৈরি করার জন্য।                                 |
+| 2      | `<th>`       | টেবিলের মধ্যে Cell তৈরি করার জন্য। (Header Cell)      |
+| 3      | `<tr>`       | টেবিলের Row তৈরি করার জন্য ।                          |
+| 4      | `<td>`       | টেবিলের মধ্যে Cell তৈরি করার জন্য। (Data Cell)        |
+| 5      | `<caption>`  | টেবিলের ক্যাপশন দেয়ার জন্য।                           |
+| 6      | `<colgroup>` | এক বা একাধিক Columns কে গ্রুপ করার জন্য।              |
+| 7      | `<col>`      | `<colgroup>` এর মধ্যে প্রতিটা কলাম Specify করার জন্য। |
+| 8      | `<thead>`    | টেবিলের Header Contents কে গ্রুপ করার জন্য।           |
+| 9      | `<tbody>`    | টেবিলের Body Contents কে গ্রুপ করার জন্য।             |
+| 10     | `<tfoot>`    | টেবিলের Footer Contents কে গ্রুপ করার জন্য।           |
 
 ### Table Border
 
@@ -571,6 +574,9 @@ Here we go:
 
 ## HTML Iframe
 
+## Code Tags
+
+## HTML Semantic Element
 
 ## HTML Entities
 
@@ -592,15 +598,6 @@ Character entities are used to display reserved characters in HTML.
 
 **Note:** Entities names are case-sensitive.
 Here is the [HTML](table.html) and [CSS](table.css) code that generates all the entites listed above.
-
-
-
-
-
-
-
-
-
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
