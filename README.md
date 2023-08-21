@@ -10,7 +10,7 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |   [01](#chapter-01-environment-setup-html-elements-attributes-text-formatting)   |     [Environment Setup, HTML Elements, Attributes, Text Formatting](#chapter-01-environment-setup-html-elements-attributes-text-formatting)      |   [Watch Now]()   |
 |             [02](#chapter-02-html-quotation-link-image-and-favicon)              |                           [HTML Quotation, Link, Image and Favicon](#chapter-02-html-quotation-link-image-and-favicon)                           |     Watch Now     |
 | [03](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities) | [HTML Table, List, Iframes, Code Tag, Semantic Element and Entities](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities) |     Watch Now     |
-|                                        04                                        |                                                                                                                                                  |     Watch Now     |
+|             [04](#chapter-04-html-symbols-emojis-charsets-and-forms)             |                          [HTML Symbols, Emojis, Charsets and Forms](#chapter-04-html-symbols-emojis-charsets-and-forms)                          |     Watch Now     |
 |                         [05](#chapter-05-html-projects)                          |                                                    [HTML Projects](#chapter-05-html-projects)                                                    |     Watch Now     |
 |                                        06                                        |                                                                                                                                                  |     Watch Now     |
 |                                        07                                        |                                                                                                                                                  |     Watch Now     |
@@ -622,7 +622,60 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
 </div>
 
-# Chapter-05: HTML Projects
+# Chapter-04: HTML Symbols, Emojis, Charsets and Forms
+
+-[HTML Symbols](#html-symbols)
+
+- [Some Mathematical Symbols](#some-mathematical-symbols)
+- [Some Greek Letters](#some-greek-letters)
+- [Some Other Entities Supported by HTML](#some-other-entities-supported-by-html)
+- [HTML Emojis](#html-emojis)
+  - [Some Emoji Symbols in UTF-8](#some-emoji-symbols-in-utf-8)
+- [HTML Charsets](#html-charsets)
+
+## HTML Symbols
+
+### Some Mathematical Symbols
+
+![Some Mathematical Symbols](./chapter-04/images/1.png)
+
+### Some Greek Letters
+
+![Some Greek Letters](./chapter-04/images/2.png)
+
+### Some Other Entities Supported by HTML
+
+![Some Other Entities Supported by HTML](./chapter-04/images/3.png)
+
+## HTML Emojis
+
+- Emoji কে Image অথবা Icon এর মতো মনে হলেও, Emoji আসলে UTF-8 Character set এর Characters/Letters.
+- পৃথিবীতে যত Characters এবং Symbols আছে মোটামুটি সব এই UTF-8 Character set এ বিদ্যমান।
+- HTML Page এ সব ধরনের Characters এবং Symbols প্রদর্শন করানোর জন্য অবশ্যই আমাদের `<meta>` ট্যাগ এর মধ্যে `charset: "UTF-8"` দিতে হবে। অর্থাৎ `<meta charset="UTF-8">` এই ফরমেটে ট্যাগটা ব্যবহার করতে হবে।
+- অনেক UTF-8 Characters আমাদের Keyboard দিয়ে Type করা যায় না (যেমন কোন Emoji), সেক্ষেত্রে আমাদের Entity Number ব্যবহার করতে হয়।
+- যেমনঃ `<p>&#128516;</p>` এই কোডটি 😄 এই Emoji প্রদর্শন করে। আবার `<p>&#65;</p>` এই কোডটি **A** প্রদর্শন করে।
+- যেহেতু A, B, C এর মতো Emoji-ও একেকটি Character, তাই Character এর ক্ষেত্রে আমরা যেরকম CSS কোড ব্যবহার করি একইভাবে Emoji এর খেত্রেও ব্যবহার করা হয়। যেমন ফন্ট সাইজ বড় করা, কালার দেয়া ইত্যাদি।
+
+### Some Emoji Symbols in UTF-8
+
+![Some Emoji Symbols in UTF-8](./chapter-04/images/4.png)
+
+## HTML Charsets
+
+- HTML Page কে সঠিকভাবে প্রদর্শন করার জন্য Web Browser কে অবশ্যই বলে দিতে হবে এই পেইজে কোন Charsets ব্যবহার করা হচ্ছে।
+  এইটা আমরা `<meta charset="UTF-8">` এই ট্যাগ দ্বারা বলে দিতে পারি।
+
+- ASCII(American Standard Code for Information Interchange) হল প্রাচীনতম অক্ষর এনকোডিং মানগুলির মধ্যে একটি এবং এটি 1960-এর দশকে বিকশিত হয়েছিল। ASCII প্রতিটি অক্ষরকে উপস্থাপন করতে একটি 7-বিট বাইনারি কোড ব্যবহার করে, যা মোট 128টি সম্ভাব্য অক্ষরের জন্য অনুমতি দেয়। 2^7 = 128
+- ASCII-তে, প্রতিটি অক্ষরকে 0 থেকে 127 পর্যন্ত একটি Unique সংখ্যা দ্বারা প্রকাশ করা হয়। উদাহরণস্বরূপ: **_A_** অক্ষরটিকে 65 হিসাবে প্রকাশ করা হয়। **_B_** অক্ষরটিকে 66 হিসাবে প্রকাশ করা হয়।
+- অন্যদিকে UTF-8 হল একটি মডার্ন ক্যারেক্টার এনকোডিং যা ইউনিকোড স্ট্যান্ডার্ডের অংশ, যার লক্ষ্য বিশ্বব্যাপী ব্যবহৃত বিভিন্ন ভাষা এবং চিহ্নের অক্ষরগুলির একটি বিস্তৃত পরিসরকে অন্তর্ভুক্ত করা।
+- UTF-8 তার প্রতিটা Character কে এক থেকে চার বাইট সংখ্যা দ্বারা Represent করে।
+- সমস্ত ASCII Character sets UTF-8 এ বিদ্যমান। অর্থাৎ বলতে পারি, সব ASCII ই UTF-8 কিন্তু সব UTF-8 ASCII নয়।
+
+<div align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</div>
+
+# Chapter-05: HTML Canvas, SVG and HTML Media
 
 # Chapter-11: CSS Position, Z-index, Overflow
 
