@@ -632,6 +632,8 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
 - [HTML Emojis](#html-emojis)
   - [Some Emoji Symbols in UTF-8](#some-emoji-symbols-in-utf-8)
 - [HTML Charsets](#html-charsets)
+  - [Comparison Between Different Charsets](#comparison-between-different-charsets)
+- [HTML Forms](#html-forms)
 
 ## HTML Symbols
 
@@ -670,6 +672,47 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
 - অন্যদিকে UTF-8 হল একটি মডার্ন ক্যারেক্টার এনকোডিং যা ইউনিকোড স্ট্যান্ডার্ডের অংশ, যার লক্ষ্য বিশ্বব্যাপী ব্যবহৃত বিভিন্ন ভাষা এবং চিহ্নের অক্ষরগুলির একটি বিস্তৃত পরিসরকে অন্তর্ভুক্ত করা।
 - UTF-8 তার প্রতিটা Character কে এক থেকে চার বাইট সংখ্যা দ্বারা Represent করে।
 - সমস্ত ASCII Character sets UTF-8 এ বিদ্যমান। অর্থাৎ বলতে পারি, সব ASCII ই UTF-8 কিন্তু সব UTF-8 ASCII নয়।
+
+### Comparison Between Different Charsets
+
+### The ASCII Character Set
+
+- ASCII Control Characters এর জন্য 0 থেকে 31 (এবং 127) পর্যন্ত মান ব্যবহার করে।
+- ASCII Letters, Digits এবং Symbol এর জন্য 32 থেকে 126 পর্যন্ত মান ব্যবহার করে।
+- ASCII 128 থেকে 255 পর্যন্ত মান ব্যবহার করে না।
+
+### The ANSI Character Set
+
+- ANSI 0 থেকে 127 পর্যন্ত মানের জন্য ASCII-এর অনুরূপ।
+- ANSI এর 128 থেকে 159 পর্যন্ত মানের জন্য অক্ষরগুলির একটি proprietary সেট রয়েছে৷
+- ANSI 160 থেকে 255 পর্যন্ত মানের জন্য UTF-8-এর অনুরূপ।
+
+### The UTF-8 Character Set
+
+- UTF-8 0 থেকে 127 পর্যন্ত মানের জন্য ASCII-এর অনুরূপ।
+- UTF-8 128 থেকে 159 পর্যন্ত মান ব্যবহার করে না।
+- UTF-8 160 থেকে 255 পর্যন্ত মানের জন্য ANSI এবং 8859-1 উভয়ের অনুরূপ।
+- UTF-8 Character Set এ 10000 এর বেশি Characters আছে।
+
+## HTML Form
+
+| **No** | Element                                         | Role/Usage                                                                                                                                                         |
+| ------ | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **1**  | `<form>`                                        | Form এর Container হিসেবে ব্যবহার করা হয়।                                                                                                                           |
+| **2**  | `<input type="text">`                           | Single line text input field এর জন্য।                                                                                                                              |
+| **3**  | `<input type="radio">`                          | Radio Button তৈরি করার জন্য                                                                                                                                        |
+| **4**  | `<input type="checkbox">`                       | Checkbox তৈরি করার জন্য।                                                                                                                                           |
+| **5**  | `<input type="submit">`                         | Submit Button তৈরি করার জন্য।                                                                                                                                      |
+| **6**  | `<input type="button">`                         | Clickable Button তৈরি করার জন্য।                                                                                                                                   |
+| **7**  | `<label>`                                       | Form Element এর Label দেয়ার জন্য।                                                                                                                                  |
+| **8**  | `<select>`                                      | Drop-down List তৈরি করার জন্য।                                                                                                                                     |
+| **9**  | `<option>`                                      | Drop down List এর Option দেয়ার জন্য।                                                                                                                               |
+| **10** | `<select size="3">`                             | Size Attribute এ যে সংখ্যা দেয়া হবে, ততগুলো Items Visible হবে Drop-down list এর।                                                                                   |
+| **11** | `<select size="4" multiple>`                    | Multiple Attribute এর মাধ্যমে Drop-down List থেকে Multiple Items Select করা যায়। (Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.) |
+| **12** | `<textarea name="message" rows="10" cols="30">` | Multi-line Text field এর জন্য।                                                                                                                                     |
+| **13** | `<button>`                                      | Clickable Button তৈরি করার জন্য।                                                                                                                                   |
+| **14** | `<fieldset>` and `<legend>`                     | একটা ফর্ম এ Related data নিয়ে ফর্ম গ্রুপ তৈরি করার জন্য Fieldset Element টি ব্যবহার করা হয় এবং Legend Element ঐ গ্রুপের Caption দেবার জন্য ব্যবহার করা হয়।         |
+| **15** | `<datalist id="abc">`                           | Input field এ Pre-defined কিছু Data সেট করার জন্য।                                                                                                                 |
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
