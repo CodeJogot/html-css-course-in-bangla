@@ -634,6 +634,7 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
 - [HTML Charsets](#html-charsets)
   - [Comparison Between Different Charsets](#comparison-between-different-charsets)
 - [HTML Forms](#html-forms)
+- [Assignment for Chapter-04](#assignment-for-chapter-04)
 
 ## HTML Symbols
 
@@ -713,6 +714,12 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
 | **13** | `<button>`                                      | Clickable Button তৈরি করার জন্য।                                                                                                                                   |
 | **14** | `<fieldset>` and `<legend>`                     | একটা ফর্ম এ Related data নিয়ে ফর্ম গ্রুপ তৈরি করার জন্য Fieldset Element টি ব্যবহার করা হয় এবং Legend Element ঐ গ্রুপের Caption দেবার জন্য ব্যবহার করা হয়।         |
 | **15** | `<datalist id="abc">`                           | Input field এ Pre-defined কিছু Data সেট করার জন্য।                                                                                                                 |
+
+## Assignment for Chapter-04
+
+### Assignment 01
+
+![assignment 1](./chapter-04/images/5.png)
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
