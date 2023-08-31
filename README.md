@@ -11,8 +11,8 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |             [02](#chapter-02-html-quotation-link-image-and-favicon)              |                           [HTML Quotation, Link, Image and Favicon](#chapter-02-html-quotation-link-image-and-favicon)                           |     Watch Now     |
 | [03](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities) | [HTML Table, List, Iframes, Code Tag, Semantic Element and Entities](#chapter-03-html-table-list-iframes-code-tag-semantic-element-and-entities) |     Watch Now     |
 |             [04](#chapter-04-html-symbols-emojis-charsets-and-forms)             |                          [HTML Symbols, Emojis, Charsets and Forms](#chapter-04-html-symbols-emojis-charsets-and-forms)                          |     Watch Now     |
-|                         [05](#chapter-05-html-projects)                          |                                                    [HTML Projects](#chapter-05-html-projects)                                                    |     Watch Now     |
-|                                        06                                        |                                                                                                                                                  |     Watch Now     |
+|                 [05](#chapter-05-html-canvas-svg-and-html-media)                 |                                  [HTML Canvas, SVG and HTML Media](#chapter-05-html-canvas-svg-and-html-media)                                   |     Watch Now     |
+|  [06](#chapter-06-introduction-to-css-css-selectors-ways-of-styling-and-color)   |     [Introduction to CSS, CSS Selectors, Ways of Styling and Color](#chapter-06-introduction-to-css-css-selectors-ways-of-styling-and-color)     |     Watch Now     |
 |                                        07                                        |                                                                                                                                                  |     Watch Now     |
 |                                        08                                        |                                                                                                                                                  |     Watch Now     |
 |                                        09                                        |                                                                                                                                                  |     Watch Now     |
@@ -624,8 +624,7 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
 
 # Chapter-04: HTML Symbols, Emojis, Charsets and Forms
 
--[HTML Symbols](#html-symbols)
-
+- [HTML Symbols](#html-symbols)
 - [Some Mathematical Symbols](#some-mathematical-symbols)
 - [Some Greek Letters](#some-greek-letters)
 - [Some Other Entities Supported by HTML](#some-other-entities-supported-by-html)
@@ -726,6 +725,88 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
 </div>
 
 # Chapter-05: HTML Canvas, SVG and HTML Media
+
+- JavaScript Course শেষ করে আমরা এই Chapter শিখবো ইনশাআল্লাহ্‌। কারন এই Chapter এর Contents ভালো করে বুঝতে JavaScript এর Concept লাগবে।
+
+# Chapter-06: Introduction to CSS, CSS Selectors, Ways of Styling and Color
+
+- [Introduction to CSS](#introduction-to-css)
+- [CSS Syntax](#css-syntax)
+- [Ways of Styling HTML Elements](#ways-of-styling-html-elements)
+- [CSS Color](#css-color)
+  - [Named Color](#named-color)
+  - [RGB Color](#rgb-color)
+  - [What is Additive Color Model and How it Works](#what-is-additive-color-model-and-how-it-works)
+
+## Introduction to CSS
+
+- CSS এর পূর্ণরূপ CCascading Style Sheets. HTML দিয়ে একটি Website এর Structure গঠন করা হয়, অপরদিকে CSS দিয়ে Website কে Style বা Design করা হয়।
+
+## CSS Syntax
+
+![CSS Styntax](./chapter-05/images/1.png)
+
+Photo Courtesy: W3 School
+
+## CSS Selector
+
+- CSS Selector HTML Elements কে Select করে Style করে। তারমানে, CSS Selector এর কাজ হলো HTML Elements কে Select করা
+
+CSS Selector সম্পর্কে [_Chapter-14_](#chapter-14-css-selectors) এ বিস্তারিত আলচনা করা হয়েছে।
+
+আমরা এখানে শুধুমাত্র Simple Selector নিয়ে আলোচনা করবো। ঐসব Selector কে Simple Selector বলে যারা HTML Elements কে Name, ID এবং Class দ্বারা Select করে।
+
+## Ways of Styling HTML Elements
+
+- HTML Elements কে ৩ ভাবে Style করা যায়।
+  - Inline CSS
+  - Internal CSS
+  - External CSS
+
+## CSS Color
+
+- CSS এ বিভিন্নভাবে Color দেয়া যায়। যেমনঃ
+  - **Named Color**
+  - **RGB**
+  - **HEX**
+  - **HSL**
+  - **RGBA**
+  - **HSLA**
+
+### Named Color
+
+- HTML/CSS ১৪৭ টা Named Color Support করে।
+- কিছু বহুল ব্যবহ্রত Named Colors হলোঃ red, green, blue, orange, tomato ইত্যাদি।
+
+### RGB Color
+
+- RGB(Red, Green, Blue) হল একটি কালার মডেল যা CSS (ক্যাসকেডিং স্টাইল শীট) সহ বিভিন্ন ডিজিটাল সিস্টেমে ব্যবহৃত হয়।
+- CSS এ RGB Color Model যেভাবে কাজ করেঃ
+  - **Color Component Values:** RGB মডেলে, প্রতিটি রঙ (লাল, সবুজ এবং নীল) 0 থেকে 255 পর্যন্ত একটি সাংখ্যিক মান দ্বারা উপস্থাপিত হয়। এই মানগুলি প্রতিটি রঙের উপাদানের তীব্রতা বা উজ্জ্বলতা নির্ধারণ করে। 0 এর মান মানে কোন তীব্রতা নেই (কোনও রঙ নেই), যখন 255 মান সেই রঙের জন্য সর্বোচ্চ তীব্রতার প্রতিনিধিত্ব করে।
+  - **Combining Color:** এই তিনটা কালারের Intensity যোগ করে নতুন একটা কালার তৈরি করা হয়।
+- CSS Syntax: `color: rgb(redValue, greenValue, blueValue);`
+- Examples:
+
+```css
+color: rgb(255, 0, 0); /* Pure red */
+color: rgb(0, 255, 0); /* Pure green */
+color: rgb(0, 0, 255); /* Pure blue */
+color: rgb(128, 128, 0); /* Medium intensity yellow-green */
+color: rgb(255, 127, 80); /* Coral color */
+```
+
+- RGB একটি Additive Color Model.
+
+## What is Additive Color Model and How it Works
+
+- RGB (লাল, সবুজ, নীল) রঙের মডেলটিকে একটি Additive কালার মডেল হিসাবে বিবেচনা করা হয় কারণ এটি বিভিন্ন রঙ তৈরি করতে আলোর বিভিন্ন তীব্রতা যোগ করে কাজ করে। এটি Printer এ ব্যবহৃত CMY(K) মডেলের মতো Substractive মডেলের বিপরীতে, যাতে পছন্দসই ফলাফল অর্জনের জন্য সাদা আলো থেকে রং বিয়োগ করা হয়।
+
+- RGB Model যেভাবে কাজ করেঃ
+  - **Color as Light:** RGB মডেলের প্রেক্ষাপটে, কালারকে সরাসরি উৎস থেকে নির্গত আলোর বিভিন্ন তীব্রতা হিসাবে উপস্থাপন করা হয়, যেমন একটি কম্পিউটার স্ক্রীন বা একটি ডিজিটাল ডিসপ্লে। একটি স্ক্রিনের প্রতিটি পিক্সেল সাবপিক্সেল নামক ক্ষুদ্র স্বতন্ত্র একক দ্বারা গঠিত, যা লাল, সবুজ এবং নীল আলো নির্গত করে।
+  - **Primary Colors:** RGB মডেলে, লাল, সবুজ এবং নীলকে প্রাথমিক রং হিসেবে বিবেচনা করা হয়। এই প্রাথমিক রংগুলি হল ভিত্তি যার উপর অন্যান্য সমস্ত রং তৈরি করা হয়। যখন তিনটি প্রাথমিক রং তাদের সম্পূর্ণ তীব্রতায় নির্গত হয়, তখন তারা একত্রিত হয়ে সাদা আলো তৈরি করে। এটি একটি সাদা পৃষ্ঠের উপর লাল, সবুজ এবং নীল আলো জ্বলজ্বল করার অনুরূপ।
+  - **Additive Process:** এখানে মূল ধারণাটি হল যে আপনি যখন আরজিবি মডেলে রং মিশ্রিত করেন, আপনি আসলে মিশ্রণে আরও **আলো** যোগ করছেন। আপনি যখন একটি রঙের উপাদানের তীব্রতা বাড়ান, আপনি সেই রঙের তরঙ্গদৈর্ঘ্যে নির্গত আলোর পরিমাণ বাড়াচ্ছেন। যখন একাধিক রঙ একই সাথে নির্গত হয়, তখন তাদের আলোগুলি ওভারল্যাপ হয় এবং ওভারল্যাপের ক্ষেত্রে মোট আলোর পরিমাণ একসঙ্গে যোগ করা হয়।
+  - যখন কোন আলো নির্গত হয় না, ফলাফল কালো হয়। অন্য কথায়, কালো হল আলোর সব রঙের অনুপস্থিতি। বিপরীতভাবে, যখন সমস্ত প্রাথমিক রঙ সম্পূর্ণ তীব্রতায় নির্গত হয়, তখন তারা সাদা আলো তৈরি করে।
+- সংক্ষেপে, RGB কালার মডেলটি Additive, কারণ এতে রং তৈরি করতে আলো নির্গত করা জড়িত। প্রতিটি প্রাথমিক রঙের তীব্রতা সামঞ্জস্য করে আপনি রঙের _বিস্তৃত বর্ণালী_ অর্জন করতে বিভিন্ন তরঙ্গদৈর্ঘ্যের আলোর বিভিন্ন পরিমাণ যোগ করতে পারেন। এই কারণেই RGB হল ডিজিটাল ডিসপ্লেতে ব্যবহৃত Primary Color মডেল।
 
 # Chapter-11: CSS Position, Z-index, Overflow
 

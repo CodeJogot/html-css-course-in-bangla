@@ -1,91 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My Portfolio</title>
-    <style>
-      
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
-    <!-- Header with navigation -->
-    <header>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <!-- Main content section -->
-    <main>
-      <!-- About Me section -->
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello, I'm [Your Name], a passionate web developer with a keen
-          interest in building interactive and user-friendly websites. I have
-          experience in HTML, CSS, JavaScript, and various frontend frameworks.
-          I love to explore new technologies and keep up with the latest trends
-          in web development.
-        </p>
-      </section>
-
-      <!-- Projects section -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1: Awesome Website</h3>
-            <p>
-              A visually appealing website built with HTML, CSS, and JavaScript
-              to showcase various features and animations.
-            </p>
-          </li>
-          <li>
-            <h3>Project 2: Portfolio Gallery</h3>
-            <p>
-              An interactive gallery of my work, demonstrating different
-              projects and skills I've acquired over time.
-            </p>
-          </li>
-          <li>
-            <h3>Project 3: Cool Web App</h3>
-            <p>
-              A web application that allows users to perform specific tasks or
-              calculations efficiently.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <!-- Contact section -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-          <br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <br />
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <br />
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-
-    <!-- Embed a video using an iframe -->
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/your_video_id"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
-
-    <!-- Footer section -->
-    <footer>&copy; 2023 [Your Name]. All rights reserved.</footer>
+    <form action="">
+      <h1>Simple SignUp Form</h1>
+      <fieldset>
+        <legend>User Name and Email</legend>
+        <label for="abc">Name</label>
+        <input type="text" id="abc" />
+        <br />
+        <label for="">Email</label>
+        <input type="email" />
+        <br />
+        <label for="">Password</label>
+        <input type="password" name="" id="" />
+      </fieldset>
+      <br />
+      <input type="radio" name="gender" id="" />
+      <label for="">Male</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">Female</label>
+      <br />
+      <input type="checkbox" />
+      <label for="">Are you agreed to the terms and conditions?</label>
+      <br />
+      <textarea
+        name=""
+        id=""
+        cols="40"
+        rows="10"
+        placeholder="Your opinion please"
+      ></textarea>
+      <br />
+      <label for="">Your Employment Status</label>
+      <select name="" id="" size="2" multiple>
+        <option value="">Job Holder</option>
+        <option value="">Freelancer</option>
+        <option value="">Unemployed</option>
+      </select>
+      <br />
+      <input type="submit" value="Submit" />
+      <br />
+      <label for="">Your City</label>
+      <input type="text" list="ab" />
+      <datalist id="ab">
+        <option value="Dhaka"></option>
+        <option value="Khulna"></option>
+        <option value="Chattagram"></option>
+        <option value="Cox's Bazar"></option>
+      </datalist>
+    </form>
   </body>
 </html>
