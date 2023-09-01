@@ -1,0 +1,15 @@
+#bd{
+    color: white;
+    font-size: 50px;
+    background-color: hsl(240, 100%, 50%)
+}
+p {
+    color: brown;
+}
+#ind {
+    background-color: green;
+    color: white;
+}
+.bold {
+    font-weight: bold;
+}

@@ -740,6 +740,7 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
   - [RGBA Color](#rgba-color)
   - [HEX Color](#hex-color)
   - [HSL Color](#hsl-color)
+- [Assignments for Chapter 06](#assignment-for-chapter-06)
 
 ## Introduction to CSS
 
@@ -844,6 +845,48 @@ color: rgba(0, 0, 255, 0.25); /* Semi-transparent blue */
 ![HSL Color Model](./chapter-06/images/1.png)
 
 Image Courtesy: FreeCodeCamp
+
+## Assignments for Chapter 06
+
+### Assignment 01
+
+Create a CSS rule that sets the background color of a paragraph element to the color represented by RGB (R: 255, G: 150, B: 0)
+
+### Assignment 02
+
+Convert the RGB color (R: 128, G: 64, B: 192) to its corresponding hexadecimal notation.
+
+### Assignment 03
+
+Create a CSS rule that styles a heading with a background color using the HSL color (Hue: 30°, Saturation: 80%, Lightness: 70%)
+
+### Assignment 04
+
+Convert the HSL color (Hue: 120°, Saturation: 100%, Lightness: 50%) to its corresponding RGB values.
+
+### Assignment 05
+
+Compare and contrast the RGB and HSL color models in terms of their benefits and usage scenarios in web design.
+
+### Assignment 06
+
+Create a CSS class that applies a background color using a shade of green in the HSL model (Hue: 120°, Saturation: 70%, Lightness: 50%).
+
+### Assignment 07
+
+Combine the RGB color (R: 255, G: 0, B: 0) and the HSL color (Hue: 240°, Saturation: 100%, Lightness: 50%) to create a new color. Describe the resulting color and provide the RGB values.
+
+### Assignment 08
+
+Adjust the lightness of the base color (Hue: 60°, Saturation: 90%, Lightness: 40%) to create a lighter and a darker variation. Provide the new HSL values for both variations.
+
+### Assignment 09
+
+Convert the RGB color (R: 150, G: 75, B: 200) to its corresponding HSL values.
+
+### Assignment 10
+
+Create a CSS rule that applies a text color using the RGB color (R: 255, G: 0, B: 150) and a background color using the HSL color (Hue: 30°, Saturation: 80%, Lightness: 60%).
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
