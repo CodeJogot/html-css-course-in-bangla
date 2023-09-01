@@ -737,6 +737,9 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
   - [Named Color](#named-color)
   - [RGB Color](#rgb-color)
   - [What is Additive Color Model and How it Works](#what-is-additive-color-model-and-how-it-works)
+  - [RGBA Color](#rgba-color)
+  - [HEX Color](#hex-color)
+  - [HSL Color](#hsl-color)
 
 ## Introduction to CSS
 
@@ -807,6 +810,44 @@ color: rgb(255, 127, 80); /* Coral color */
   - **Additive Process:** এখানে মূল ধারণাটি হল যে আপনি যখন আরজিবি মডেলে রং মিশ্রিত করেন, আপনি আসলে মিশ্রণে আরও **আলো** যোগ করছেন। আপনি যখন একটি রঙের উপাদানের তীব্রতা বাড়ান, আপনি সেই রঙের তরঙ্গদৈর্ঘ্যে নির্গত আলোর পরিমাণ বাড়াচ্ছেন। যখন একাধিক রঙ একই সাথে নির্গত হয়, তখন তাদের আলোগুলি ওভারল্যাপ হয় এবং ওভারল্যাপের ক্ষেত্রে মোট আলোর পরিমাণ একসঙ্গে যোগ করা হয়।
   - যখন কোন আলো নির্গত হয় না, ফলাফল কালো হয়। অন্য কথায়, কালো হল আলোর সব রঙের অনুপস্থিতি। বিপরীতভাবে, যখন সমস্ত প্রাথমিক রঙ সম্পূর্ণ তীব্রতায় নির্গত হয়, তখন তারা সাদা আলো তৈরি করে।
 - সংক্ষেপে, RGB কালার মডেলটি Additive, কারণ এতে রং তৈরি করতে আলো নির্গত করা জড়িত। প্রতিটি প্রাথমিক রঙের তীব্রতা সামঞ্জস্য করে আপনি রঙের _বিস্তৃত বর্ণালী_ অর্জন করতে বিভিন্ন তরঙ্গদৈর্ঘ্যের আলোর বিভিন্ন পরিমাণ যোগ করতে পারেন। এই কারণেই RGB হল ডিজিটাল ডিসপ্লেতে ব্যবহৃত Primary Color মডেল।
+
+### RGBA Color
+
+- RGBA কালার মডেল হল RGB (লাল, সবুজ, নীল) কালার মডেলের একটি **এক্সটেনশন** যা সাধারণত ডিজিটাল ডিসপ্লে এবং ওয়েব ডিজাইনে ব্যবহৃত হয়। RGB এবং RGBA-এর মধ্যে পার্থক্য হল RGBA-এ "Alpha" নামক একটি অতিরিক্ত উপাদান রয়েছে যা একটি রঙের স্বচ্ছতা(transparency) বা অস্বচ্ছতাকে(opacity) প্রতিনিধিত্ব করে। RGBA-তে "A" এর অর্থ হল "Alpha".
+- RGBA কালার মডেলের আলফা মান 0 এবং 1 এর মধ্যে দশমিক হিসাবে নির্দিষ্ট করা হয়েছে, যেখানে 0 সম্পূর্ণ স্বচ্ছতা (সম্পূর্ণ স্বচ্ছ) এবং 1 সম্পূর্ণ অস্বচ্ছতা (সম্পূর্ণ অস্বচ্ছ) প্রতিনিধিত্ব করে।
+- Syntax: color: `rgba(redValue, greenValue, blueValue, alphaValue);`
+- Example:
+
+```css
+color: rgba(255, 0, 0, 0.5); /* Semi-transparent red */
+color: rgba(0, 255, 0, 0.75); /* Semi-transparent green */
+color: rgba(0, 0, 255, 0.25); /* Semi-transparent blue */
+```
+
+### Hex Color
+
+- Hexadecimal Color-ও আসলে একটা RGB Color মডেল। শুধু Syntax টা ভিন্ন।
+- Syntax: `color: #RRGGBB`
+- আরজিবি কালার মডেলের মতো, হেক্স কালার মডেলও Color তৈরি করতে প্রাথমিক রং লাল, সবুজ এবং নীল ব্যবহার করে। প্রতিটি রঙের উপাদানের তীব্রতা একটি _দুই-অঙ্কের হেক্সাডেসিমেল সংখ্যা_ দ্বারা উপস্থাপিত হয়, যা 00 থেকে FF পর্যন্ত হতে পারে। মোট, প্রতিটি রঙের উপাদানের জন্য 256টি সম্ভাব্য মান রয়েছে, ডেসিমেলে 0 থেকে 255 পর্যন্ত।
+- হেক্সাডেসিমাল হল একটি 16-base নাম্বারিং সিস্টেম, যার মানে এটি মানগুলি উপস্থাপন করতে 16টি Unique Symbol (0-9 এবং A-F) ব্যবহার করে। 10 থেকে 15 সংখ্যাগুলি A থেকে F অক্ষর দ্বারা প্রতিনিধিত্ব করা হয়।
+
+### HSL Color
+
+- HSL stands for hue, saturation, and lightness.
+- Sytax: `hsl(hue, saturation, lightness)`
+- 360 Degree Color Wheel এ Hue Color এর Position নির্দেশ করে। এটি রঙের ধরনকে প্রতিনিধিত্ব করে, যেমন লাল, সবুজ, নীল, ইত্যাদি। Color Wheel এ 0° লাল, 120° সবুজ এবং 240° নীলকে প্রতিনিধিত্ব করে।
+- স্যাচুরেশন বলতে রঙের তীব্রতা(Intensity) বা বিশুদ্ধতা(Purity) বোঝায়। উচ্চ স্যাচুরেশনের একটি রঙ প্রাণবন্ত এবং সমৃদ্ধ, অন্যদিকে কম স্যাচুরেশনের একটি রঙ Muted or Washed out এর মতো মনে হয়। স্যাচুরেশন সাধারণত শতাংশ হিসাবে উপস্থাপিত হয়, 0% সম্পূর্ণ Grayscale (No Color) এবং 100% সম্পূর্ণরূপে স্যাচুরেটেড (Vivid Color)।
+- Lightness determines how light or dark the color appears. 0% Lightness মানে সম্পূর্ণ কালো, 100% Lightness মানে সম্পূর্ণ সাদা। Intermediate values create the range of shades in between.
+- HSL Color মডেলে খুব সহজে Color Variation তৈরি করা যায় rathe than RGB Model. উদাহরণস্বরূপ, যদি আপনি একটি বেস রঙের বৈচিত্র তৈরি করতে চান, আপনি Hue ঠিক রেখে এর স্যাচুরেশন এবং Lightness পরিবর্তন করতে পারেন।
+- একটা কালার আরেকটা কালারের সাথে কিভাবে সম্পর্কযুক্ত তা HSL Color মডেলে খুব সহজে বোঝা যায়, rather than RGB Model.
+
+![HSL Color Model](./chapter-06/images/1.png)
+
+Image Courtesy: FreeCodeCamp
+
+<div align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</div>
 
 # Chapter-11: CSS Position, Z-index, Overflow
 
