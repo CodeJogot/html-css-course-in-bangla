@@ -899,7 +899,9 @@ Create a CSS rule that applies a text color using the RGB color (R: 255, G: 0, B
 - [CSS Border](#css-border)
   - [Useful Border Properties](#useful-border-properties)
   - [Border Shorthand](#border-shorthand)
-- [CSS Margin](#css-margin)
+- [CSS Margin & Padding](#css-margin-and-padding)
+- [CSS Width and Height](#css-width-and-height)
+- [CSS Box Model](#css-box-model)
 
 ## CSS Background
 
@@ -970,7 +972,40 @@ body {
 - Example: `border: 2px solid red`
 - এই Shorthand Property আলাদা আলাদা Border এর খেত্রেও দেয়া যায়, যেমনঃ `border-left: 6px solid red` অথবা `border-bottom: 5px solid green` ইত্যাদি।
 
-## CSS Margin
+## CSS Margin and Padding 
+
+- খুব সহজভাবে বললে, Margin হলো Border এর বাইরের Space এবং Padding হলো Border এর ভিতরের Space. 
+
+![maring](/chapter-07/images/margin.png)
+Image Courtesy: W3 School
+
+Explanation of the different parts:
+
+- **Content** - The content of the box, যেখানে text, images ইত্যাদি থাকে। 
+- **Padding** - Border এর নিচের Space. Padding Transparent.
+- **Border** - Margin এবং Padding এর মাঝখানে থাকে। Border এর কালার দেয়া যায়। 
+- **Margin** - Border এর উপরের Space. Margin-ও Transparent.
+
+## CSS Width and Height
+
+## CSS Box Model
+- সমস্ত HTML Elements কে Box আঁকারে চিন্তা করা যায়। 
+- যখন কোন Element এর Width এবং Height দেয়া হয়, তখন ঐ Width এবং Height Element এর Content এর জন্য Set হয়। Element total কতো Space নিয়েছে, তার জন্য Border, Margin এবং Padding যোগ করতে হয়। অর্থাৎ 
+**_Total width of an element = width + left padding + right padding + left border + right border + left margin + right margin_**
+
+একইভাবে **_Total height of an element = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin_**
+
+![maring](/chapter-07/images/margin.png)
+Image Courtesy: W3 School
+
+Explanation of the different parts:
+
+- **Content** - The content of the box, যেখানে text, images ইত্যাদি থাকে। 
+- **Padding** - Border এর নিচের Space. Padding Transparent.
+- **Border** - Margin এবং Padding এর মাঝখানে থাকে। Border এর কালার দেয়া যায়। 
+- **Margin** - Border এর উপরের Space. Margin-ও Transparent.
+
+
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>

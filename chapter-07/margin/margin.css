@@ -1,0 +1,13 @@
+.box1 {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border: 5px solid blue;
+    margin: 50px;
+    padding: 20px;
+}
+.box2 {
+    width: 200px;
+    height: 100px;
+    background-color: green;
+}
