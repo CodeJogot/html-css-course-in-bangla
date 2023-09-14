@@ -271,8 +271,6 @@ Here we go:
 3. Video [Explanation](https://www.youtube.com/watch?v=hJHvdBlSxug) on Academind.
 4. An [Explanation](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works) on Mozilla.
 
-[Go to Top](#learn-html-and-css-in-60-chapters)
-
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
 </div>
@@ -887,6 +885,92 @@ Convert the RGB color (R: 150, G: 75, B: 200) to its corresponding HSL values.
 ### Assignment 10
 
 Create a CSS rule that applies a text color using the RGB color (R: 255, G: 0, B: 150) and a background color using the HSL color (Hue: 30°, Saturation: 80%, Lightness: 60%).
+
+<div align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</div>
+
+# Chapter-07: CSS Background, Border, Margin, Padding, Width, Height and Box Model
+
+- [CSS Background](#css-background)
+  - [Background Image](#background-image)
+  - [Useful Background Properties](#useful-background-properties)
+  - [Background Shorthand](#background-shorthand)
+- [CSS Border](#css-border)
+  - [Useful Border Properties](#useful-border-properties)
+  - [Border Shorthand](#border-shorthand)
+
+## CSS Background
+
+### Transparency using Opacity Property
+
+![Opacity](./chapter-07/images/1.png)
+
+### Transparency using RGBA
+
+![Opacity](./chapter-07/images/2.png)
+
+### Background Image
+
+- কোন Image কে আমরা চাইলে Background হিসেবে ব্যবহার করতে পারি।
+- By default, সম্পূর্ণ Element কে কাভার করার জন্য Image টা Horizontally এবং Vertically Repeat হয়।
+- Syntax:
+
+```css
+body {
+  background-image: url("logo.png");
+}
+```
+
+### Useful Background Properties
+
+| **No** | **Property Name and Value**       | **Role/Action**                                                            |
+| ------ | --------------------------------- | -------------------------------------------------------------------------- |
+| 1      | `background-repeat: repeat-x;`    | শুধুমাত্র Horizontal বরাবর Repeat হবে।                                     |
+| 2      | `background-repeat: repeat-y;`    | শুধুমাত্র Vertical বরাবর Repeat হবে।                                       |
+| 3      | `background-repeat: no-repeat;`   | কোন দিকেই Repeat হবে না।                                                   |
+| 4      | `background-position: right top;` | Image টার Position Define করার জন্য।                                       |
+| 5      | `background-attachment: fixed;`   | Image টা ফিক্সড হয়ে থাকবে, Scroll করলেও Image তার Position Change করবে না। |
+| 6      | `background-attachment: scroll;`  | Image টা ফিক্সড থাকবে না। Scroll এর সাথে সাথে Image উপরে বা নিচে চলে যাবে। |
+
+### Background Shorthand
+
+- Syntax:
+  `background: background-color background-image background-repeat background-attachment background-position`
+- কোন প্রপার্টি মিসিং হলেও প্রবলেম নেই, তবে Order ঠিক থাকতে হবে।
+- Example:
+
+```css
+body {
+  background-color: #ffffff;
+  background-image: url("book.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+```
+
+## CSS Border
+
+### Useful Border Properties
+
+| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
+| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1      | `border-top-style: dotted;`                 | উপরের Border এর Style দেয়ার জন্য।                                        |
+| 2      | `border-right-style: solid;`                | ডানের Border এর Style দেয়ার জন্য।                                        |
+| 3      | `border-bottom-style: dotted;`              | নিচের Border এর Style দেয়ার জন্য।                                        |
+| 4      | `border-left-style: solid;`                 | বামের Border এর Style দেয়ার জন্য।                                        |
+| 5      | `border-style: dotted solid double dashed;` | উপরের এই চারটা Property এর কাজ এই একটা Shorthand Property দিয়েও করা যায়। |
+| 6      | `border-style: solid;`                      | সব দিকের Border এর Style Solid হবে।                                      |
+| 7      | `border-width: 5px;`                        | Border Width 5px হবে।                                                    |
+| 8      | `border-width: 25px 10px 4px 35px;`         | চারপাশে ভিন্ন ভিন্ন Width দেয়ার জন্য                                     |
+| 9      | `border-color`                              | Border এর কালার দেয়ার জন্য                                               |
+| 10     | `border-radius`                             | Border এর Radius দেয়ার জন্য ।                                            |
+
+### Border Shorthand
+
+- Syntax: `border: border-width border-style border-color`
+- Example: `border: 2px solid red`
+- এই Shorthand Property আলাদা আলাদা Border এর খেত্রেও দেয়া যায়, যেমনঃ `border-left: 6px solid red` অথবা `border-bottom: 5px solid green` ইত্যাদি।
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
