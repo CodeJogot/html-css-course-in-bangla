@@ -902,7 +902,7 @@ Create a CSS rule that applies a text color using the RGB color (R: 255, G: 0, B
 - [CSS Margin & Padding](#css-margin-and-padding)
 - [CSS Width and Height](#css-width-and-height)
 - [CSS Box Model](#css-box-model)
-- [Assignments]()
+- [Assignments](#assignments-for-chapter-7)
 
 ## CSS Background
 
