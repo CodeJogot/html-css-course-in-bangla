@@ -1,0 +1,20 @@
+.box {
+   width: 300px;
+   height: 300px;
+   /* border-style: solid; */
+   /* border-top-width: 10px;
+   border-right-width: 50px;
+   border-bottom-width: 20px;
+   border-left-width: 50px; */
+   /* border-width: 10px; */
+   /* border-top-color: red;
+   border-right-color: blue;
+   border-bottom-color: green;
+   border-left-color: yellow; */
+   /* border-color: red; */
+   border-top: 10px solid red;
+   border-bottom: 20px solid blue;
+   border-left: 30px solid yellow;
+   border-right: 10px solid green
+;
+}
