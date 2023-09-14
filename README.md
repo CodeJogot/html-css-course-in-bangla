@@ -902,6 +902,7 @@ Create a CSS rule that applies a text color using the RGB color (R: 255, G: 0, B
 - [CSS Margin & Padding](#css-margin-and-padding)
 - [CSS Width and Height](#css-width-and-height)
 - [CSS Box Model](#css-box-model)
+- [Assignments]()
 
 ## CSS Background
 
@@ -972,26 +973,27 @@ body {
 - Example: `border: 2px solid red`
 - এই Shorthand Property আলাদা আলাদা Border এর খেত্রেও দেয়া যায়, যেমনঃ `border-left: 6px solid red` অথবা `border-bottom: 5px solid green` ইত্যাদি।
 
-## CSS Margin and Padding 
+## CSS Margin and Padding
 
-- খুব সহজভাবে বললে, Margin হলো Border এর বাইরের Space এবং Padding হলো Border এর ভিতরের Space. 
+- খুব সহজভাবে বললে, Margin হলো Border এর বাইরের Space এবং Padding হলো Border এর ভিতরের Space.
 
 ![maring](/chapter-07/images/margin.png)
 Image Courtesy: W3 School
 
 Explanation of the different parts:
 
-- **Content** - The content of the box, যেখানে text, images ইত্যাদি থাকে। 
+- **Content** - The content of the box, যেখানে text, images ইত্যাদি থাকে।
 - **Padding** - Border এর নিচের Space. Padding Transparent.
-- **Border** - Margin এবং Padding এর মাঝখানে থাকে। Border এর কালার দেয়া যায়। 
+- **Border** - Margin এবং Padding এর মাঝখানে থাকে। Border এর কালার দেয়া যায়।
 - **Margin** - Border এর উপরের Space. Margin-ও Transparent.
 
 ## CSS Width and Height
 
 ## CSS Box Model
-- সমস্ত HTML Elements কে Box আঁকারে চিন্তা করা যায়। 
-- যখন কোন Element এর Width এবং Height দেয়া হয়, তখন ঐ Width এবং Height Element এর Content এর জন্য Set হয়। Element total কতো Space নিয়েছে, তার জন্য Border, Margin এবং Padding যোগ করতে হয়। অর্থাৎ 
-**_Total width of an element = width + left padding + right padding + left border + right border + left margin + right margin_**
+
+- সমস্ত HTML Elements কে Box আঁকারে চিন্তা করা যায়।
+- যখন কোন Element এর Width এবং Height দেয়া হয়, তখন ঐ Width এবং Height Element এর Content এর জন্য Set হয়। Element total কতো Space নিয়েছে, তার জন্য Border, Margin এবং Padding যোগ করতে হয়। অর্থাৎ
+  **_Total width of an element = width + left padding + right padding + left border + right border + left margin + right margin_**
 
 একইভাবে **_Total height of an element = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin_**
 
@@ -1000,12 +1002,61 @@ Image Courtesy: W3 School
 
 Explanation of the different parts:
 
-- **Content** - The content of the box, যেখানে text, images ইত্যাদি থাকে। 
+- **Content** - The content of the box, যেখানে text, images ইত্যাদি থাকে।
 - **Padding** - Border এর নিচের Space. Padding Transparent.
-- **Border** - Margin এবং Padding এর মাঝখানে থাকে। Border এর কালার দেয়া যায়। 
+- **Border** - Margin এবং Padding এর মাঝখানে থাকে। Border এর কালার দেয়া যায়।
 - **Margin** - Border এর উপরের Space. Margin-ও Transparent.
 
+## Assignments for Chapter 7
 
+**Task 1: Background and Border**
+
+1. Create an HTML document with a `<div>` element inside the `<body>`.
+
+2. Apply a background color of your choice to this `<div>`.
+
+3. Add a border to the `<div>` with the following properties:
+   - Style: Dotted
+   - Color: Red
+   - Width: 2px
+
+**Task 2: Margin and Padding**
+
+1. Inside the same `<div>` element from Task 1, add an `<h1>` heading with some text content.
+
+2. Apply a margin to the `<h1>` element to create space around it.
+
+3. Apply padding to the `<h1>` element to create space between the text and the border of the `<div>`.
+
+**Task 3: Width and Height**
+
+1. Change the width of the `<div>` to 300px.
+
+2. Change the height of the `<div>` to 200px.
+
+**Task 4: Box Model**
+
+1. Calculate the total width and height of the `<div>` including content, padding, border, and margin. Show your calculations in comments within your CSS code.
+
+**Task 5: Hover Effects**
+
+1. Add a hover effect to the `<div>` from Task 1. When the user hovers over it, change the background color to a different color of your choice, and change the text color of the `<h1>` inside it.
+
+**Task 6: Centering the Content**
+
+1. Using CSS, center both the `<div>` and the `<h1>` horizontally and vertically on the page.
+
+**Task 7: Bonus Challenge (Optional)**
+
+1. Create a CSS animation that makes the border of the `<div>` from Task 1 gradually change color over a duration of 3 seconds.
+
+**Submission Guidelines:**
+
+- Create an HTML file and a separate CSS file for your styles.
+- Use comments in your CSS code to explain each part of your code.
+- Provide a clear and organized structure for your HTML and CSS.
+- Test your web page in different browsers to ensure compatibility.
+- Share your assignment files (HTML and CSS) in a ZIP archive or via a code-sharing platform of your choice.
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
