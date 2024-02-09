@@ -1062,6 +1062,13 @@ Explanation of the different parts:
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
 </div>
 
+# Chapter-08: CSS Outline, Text, Fonts, Icons, Lists
+
+# Chapter-09: CSS Table and Display
+
+# Chapter-10: CSS Max-width, Min-width, Max-height, Min-height
+
+
 # Chapter-11: CSS Position, Z-index, Overflow
 
 - [CSS Position](#css-position)
