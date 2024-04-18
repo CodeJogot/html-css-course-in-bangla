@@ -14,9 +14,9 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |                 [05](#chapter-05-html-canvas-svg-and-html-media)                  |                                    [HTML Canvas, SVG and HTML Media](#chapter-05-html-canvas-svg-and-html-media)                                    |     Watch Now     |
 |   [06](#chapter-06-introduction-to-css-css-selectors-ways-of-styling-and-color)   |      [Introduction to CSS, CSS Selectors, Ways of Styling and Color](#chapter-06-introduction-to-css-css-selectors-ways-of-styling-and-color)       |     Watch Now     |
 | [07](#chapter-07-css-background-border-margin-padding-width-height-and-box-model) | [CSS Background, Border, Margin, Padding, Width, Height and Box Model](#chapter-07-css-background-border-margin-padding-width-height-and-box-model) |     Watch Now     |
-|                                        [08](#chapter-08-css-outline-text-fonts-icons-lists)                                         |        [CSS Outline, Text, Fonts, Icons, Lists](#chapter-08-css-outline-text-fonts-icons-lists)                                                                                                                                             |     Watch Now     |
-|                                        [09](#chapter-09-css-table-and-display)                                         |        [CSS Table and Display](#chapter-09-css-table-and-display)                                                                                                                                             |     Watch Now     |
-|                                        [10](#chapter-10-css-max-width-min-width-max-height-min-height)                                         |   [CSS Max-width, Min-width, Max-height and Min-height](#chapter-10-css-max-width-min-width-max-height-min-height)                                                                                                                                                  |     Watch Now     |
+|               [08](#chapter-08-css-outline-text-fonts-icons-lists)                |                              [CSS Outline, Text, Fonts, Icons, Lists](#chapter-08-css-outline-text-fonts-icons-lists)                               |     Watch Now     |
+|                      [09](#chapter-09-css-table-and-display)                      |                                             [CSS Table and Display](#chapter-09-css-table-and-display)                                              |     Watch Now     |
+|          [10](#chapter-10-css-max-width-min-width-max-height-min-height)          |                  [CSS Max-width, Min-width, Max-height and Min-height](#chapter-10-css-max-width-min-width-max-height-min-height)                   |     Watch Now     |
 |                  [11](#chapter-11-css-position-z-index-overflow)                  |                                    [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                                     |     Watch Now     |
 |                   [12](#chapter-12-css-float-display-alignment)                   |                                     [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                                     |     Watch Now     |
 |                           [13](#chapter-13-css-flexbox)                           |                                                       [CSS Flexbox](#chapter-13-css-flexbox)                                                        |     Watch Now     |
@@ -67,23 +67,24 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 
 # Chapter-00: How The Course is Designed
 
-### কোর্সটি যেভাবে সাজানো হয়েছেঃ
+## কোর্সটি যেভাবে সাজানো হয়েছেঃ
 
-- এই পুরো Article কে একটা বই মনে করতে পারেন। কোর্সটি 60 টি Chapter এ ভাগ করা হয়েছে। প্রতিটি Chapter এ HTML/CSS এর বিভিন্ন Topics নিয়ে আলোচনা করা হয়েছে।
-- প্রতিটা Chapter এর Module সাজানো হয়েছে ক্রমানুসারে । উদাহরণস্বরূপ, Chapter-05 এর টপিকসগুলো শিখতে হলে অবশ্যই আপনাকে Chapter-04 শেষ করে আসতে হবে। একইভাবে Chapter-04 শিখতে হলে আপনাকে Chapter-03 শেষ করে আসতে হবে ।
-- প্রতিটা Chapter এর Topics এর Written Explanation/Article এর সাথে সাথে Video Explanation-ও দেয়া আছে। যাতে শিক্ষার্থীরা খুব সহজেই টপিকসগুলো আত্মস্থ করতে পারে।
-
-### কোর্সটি কাদের জন্য?
+## কোর্সটি কাদের জন্য?
 
 - এই কোর্সটিতে যেকেউ অংশগ্রহণ করতে পারবে। শিখার জন্য মনের ইচ্ছাটাই আসল!
 - Course টি মূলত Beginner-friendly. যারা Web Programming এ নতুন তাদেরকে উদ্দেশ্য করেই Course টি সাজানো।
 
-### Prerequisite
+## Prerequisite
 
 - HTML সম্পর্কে অল্প ধারনা থাকলে ভালো, না থাকলেও সমস্যা নেই।
 
 # Chapter-01: Environment Setup, HTML Elements, Attributes, Text Formatting
 
+- [What is Programming Lanuage](#what-is-programming-lanuage)
+- [What is Program, Programming & Programmer](#what-is-program-programming--programmer)
+- [What is IDE](#what-is-ide)
+- [Difference between Web Design & Web Development
+  ](#difference-between-web-design--web-development)
 - [What is HTML?](#what-is-html)
 - [History of HTML](#history-of-html)
   - [Founder of HTML](#founder-of-html)
@@ -98,6 +99,36 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 - [HTML Text Formatting](#html-text-formatting)
 - [Assignments for Chapter 01](#assignments-for-chapter-01)
 - [How Web Works? (Optional for Right Now)](#how-web-works)
+
+## What is Programming Lanuage
+
+- যে ভাষা ব্যবহার করে মানুষ মানুষের সাথে কথা বলে, তাকে বলে Lanuage বা ভাষা। অপরদিকে যে ভাষা ব্যবহার করে মানুষ Computer এর সাথে কথা বলে তাকে বলা হয় Programming Lanuage বা প্রোগ্রামিং ভাষা।
+- Computer 0 এবং 1 ছাড়া কোনকিছুই বুঝতে পারে না। তাই আমরা যে Code লিখি সেই কোডকে আসলে 0 এবং 1 Convert করতে হয়। আর এই কাজটি করে Interpreter এবং Compiler.
+- Examples: C, C++, Java, Python, JavaScript, PHP etc.
+
+![pr](./chapter-01/images/pr.png)
+
+## What is Program, Programming & Programmer
+
+- একটি প্রোগ্রাম হল Insturctions এর তালিকা যা একটি
+  নির্দিষ্ট কাজ সম্পন্ন করে এবং Computer দ্বারা Executed হয়। (A program is a list of instructions that is executed by a computer to accomplish a particular task.)
+- এই Instructions তৈরি করাকেই প্রোগ্রামিং বলে। যে তৈরি করে তাকে প্রোগ্রামার বলে।
+
+## What is IDE
+
+- An Integrated Development Environment (IDE) is a software application that combines common software development tasks into a single application.
+- Example: VS Code, Atom, Netbeans, Android Studio, Sublime Text, Code Blocks etc.
+
+**Common Task of An IDE:**
+![ide](./chapter-01/images/codejogot.com.png)
+
+## Difference between Web Design & Web Development
+
+| **Criteria**   | **Web Design**                                                                                                          | **Web Development**                                             |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **Definition** | Designing the overall look & feel of the website, creating visual elements such as logos, icons, buttons, graphics etc. | Implementing the design into a functional website writing code. |
+| **Tools**      | Adobe Photoshop, Adobe XD, Figma etc.                                                                                   | VS Code, Sublime Text, Atom etc.                                |
+| **Skills**     | Design Principles, Layout Techniques, Color Theory, Typography, UI Design etc.                                          | HTML, CSS, JavaScript, ReactJS, PHP, Laravel etc.               |
 
 ## What is HTML?
 
@@ -1067,7 +1098,6 @@ Explanation of the different parts:
 # Chapter-09: CSS Table and Display
 
 # Chapter-10: CSS Max-width, Min-width, Max-height, Min-height
-
 
 # Chapter-11: CSS Position, Z-index, Overflow
 
