@@ -194,10 +194,10 @@ CSS এর Details Version History দেখতে [এখানে](https://www
 
 ## Environment Setup
 
-- To download VS Code [Visit Here](https://code.visualstudio.com/). Download the VS Code according to your Operating Stytem.
-- For Windows, Click the marked button.
+- VS Code Download করতে [এখানে](https://code.visualstudio.com/) ক্লিক করুন।
+- Windows এর জন্য নিচের দেখানো Marked Button এ ক্লিক করুন। Download এর পরে Install করুন।
   ![vscode](./chapter-01/images/vscode.png)
-- Now install the following extensions.
+- এরপর নিচের Extensions গুলো ইনস্টল করুন:
   - Auto Close Tag
   - Auto Rename Tag
   - Code Runner
@@ -211,7 +211,7 @@ CSS এর Details Version History দেখতে [এখানে](https://www
 
 ## HTML Basics
 
-- **`<DOCTYPE html>`** is used to **tell** the browser, this is an HTML5 document.
+- **`<!DOCTYPE html>`** is used to **tell** the browser, this is an HTML5 document.
 - **`<html>`** is the **container** of all HTML elements. This tag is used to **indicate** the beginning and end of all HTML elements in an HTML Document.
 
 - **`<head>`** element is used to give **browser and search engine** informations about the page.
