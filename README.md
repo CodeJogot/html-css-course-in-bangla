@@ -595,6 +595,286 @@ Here we go:
 | 10     | `<tfoot>`    | টেবিলের Footer Contents কে গ্রুপ করার জন্য।           |
 
 ### Table Border
+- টেবিলে বর্ডার অ্যাড করার জন্য `<table>`, `<th>`, `<td>` এ CSS ব্যবহার করতে হয়। যেমনঃ
+
+```css
+table, th, td {
+  border: 1px solid black;
+}
+```
+
+![table with css](./chapter-03/images/double-border.png)
+
+- Double Border Avoid করার জন্য নিচের CSS ব্যবহার করতে হয়।
+```css
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+```
+![Avoid Double Border](./chapter-03/images/single-border.png)
+
+- Border এর Color দেয়ার জন্য `border-color` property ব্যবহার করতে হয়।
+
+### Table Size
+- HTML টেবিলের প্রতিটি কলাম, সারি বা পুরো টেবিলের Size পরিবর্তন করা যায়। 
+
+![table](./chapter-03/images/table-size.png)
+Image Credit: W3 School
+
+- পুরো Table এর Width পরিবর্তন করার জন্য Table Element এ `width` property ব্যবহার করতে হয়।
+- কোন একটা কলামের সাইজ পরিবর্তন করার জন্য ঐ কলামের যেকোন একটি Cell কে ধরে তার Width Change করতে হয়। অপরদিকে Row এর Height পরিবর্তন করার জন্য ঐ Row এর যেকোন একটি Cell কে ধরে তার Height Change করতে হয়।
+
+### Padding & Spacing
+- Cell কে Padding দেয়ার জন্য `<th>` এবং `<td>` তে `padding` property ব্যবহার করতে হয়। যেমনঃ 
+```css
+th, td {
+  padding: 15px;
+}
+```
+- পাশাপাশি Cells এর মধ্যে Space দেয়ার জন্য `<table>` element এ `border-spacing` property ব্যবহার করতে হয়। যেমনঃ
+```css
+table {
+  border-spacing: 30px;
+}
+```
+### Colspan & Rowspan
+
+- একটা Cell অনেকগুলয় Rows বা Columns এর জায়গা দখল করতে পারে। যেমনঃ 
+![rowspan](./chapter-03/images/col%20and%20row%20span.png)
+
+Image Credit: W3 School
+
+- `colspan` attribute দিয়ে একটি Cell অনেকগুলো Columns এর জায়গা দখল করতে পারে।
+- `rowspan` attribute দিয়ে একটি Cell অনেকগুলো Rows এর জায়গা দখল করতে পারে।
+যেমনঃ
+```html
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+```
+### HTML Table Styling
+- আপনি যদি প্রতিটি টেবিলের Row তে একটি Background Color দেন, তাহলে আপনি একটি চমৎকার জেব্রা স্ট্রাইপ ইফেক্ট পাবেন।
+- একটি টেবিলের শুধু Even Row কে Background Color দেয়ার জন্য `:n-th-child(even)` Pseudo Class ব্যবহার করতে হয়। যেমনঃ 
+```css
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+```
+
+![tb](./chapter-03/images/zebra.png)
+
+- একটি টেবিলের শুধু Odd Row কে Background Color দেয়ার জন্য `:n-th-child(odd)` Pseudo Class ব্যবহার করতে হয়। যেমনঃ 
+```css
+tr:nth-child(odd) {
+  background-color: #D6EEEE;
+}
+```
+
+### Horizontal Divider
+- Horizontal Divider তৈরি করার জন্য সকল tr element এ `border-bottom` property ব্যবহার করতে হয়। যেমনঃ 
+```css
+tr {
+  border-bottom: 1px solid #ddd;
+}
+```
+![dd](./chapter-03/images/hori-divider.png)
+
+- Hover Effect Add করার জন্য `tr:hover` Pseudo Class ব্যবহার করতে হয়। যেমনঃ 
+```css
+tr:hover {background-color: #D6EEEE;}
+```
+![hover](./chapter-03/images/hover.png)
+
+### HTML Colgroup
+- আপনি যদি এক বা একাধিক কলাম ধরে ধরে Style করতে চান, তাহলে `colgroup` element ব্যবহার করতে হয়। এবং এর মধ্যে `col` element ব্যবহার করতে হয়।
+- আপনি যদি ১ম ২ টি কলাম Style করতে চান, তাহলে `col` element এ `span=2` attribute ব্যবহার করতে হবে।
+- `colgroup` element টি table element এর Immediate পরেই দিতে হয়। তবে যদি `caption` element থাকে, তাহলে `caption` element এর পরেই `colgroup` element টি দিতে হয়।
+
+![colgroup](./chapter-03/images/colgroup.png)
+
+Code:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Multiple Col Elements</h2>
+<p>Add multiple col elements in the colgroup:</p>
+
+<table style="width: 100%;">
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+    <col span="3" style="background-color: pink">
+  </colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+</body>
+</html>
+```
+- আমরা চাইলে মাঝে থেকেও কিছু কলাম Select করতে পারি। যেমনঃ 
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Empty Colgroups</h2>
+<p>Add "empty" col elements that represents the columns before the columns you want to style:</p>
+
+<table style="width: 100%;">
+<colgroup>
+  <col span="3">
+  <col span="2" style="background-color: pink">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+```
+
+![empty colgroup](./chapter-03/images/colg-2.png)
+
+- আমরা চাইলে যেকোনো এক বা একাধিক Column কে Disappeared করে দিতে পারি। ধরুন, আমাদের ৭ টি কলাম আছে। আমরা চাচ্ছি ৩, ৪ ও ৫ নং কলামকে Disappeared করতে। 
+
+Disappeared করার আগে Table:
+![before hide](./chapter-03/images/hide.png)
+
+Disappeared করার পরে Table:
+
+![after hide](./chapter-03/images/hide2.png)
+
+Code:
+```html
+<colgroup>
+    <col span="2">
+    <col span="3" style="visibility: collapse">
+  </colgroup>
+```
+
+
+
 
 ## HTML List
 
