@@ -877,10 +877,85 @@ Code:
 
 
 ## HTML List
+- HTML List ২ প্রকারঃ Ordered List & Unordered List
+
 
 ### Unordered List
+- একটি Unordered List তৈরি করার জন্য `ul` element ব্যবহার করতে হয়। এবং এর মধ্যে `li` element ব্যবহার করতে হয়। যেমনঃ 
+```html
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+```
+
+- CSS এ `list-style-type` প্রপার্টি এর Value `circle`, `square`, `none` ব্যবহার করে Customized List Style দেয়া যায়। যেমনঃ
+```html
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+```
 
 ### Ordered List
+- একটি Ordered List তৈরি করার জন্য `ol` element ব্যবহার করতে হয়। এবং এর মধ্যে `li` element ব্যবহার করতে হয়। যেমনঃ 
+```html
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+```
+
+### Creating A Navbar Using Unordered List
+
+- Step-01: `ul` element এ `list-style-type` property টি `none` দিতে হবে।
+- Step-02: একটা Height দিতে হবে। 
+- Step-03: `li` element এ `float: left` দিতে হবে।
+- Step-04: `li` element এর মধ্যে `a` element `text-decoration` property টি `none` দিতে হবে এবং `display: block` দিতে হবে।
+- Step-05: `li a:hover` এ একটা Background দিতে হবে।
+
+![navbar](./chapter-03/images/menu.png)
+
+Code:
+
+```html
+<style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        background-color: #333;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        padding: 18px;
+      }
+      li a:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">News</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+  </body>
+```
+
+
+
 
 ## HTML Iframe
 
