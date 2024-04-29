@@ -595,10 +595,13 @@ Here we go:
 | 10     | `<tfoot>`    | টেবিলের Footer Contents কে গ্রুপ করার জন্য।           |
 
 ### Table Border
+
 - টেবিলে বর্ডার অ্যাড করার জন্য `<table>`, `<th>`, `<td>` এ CSS ব্যবহার করতে হয়। যেমনঃ
 
 ```css
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
 }
 ```
@@ -606,18 +609,23 @@ table, th, td {
 ![table with css](./chapter-03/images/double-border.png)
 
 - Double Border Avoid করার জন্য নিচের CSS ব্যবহার করতে হয়।
+
 ```css
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 ```
+
 ![Avoid Double Border](./chapter-03/images/single-border.png)
 
 - Border এর Color দেয়ার জন্য `border-color` property ব্যবহার করতে হয়।
 
 ### Table Size
-- HTML টেবিলের প্রতিটি কলাম, সারি বা পুরো টেবিলের Size পরিবর্তন করা যায়। 
+
+- HTML টেবিলের প্রতিটি কলাম, সারি বা পুরো টেবিলের Size পরিবর্তন করা যায়।
 
 ![table](./chapter-03/images/table-size.png)
 Image Credit: W3 School
@@ -626,28 +634,35 @@ Image Credit: W3 School
 - কোন একটা কলামের সাইজ পরিবর্তন করার জন্য ঐ কলামের যেকোন একটি Cell কে ধরে তার Width Change করতে হয়। অপরদিকে Row এর Height পরিবর্তন করার জন্য ঐ Row এর যেকোন একটি Cell কে ধরে তার Height Change করতে হয়।
 
 ### Padding & Spacing
-- Cell কে Padding দেয়ার জন্য `<th>` এবং `<td>` তে `padding` property ব্যবহার করতে হয়। যেমনঃ 
+
+- Cell কে Padding দেয়ার জন্য `<th>` এবং `<td>` তে `padding` property ব্যবহার করতে হয়। যেমনঃ
+
 ```css
-th, td {
+th,
+td {
   padding: 15px;
 }
 ```
+
 - পাশাপাশি Cells এর মধ্যে Space দেয়ার জন্য `<table>` element এ `border-spacing` property ব্যবহার করতে হয়। যেমনঃ
+
 ```css
 table {
   border-spacing: 30px;
 }
 ```
+
 ### Colspan & Rowspan
 
-- একটা Cell অনেকগুলয় Rows বা Columns এর জায়গা দখল করতে পারে। যেমনঃ 
-![rowspan](./chapter-03/images/col%20and%20row%20span.png)
+- একটা Cell অনেকগুলয় Rows বা Columns এর জায়গা দখল করতে পারে। যেমনঃ
+  ![rowspan](./chapter-03/images/col%20and%20row%20span.png)
 
 Image Credit: W3 School
 
 - `colspan` attribute দিয়ে একটি Cell অনেকগুলো Columns এর জায়গা দখল করতে পারে।
 - `rowspan` attribute দিয়ে একটি Cell অনেকগুলো Rows এর জায়গা দখল করতে পারে।
-যেমনঃ
+  যেমনঃ
+
 ```html
 <table>
   <tr>
@@ -666,40 +681,52 @@ Image Credit: W3 School
   </tr>
 </table>
 ```
+
 ### HTML Table Styling
+
 - আপনি যদি প্রতিটি টেবিলের Row তে একটি Background Color দেন, তাহলে আপনি একটি চমৎকার জেব্রা স্ট্রাইপ ইফেক্ট পাবেন।
-- একটি টেবিলের শুধু Even Row কে Background Color দেয়ার জন্য `:n-th-child(even)` Pseudo Class ব্যবহার করতে হয়। যেমনঃ 
+- একটি টেবিলের শুধু Even Row কে Background Color দেয়ার জন্য `:n-th-child(even)` Pseudo Class ব্যবহার করতে হয়। যেমনঃ
+
 ```css
 tr:nth-child(even) {
-  background-color: #D6EEEE;
+  background-color: #d6eeee;
 }
 ```
 
 ![tb](./chapter-03/images/zebra.png)
 
-- একটি টেবিলের শুধু Odd Row কে Background Color দেয়ার জন্য `:n-th-child(odd)` Pseudo Class ব্যবহার করতে হয়। যেমনঃ 
+- একটি টেবিলের শুধু Odd Row কে Background Color দেয়ার জন্য `:n-th-child(odd)` Pseudo Class ব্যবহার করতে হয়। যেমনঃ
+
 ```css
 tr:nth-child(odd) {
-  background-color: #D6EEEE;
+  background-color: #d6eeee;
 }
 ```
 
 ### Horizontal Divider
-- Horizontal Divider তৈরি করার জন্য সকল tr element এ `border-bottom` property ব্যবহার করতে হয়। যেমনঃ 
+
+- Horizontal Divider তৈরি করার জন্য সকল tr element এ `border-bottom` property ব্যবহার করতে হয়। যেমনঃ
+
 ```css
 tr {
   border-bottom: 1px solid #ddd;
 }
 ```
+
 ![dd](./chapter-03/images/hori-divider.png)
 
-- Hover Effect Add করার জন্য `tr:hover` Pseudo Class ব্যবহার করতে হয়। যেমনঃ 
+- Hover Effect Add করার জন্য `tr:hover` Pseudo Class ব্যবহার করতে হয়। যেমনঃ
+
 ```css
-tr:hover {background-color: #D6EEEE;}
+tr:hover {
+  background-color: #d6eeee;
+}
 ```
+
 ![hover](./chapter-03/images/hover.png)
 
 ### HTML Colgroup
+
 - আপনি যদি এক বা একাধিক কলাম ধরে ধরে Style করতে চান, তাহলে `colgroup` element ব্যবহার করতে হয়। এবং এর মধ্যে `col` element ব্যবহার করতে হয়।
 - আপনি যদি ১ম ২ টি কলাম Style করতে চান, তাহলে `col` element এ `span=2` attribute ব্যবহার করতে হবে।
 - `colgroup` element টি table element এর Immediate পরেই দিতে হয়। তবে যদি `caption` element থাকে, তাহলে `caption` element এর পরেই `colgroup` element টি দিতে হয়।
@@ -707,156 +734,159 @@ tr:hover {background-color: #D6EEEE;}
 ![colgroup](./chapter-03/images/colgroup.png)
 
 Code:
+
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-</head>
-<body>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Multiple Col Elements</h2>
+    <p>Add multiple col elements in the colgroup:</p>
 
-<h2>Multiple Col Elements</h2>
-<p>Add multiple col elements in the colgroup:</p>
-
-<table style="width: 100%;">
-  <colgroup>
-    <col span="2" style="background-color: #D6EEEE">
-    <col span="3" style="background-color: pink">
-  </colgroup>
-<tr>
-<th>MON</th>
-<th>TUE</th>
-<th>WED</th>
-<th>THU</th>
-<th>FRI</th>
-<th>SAT</th>
-<th>SUN</th>
-</tr>
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-</tr>
-<tr>
-<td>8</td>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>
-<td>13</td>
-<td>14</td>
-</tr>
-<tr>
-<td>15</td>
-<td>16</td>
-<td>17</td>
-<td>18</td>
-<td>19</td>
-<td>20</td>
-<td>21</td>
-</tr>
-<tr>
-<td>22</td>
-<td>23</td>
-<td>24</td>
-<td>25</td>
-<td>26</td>
-<td>27</td>
-<td>28</td>
-</tr>
-</table>
-
-</body>
+    <table style="width: 100%;">
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE" />
+        <col span="3" style="background-color: pink" />
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+      </tr>
+    </table>
+  </body>
 </html>
 ```
-- আমরা চাইলে মাঝে থেকেও কিছু কলাম Select করতে পারি। যেমনঃ 
+
+- আমরা চাইলে মাঝে থেকেও কিছু কলাম Select করতে পারি। যেমনঃ
 
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-</head>
-<body>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Empty Colgroups</h2>
+    <p>
+      Add "empty" col elements that represents the columns before the columns
+      you want to style:
+    </p>
 
-<h2>Empty Colgroups</h2>
-<p>Add "empty" col elements that represents the columns before the columns you want to style:</p>
-
-<table style="width: 100%;">
-<colgroup>
-  <col span="3">
-  <col span="2" style="background-color: pink">
-</colgroup>
-<tr>
-<th>MON</th>
-<th>TUE</th>
-<th>WED</th>
-<th>THU</th>
-<th>FRI</th>
-<th>SAT</th>
-<th>SUN</th>
-</tr>
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-</tr>
-<tr>
-<td>8</td>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>
-<td>13</td>
-<td>14</td>
-</tr>
-<tr>
-<td>15</td>
-<td>16</td>
-<td>17</td>
-<td>18</td>
-<td>19</td>
-<td>20</td>
-<td>21</td>
-</tr>
-<tr>
-<td>22</td>
-<td>23</td>
-<td>24</td>
-<td>25</td>
-<td>26</td>
-<td>27</td>
-<td>28</td>
-</tr>
-</table>
-
-</body>
+    <table style="width: 100%;">
+      <colgroup>
+        <col span="3" />
+        <col span="2" style="background-color: pink" />
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+      </tr>
+    </table>
+  </body>
 </html>
-
-
 ```
 
 ![empty colgroup](./chapter-03/images/colg-2.png)
 
-- আমরা চাইলে যেকোনো এক বা একাধিক Column কে Disappeared করে দিতে পারি। ধরুন, আমাদের ৭ টি কলাম আছে। আমরা চাচ্ছি ৩, ৪ ও ৫ নং কলামকে Disappeared করতে। 
+- আমরা চাইলে যেকোনো এক বা একাধিক Column কে Disappeared করে দিতে পারি। ধরুন, আমাদের ৭ টি কলাম আছে। আমরা চাচ্ছি ৩, ৪ ও ৫ নং কলামকে Disappeared করতে।
 
 Disappeared করার আগে Table:
 ![before hide](./chapter-03/images/hide.png)
@@ -866,22 +896,22 @@ Disappeared করার পরে Table:
 ![after hide](./chapter-03/images/hide2.png)
 
 Code:
+
 ```html
 <colgroup>
-    <col span="2">
-    <col span="3" style="visibility: collapse">
-  </colgroup>
+  <col span="2" />
+  <col span="3" style="visibility: collapse" />
+</colgroup>
 ```
 
-
-
-
 ## HTML List
+
 - HTML List ২ প্রকারঃ Ordered List & Unordered List
 
-
 ### Unordered List
-- একটি Unordered List তৈরি করার জন্য `ul` element ব্যবহার করতে হয়। এবং এর মধ্যে `li` element ব্যবহার করতে হয়। যেমনঃ 
+
+- একটি Unordered List তৈরি করার জন্য `ul` element ব্যবহার করতে হয়। এবং এর মধ্যে `li` element ব্যবহার করতে হয়। যেমনঃ
+
 ```html
 <ul>
   <li>Coffee</li>
@@ -891,6 +921,7 @@ Code:
 ```
 
 - CSS এ `list-style-type` প্রপার্টি এর Value `circle`, `square`, `none` ব্যবহার করে Customized List Style দেয়া যায়। যেমনঃ
+
 ```html
 <ul style="list-style-type:square;">
   <li>Coffee</li>
@@ -900,7 +931,9 @@ Code:
 ```
 
 ### Ordered List
-- একটি Ordered List তৈরি করার জন্য `ol` element ব্যবহার করতে হয়। এবং এর মধ্যে `li` element ব্যবহার করতে হয়। যেমনঃ 
+
+- একটি Ordered List তৈরি করার জন্য `ol` element ব্যবহার করতে হয়। এবং এর মধ্যে `li` element ব্যবহার করতে হয়। যেমনঃ
+
 ```html
 <ol>
   <li>Coffee</li>
@@ -912,7 +945,7 @@ Code:
 ### Creating A Navbar Using Unordered List
 
 - Step-01: `ul` element এ `list-style-type` property টি `none` দিতে হবে।
-- Step-02: একটা Height দিতে হবে। 
+- Step-02: একটা Height দিতে হবে।
 - Step-03: `li` element এ `float: left` দিতে হবে।
 - Step-04: `li` element এর মধ্যে `a` element `text-decoration` property টি `none` দিতে হবে এবং `display: block` দিতে হবে।
 - Step-05: `li a:hover` এ একটা Background দিতে হবে।
@@ -953,9 +986,6 @@ Code:
     </ul>
   </body>
 ```
-
-
-
 
 ## HTML Iframe
 
@@ -1128,7 +1158,7 @@ Develop an HTML page that contains text about a foreign country or city. Use HTM
 
 ## Introduction to CSS
 
-- CSS এর পূর্ণরূপ CCascading Style Sheets. HTML দিয়ে একটি Website এর Structure গঠন করা হয়, অপরদিকে CSS দিয়ে Website কে Style বা Design করা হয়।
+- CSS এর পূর্ণরূপ Cascading Style Sheets. HTML দিয়ে একটি Website এর Structure গঠন করা হয়, অপরদিকে CSS দিয়ে Website কে Style বা Design করা হয়।
 
 ## CSS Syntax
 
@@ -1292,18 +1322,54 @@ Create a CSS rule that applies a text color using the RGB color (R: 255, G: 0, B
 
 ## CSS Background
 
+### Background Color Property
+
+- কোন একটা Element এর Background Color দেয়ার জন্য `background-color` property ব্যবহার করা হয়।
+- Syntax: `background-color: color;` যেমনঃ
+
+```css
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+```
+
 ### Transparency using Opacity Property
+
+- Opacity property কে ব্যবহার করে আমরা একটি Element এর Background Color এর Transparency পরিবর্তন করতে পারি। এটার Value 0-1 এর মধ্যে হয়ে থাকে। Value যত ছোট, Color তত বেশি Transparent হয়। Opacity এর শাব্দিক অর্থ অস্পষ্টতা এবং Transparency এর শাব্দিক অর্থ স্পষ্টতা। অর্থাৎ এরা একে অপরের বিপরিত অর্থে ব্যবহার হয়। যেমনঃ
+
+```css
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+```
 
 ![Opacity](./chapter-07/images/1.png)
 
 ### Transparency using RGBA
+
+- আপনি যদি Child Element এ Opacity Apply হোক সেটা না চান, তাহলে আপনি RGBA ব্যবহার করতে পারেন। যেমন আগের উদাহরনে Background এর সাথে Text-এও Opacity Apply হয়েছে, অর্থাৎ আমরা যে Div element এ Opacity দিয়েছি ঐ Div Element এর Child Element এ যে Text ছিল, তাতেও Opacity Apply হয়েছে। কিন্তু RGBA এর ক্ষেত্রে যে Element এ Opacity দেয়া হবে কেবল সেই Element-এই Opacity Apply হবে, তার Child element এ হবে না। যেমনঃ
+
+```css
+div {
+  background: rgba(0, 128, 0, 0.3); /* Green background with 30% opacity */
+}
+```
 
 ![Opacity](./chapter-07/images/2.png)
 
 ### Background Image
 
 - কোন Image কে আমরা চাইলে Background হিসেবে ব্যবহার করতে পারি।
-- By default, সম্পূর্ণ Element কে কাভার করার জন্য Image টা Horizontally এবং Vertically Repeat হয়।
+- By default, সম্পূর্ণ Element কে কাভার করার জন্য Image টা Horizontally এবং Vertically Repeat হয়, যদি Image টি যে Element এ আছে তার চেয়ে ছোট হয়।
 - Syntax:
 
 ```css
@@ -1314,14 +1380,14 @@ body {
 
 ### Useful Background Properties
 
-| **No** | **Property Name and Value**       | **Role/Action**                                                            |
-| ------ | --------------------------------- | -------------------------------------------------------------------------- |
-| 1      | `background-repeat: repeat-x;`    | শুধুমাত্র Horizontal বরাবর Repeat হবে।                                     |
-| 2      | `background-repeat: repeat-y;`    | শুধুমাত্র Vertical বরাবর Repeat হবে।                                       |
-| 3      | `background-repeat: no-repeat;`   | কোন দিকেই Repeat হবে না।                                                   |
-| 4      | `background-position: right top;` | Image টার Position Define করার জন্য।                                       |
-| 5      | `background-attachment: fixed;`   | Image টা ফিক্সড হয়ে থাকবে, Scroll করলেও Image তার Position Change করবে না। |
-| 6      | `background-attachment: scroll;`  | Image টা ফিক্সড থাকবে না। Scroll এর সাথে সাথে Image উপরে বা নিচে চলে যাবে। |
+| **No** | **Property Name and Value**       | **Role/Action**                                                                                 |
+| ------ | --------------------------------- | ----------------------------------------------------------------------------------------------- |
+| 1      | `background-repeat: repeat-x;`    | শুধুমাত্র Horizontal বরাবর Repeat হবে।                                                          |
+| 2      | `background-repeat: repeat-y;`    | শুধুমাত্র Vertical বরাবর Repeat হবে।                                                            |
+| 3      | `background-repeat: no-repeat;`   | কোন দিকেই Repeat হবে না।                                                                        |
+| 4      | `background-position: right top;` | Image টার Position Define করার জন্য।                                                            |
+| 5      | `background-attachment: fixed;`   | Image টা ফিক্সড হয়ে থাকবে, Scroll করলেও Image তার Position Change করবে না।                      |
+| 6      | `background-attachment: scroll;`  | By default property. Image টা ফিক্সড থাকবে না। Scroll এর সাথে সাথে Image উপরে বা নিচে চলে যাবে। |
 
 ### Background Shorthand
 
@@ -1329,6 +1395,15 @@ body {
   `background: background-color background-image background-repeat background-attachment background-position`
 - কোন প্রপার্টি মিসিং হলেও প্রবলেম নেই, তবে Order ঠিক থাকতে হবে।
 - Example:
+
+```css
+body {
+  background-color: #ffffff;
+  background-image: url("book.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+```
 
 ```css
 body {
@@ -1355,6 +1430,7 @@ body {
 
 ### Border Shorthand
 
+- একের অধিক Property এর কাজ যদি যদি একটি Property দিয়ে করা যায় তখন ঐ একটি Property কে Shorthand Property বলে।
 - Syntax: `border: border-width border-style border-color`
 - Example: `border: 2px solid red`
 - এই Shorthand Property আলাদা আলাদা Border এর খেত্রেও দেয়া যায়, যেমনঃ `border-left: 6px solid red` অথবা `border-bottom: 5px solid green` ইত্যাদি।
@@ -1362,6 +1438,7 @@ body {
 ## CSS Margin and Padding
 
 - খুব সহজভাবে বললে, Margin হলো Border এর বাইরের Space এবং Padding হলো Border এর ভিতরের Space.
+- একমাত্র Border কে কালার দেয়া যায়। Margin Padding হলো Transparent, তাদের কোন কালার দেয়া যায় না।
 
 ![maring](/chapter-07/images/margin.png)
 Image Courtesy: W3 School
@@ -1449,6 +1526,196 @@ Explanation of the different parts:
 </div>
 
 # Chapter-08: CSS Outline, Text, Fonts, Icons, Lists
+
+- [CSS Outline](#css-outline)
+- [CSS Text](#css-text)
+- [CSS Fonts](#css-fonts)
+
+## CSS Outline
+
+- Outline একটি Element এর Border এর ঠিক উপরে থাকে। অর্থাৎ Element টিকে Wrap করে রাখে।
+  ![outline](./chapter-08/images/outline.png)
+  Image Courtesy: W3 School
+
+- Outline এবং Border এর মধ্যে পার্থক্য আছে। Outline Element এর Border এর বাইরে দেয়া হয় এবং তা অন্য Element এর সাথে Overlap করতে পারে। Border Element এর Dimension এর অংশ, অপরদিকে Outline Element এর Dimension এর অংশ না।
+
+- CSS এ বিভিন্ন Outline Property আছেঃ
+
+```css
+outline-style
+outline-color
+outline-width
+outline-offset
+outline
+```
+
+- `outline-width` property এর Value গুলো হলো `thin`, `medium`, `thick`, এর সাথে specific size (in px, cm, em etc)-ও ব্যবহার করা যায়। 
+- `outline-offset` Outline এবং Border এর মধ্যে Space দেয়। যেমনঃ 
+```css
+p {
+  margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+}
+```
+![outl](./chapter-08/images/outline-2.png)
+
+## CSS Text
+- Text নিয়ে কাজ করার জন্য নিচের CSS Property গুলো ব্যবহার করা হয়ে থাকে। 
+
+### CSS Text Align & Vertical Align Property
+
+| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
+| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1      | `text-align: center`                 | Text Horizontally Center নেয়ার জন্য                                        |
+| 2      | `text-align: right`                | Text Horizontally ডানে নেয়ার জন্য                                       |
+| 3      | `text-align: justify`              | প্রতিটা লাইনের Text এমনভাবে Stretched হয় যাতে সব লাইনের Width Same হয় এবং Left ও Right Margin-ও Same হয়।                                        |
+| 4      | `text-align-last: center`                 | last line of text Horizontally Center নেয়ার জন্য                                        |
+| 5      | `vertical-align: top` | inline or inline-block element কে Vertically top এ নেয়ার জন্য। vertical-align কেবল inline এবং inline-block element এই কাজ করে |
+
+
+### CSS Text Decoration Property
+- `text-decoration-line` প্রোপার্টি টেক্সটে *একটি ডেকোরেশন লাইন* যোগ করতে ব্যবহার করা হয়। একই Property তে একসাথে একাধিক Values-ও ব্যবহার করা যায়।  যেমনঃ 
+```css
+h1 {
+  text-decoration: overline;
+}
+
+h2 {
+  text-decoration: line-through;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+p.ex {
+  text-decoration: overline underline;
+}
+```
+
+![text-decoration](./chapter-08/images/text-decoration.png)
+
+- `text-decoration-color` Property ব্যবহার করে Decoration Line এর কালার দেয়া যায়। যেমনঃ 
+```css
+h1 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+p.ex1 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+p.ex3 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+```
+![text decoration color](./chapter-08/images/dec-color.png)
+
+- `text-decoration-thickness` property ব্যবহার করে Decoration Line এর thickness দেয়া যায়। যেমনঃ
+```css
+h1 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;  /* this is default */
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+p {
+  text-decoration-line: underline;
+  text-decoration-color: red;  
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;  
+}
+```
+![text-decoration-thickness](./chapter-08/images/dec-thickness.png)
+
+- Shorthand of Text Decoration: `text-decoration: text-decoration-line(required) text-decoration-colo(optional)text-decoration-style(optional) text-decoration-thickness (optional)` যেমনঃ 
+```css
+p {
+  text-decoration: underline red double 5px;
+}
+```
+
+### Text Transform Property
+
+- `text-transform` Property একটি টেক্সটে বড় হাতের এবং ছোট হাতের অক্ষর নির্দিষ্ট করতে ব্যবহৃত হয়।
+- এটি সবকিছুকে বড় হাতের বা ছোট হাতের অক্ষরে পরিণত করতে বা প্রতিটি শব্দের প্রথম অক্ষর বড় হাতের লেখা করতে ব্যবহার করা যেতে পারে। যেমনঃ 
+```css
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+```
+
+### Text Spacing
+
+| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
+| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1      | `text-indent: 50px`                 | Text এর ১ম লাইনের শুরুতে 50px Space দিতে                                       |
+| 2      | `letter-spacing: 5px`                | Text এ Letters গুলোর Horizontally মধ্যে 5px Space দিতে                                       |
+| 3      | `line-height: 5px`              | টেক্সটে প্রতিটা লাইনের মধ্যে 5px Space দেয়ার জন্য                                        |
+| 4      | `word-spacing: 10px`                 | Text এ প্রতিটা Word এর মাঝে Space দেয়ার জন্য                                      |
+| 5      | `white-space: nowrap` | Screen যতই ছোট করা হোক না কেন, Wrap হবে না |
+
+### Text Shadow Property
+
+| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
+| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1      | `text-shadow: 2px 2px`                 | Horizontal বরাবর 2px এবং Vertical বরাবর 2px Shadow পাবে                                      |
+| 2      | `text-shadow: 2px 2px red`                | আগের মতোই Horizontal বরাবর 2px এবং Vertical বরাবর 2px Shadow পাবে , সাথে কালার যোগ হবে                                       |
+| 3      | `text-shadow: 2px 2px 5px red`              | চারটা Value দিলে, ৩য় Value Blur করবে                                       |
+
+- একাধিক Text Shadow Effect-ও একই Property এর মধ্যে ব্যবহার করা যায়। যেমনঃ
+```css
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+```
+![text shadow](./chapter-08/images/text-shadow.png)
+
+## CSS Fonts
+
+## CSS Icons
+
+## CSS List
+
 
 # Chapter-09: CSS Table and Display
 

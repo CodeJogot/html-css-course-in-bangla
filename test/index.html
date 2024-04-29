@@ -4,32 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      table, td {
-        border: 1px solid blue;
-      }
-      
-      table {
-        border-collapse: collapse;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table>
+    <table width="100%">
       <thead>
-        <tr>
-          <td>Student</td>
-          <td>ID</td>
-          <td>Mark</td>
+        <tr id="first-row">
+          <th>Student</th>
+          <th>ID</th>
+          <th>Mark</th>
+        </tr>
+        <tr id="first-row">
+          <th>Student</th>
+          <th>ID</th>
+          <th>Mark</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Ahsan Arif</td>
-          <td>WDB05002</td>
+          <td width="50%">WDB05002</td>
           <td>20</td>
         </tr>
-        <tr>
+        <tr id="third-row">
           <td>Abdullah</td>
           <td>WDB05023</td>
           <td>18</td>
@@ -37,18 +34,50 @@
         <tr>
           <td>Abdur Rahim</td>
           <td>WDB05078</td>
-          <td>14</td>
+          <td id="m14">14</td>
         </tr>
       </tbody>
     </table>
+
+    <p>Popular Islamic Book List</p>
+    <ul style="list-style-type: square">
+      <li>Paradoxical Sajid</li>
+      <li>Bela Furabar Age</li>
+      <li>Paradoxical Sajid 2</li>
+    </ul>
+
+    <ol>
+      <li>Paradoxical Sajid</li>
+      <li>Bela Furabar Age</li>
+      <li>Paradoxical Sajid 2</li>
+    </ol>
+
+    <h1>Simple HTML Form</h1>
+    <form action="">
+      <label for="xyz">Name</label>
+      <input type="text" name="" id="xyz" />
+      <br />
+      <label for="abc">Email</label>
+      <input type="email" name="" id="abc" />
+      <br />
+      <label for="pqr">Password</label>
+      <input type="password" name="" id="pqr" />
+      <br />
+      <label for="">Select your gender</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">Male</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">Female</label>
+      <p>Please Select Your Department</p>
+      <select name="" id="">
+        <option value="">CSE</option>
+        <option value="">EEE</option>
+        <option value="">Civil</option>
+        <option value="">Mechanical</option>
+      </select>
+
+      <br />
+      <button>Login</button>
+    </form>
   </body>
 </html>
-
-<!-- 
-
-Student ID Mark
-Ahsan Arif WDB05002 20
-Ahsan Arif WDB05002 20
-Ahsan Arif WDB05002 20
-
- -->
