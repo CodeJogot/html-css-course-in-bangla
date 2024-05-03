@@ -14,8 +14,8 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |                 [05](#chapter-05-html-canvas-svg-and-html-media)                  |                                    [HTML Canvas, SVG and HTML Media](#chapter-05-html-canvas-svg-and-html-media)                                    |     Watch Now     |
 |   [06](#chapter-06-introduction-to-css-css-selectors-ways-of-styling-and-color)   |      [Introduction to CSS, CSS Selectors, Ways of Styling and Color](#chapter-06-introduction-to-css-css-selectors-ways-of-styling-and-color)       |     Watch Now     |
 | [07](#chapter-07-css-background-border-margin-padding-width-height-and-box-model) | [CSS Background, Border, Margin, Padding, Width, Height and Box Model](#chapter-07-css-background-border-margin-padding-width-height-and-box-model) |     Watch Now     |
-|               [08](#chapter-08-css-outline-text-fonts-icons-lists)                |                              [CSS Outline, Text, Fonts, Icons, Lists](#chapter-08-css-outline-text-fonts-icons-lists)                               |     Watch Now     |
-|                      [09](#chapter-09-css-table-and-display)                      |                                             [CSS Table and Display](#chapter-09-css-table-and-display)                                              |     Watch Now     |
+|                  [08](#chapter-08-css-outline-text-fonts--icons)                  |                                 [CSS Outline, Text, Fonts, Icons, Lists](#chapter-08-css-outline-text-fonts--icons)                                 |     Watch Now     |
+|                           [09](#chapter-09-css-display)                           |                                                       [CSS Display](#chapter-09-css-display)                                                        |     Watch Now     |
 |          [10](#chapter-10-css-max-width-min-width-max-height-min-height)          |                  [CSS Max-width, Min-width, Max-height and Min-height](#chapter-10-css-max-width-min-width-max-height-min-height)                   |     Watch Now     |
 |                  [11](#chapter-11-css-position-z-index-overflow)                  |                                    [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                                     |     Watch Now     |
 |                   [12](#chapter-12-css-float-display-alignment)                   |                                     [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                                     |     Watch Now     |
@@ -42,28 +42,28 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 
 # 20 HTML & CSS Projects
 
-|                     Project No.                      |                                       Project Name                                       | Video Explanation |                           Live Demo                           |
-| :--------------------------------------------------: | :--------------------------------------------------------------------------------------: | :---------------: | :-----------------------------------------------------------: |
-|                          01                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|  [02](#project-02-simple-website-layout-with-float)  |   [Simple Website Layout with CSS Float](#project-02-simple-website-layout-with-float)   |     Watch Now     |                           Live Demo                           |
-| [03](#project-03-simple-website-layout-with-flexbox) | [Simple Website Layout with CSS Flexbox](#project-03-simple-website-layout-with-flexbox) |     Watch Now     |                           Live Demo                           |
-|                          04                          |                                                                                          |     Watch Now     |                           Live Demo                           |
+|                     Project No.                      |                                       Project Name                                       | Video Explanation |                          Live Demo                          |
+| :--------------------------------------------------: | :--------------------------------------------------------------------------------------: | :---------------: | :---------------------------------------------------------: |
+|                          01                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|  [02](#project-02-simple-website-layout-with-float)  |   [Simple Website Layout with CSS Float](#project-02-simple-website-layout-with-float)   |     Watch Now     |                          Live Demo                          |
+| [03](#project-03-simple-website-layout-with-flexbox) | [Simple Website Layout with CSS Flexbox](#project-03-simple-website-layout-with-flexbox) |     Watch Now     |                          Live Demo                          |
+|                          04                          |                                                                                          |     Watch Now     |                          Live Demo                          |
 |      [05](#project-05-simple-3d-animation-page)      |             [Simple 3D Animation Page](#project-05-simple-3d-animation-page)             |  [Watch Now](#)   | [Live Demo](https://codepen.io/FarmerAbdulAlim/pen/zYjPVQp) |
-|                          06                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          07                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          08                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          09                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          10                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          11                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          12                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          13                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          14                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          15                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          16                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          17                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          18                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          19                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|                          20                          |                                                                                          |     Watch Now     |                           Live Demo                           |
+|                          06                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          07                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          08                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          09                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          10                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          11                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          12                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          13                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          14                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          15                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          16                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          17                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          18                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          19                          |                                                                                          |     Watch Now     |                          Live Demo                          |
+|                          20                          |                                                                                          |     Watch Now     |                          Live Demo                          |
 
 # Chapter-00: How The Course is Designed
 
@@ -1550,8 +1550,9 @@ outline-offset
 outline
 ```
 
-- `outline-width` property এর Value গুলো হলো `thin`, `medium`, `thick`, এর সাথে specific size (in px, cm, em etc)-ও ব্যবহার করা যায়। 
-- `outline-offset` Outline এবং Border এর মধ্যে Space দেয়। যেমনঃ 
+- `outline-width` property এর Value গুলো হলো `thin`, `medium`, `thick`, এর সাথে specific size (in px, cm, em etc)-ও ব্যবহার করা যায়।
+- `outline-offset` Outline এবং Border এর মধ্যে Space দেয়। যেমনঃ
+
 ```css
 p {
   margin: 30px;
@@ -1560,24 +1561,27 @@ p {
   outline-offset: 15px;
 }
 ```
+
 ![outl](./chapter-08/images/outline-2.png)
 
 ## CSS Text
-- Text নিয়ে কাজ করার জন্য নিচের CSS Property গুলো ব্যবহার করা হয়ে থাকে। 
+
+- Text নিয়ে কাজ করার জন্য নিচের CSS Property গুলো ব্যবহার করা হয়ে থাকে।
 
 ### CSS Text Align & Vertical Align Property
 
-| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
-| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
-| 1      | `text-align: center`                 | Text Horizontally Center নেয়ার জন্য                                        |
-| 2      | `text-align: right`                | Text Horizontally ডানে নেয়ার জন্য                                       |
-| 3      | `text-align: justify`              | প্রতিটা লাইনের Text এমনভাবে Stretched হয় যাতে সব লাইনের Width Same হয় এবং Left ও Right Margin-ও Same হয়।                                        |
-| 4      | `text-align-last: center`                 | last line of text Horizontally Center নেয়ার জন্য                                        |
-| 5      | `vertical-align: top` | inline or inline-block element কে Vertically top এ নেয়ার জন্য। vertical-align কেবল inline এবং inline-block element এই কাজ করে |
-
+| **No** | **Property Name and Value** | **Role/Action/Used For**                                                                                                      |
+| ------ | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1      | `text-align: center`        | Text Horizontally Center নেয়ার জন্য                                                                                           |
+| 2      | `text-align: right`         | Text Horizontally ডানে নেয়ার জন্য                                                                                             |
+| 3      | `text-align: justify`       | প্রতিটা লাইনের Text এমনভাবে Stretched হয় যাতে সব লাইনের Width Same হয় এবং Left ও Right Margin-ও Same হয়।                      |
+| 4      | `text-align-last: center`   | last line of text Horizontally Center নেয়ার জন্য                                                                              |
+| 5      | `vertical-align: top`       | inline or inline-block element কে Vertically top এ নেয়ার জন্য। vertical-align কেবল inline এবং inline-block element এই কাজ করে |
 
 ### CSS Text Decoration Property
-- `text-decoration-line` প্রোপার্টি টেক্সটে *একটি ডেকোরেশন লাইন* যোগ করতে ব্যবহার করা হয়। একই Property তে একসাথে একাধিক Values-ও ব্যবহার করা যায়।  যেমনঃ 
+
+- `text-decoration-line` প্রোপার্টি টেক্সটে _একটি ডেকোরেশন লাইন_ যোগ করতে ব্যবহার করা হয়। একই Property তে একসাথে একাধিক Values-ও ব্যবহার করা যায়। যেমনঃ
+
 ```css
 h1 {
   text-decoration: overline;
@@ -1598,7 +1602,8 @@ p.ex {
 
 ![text-decoration](./chapter-08/images/text-decoration.png)
 
-- `text-decoration-color` Property ব্যবহার করে Decoration Line এর কালার দেয়া যায়। যেমনঃ 
+- `text-decoration-color` Property ব্যবহার করে Decoration Line এর কালার দেয়া যায়। যেমনঃ
+
 ```css
 h1 {
   text-decoration-line: underline;
@@ -1631,13 +1636,15 @@ p.ex3 {
   text-decoration-style: wavy;
 }
 ```
+
 ![text decoration color](./chapter-08/images/dec-color.png)
 
 - `text-decoration-thickness` property ব্যবহার করে Decoration Line এর thickness দেয়া যায়। যেমনঃ
+
 ```css
 h1 {
   text-decoration-line: underline;
-  text-decoration-thickness: auto;  /* this is default */
+  text-decoration-thickness: auto; /* this is default */
 }
 
 h2 {
@@ -1652,14 +1659,16 @@ h3 {
 
 p {
   text-decoration-line: underline;
-  text-decoration-color: red;  
+  text-decoration-color: red;
   text-decoration-style: double;
-  text-decoration-thickness: 5px;  
+  text-decoration-thickness: 5px;
 }
 ```
+
 ![text-decoration-thickness](./chapter-08/images/dec-thickness.png)
 
-- Shorthand of Text Decoration: `text-decoration: text-decoration-line(required) text-decoration-colo(optional)text-decoration-style(optional) text-decoration-thickness (optional)` যেমনঃ 
+- Shorthand of Text Decoration: `text-decoration: text-decoration-line(required) text-decoration-colo(optional)text-decoration-style(optional) text-decoration-thickness (optional)` যেমনঃ
+
 ```css
 p {
   text-decoration: underline red double 5px;
@@ -1669,7 +1678,8 @@ p {
 ### Text Transform Property
 
 - `text-transform` Property একটি টেক্সটে বড় হাতের এবং ছোট হাতের অক্ষর নির্দিষ্ট করতে ব্যবহৃত হয়।
-- এটি সবকিছুকে বড় হাতের বা ছোট হাতের অক্ষরে পরিণত করতে বা প্রতিটি শব্দের প্রথম অক্ষর বড় হাতের লেখা করতে ব্যবহার করা যেতে পারে। যেমনঃ 
+- এটি সবকিছুকে বড় হাতের বা ছোট হাতের অক্ষরে পরিণত করতে বা প্রতিটি শব্দের প্রথম অক্ষর বড় হাতের লেখা করতে ব্যবহার করা যেতে পারে। যেমনঃ
+
 ```css
 p.uppercase {
   text-transform: uppercase;
@@ -1686,40 +1696,45 @@ p.capitalize {
 
 ### Text Spacing
 
-| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
-| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
-| 1      | `text-indent: 50px`                 | Text এর ১ম লাইনের শুরুতে 50px Space দিতে                                       |
-| 2      | `letter-spacing: 5px`                | Text এ Letters গুলোর Horizontally মধ্যে 5px Space দিতে                                       |
-| 3      | `line-height: 5px`              | টেক্সটে প্রতিটা লাইনের মধ্যে 5px Space দেয়ার জন্য                                        |
-| 4      | `word-spacing: 10px`                 | Text এ প্রতিটা Word এর মাঝে Space দেয়ার জন্য                                      |
-| 5      | `white-space: nowrap` | Screen যতই ছোট করা হোক না কেন, Wrap হবে না |
+| **No** | **Property Name and Value** | **Role/Action/Used For**                               |
+| ------ | --------------------------- | ------------------------------------------------------ |
+| 1      | `text-indent: 50px`         | Text এর ১ম লাইনের শুরুতে 50px Space দিতে               |
+| 2      | `letter-spacing: 5px`       | Text এ Letters গুলোর Horizontally মধ্যে 5px Space দিতে |
+| 3      | `line-height: 5px`          | টেক্সটে প্রতিটা লাইনের মধ্যে 5px Space দেয়ার জন্য      |
+| 4      | `word-spacing: 10px`        | Text এ প্রতিটা Word এর মাঝে Space দেয়ার জন্য           |
+| 5      | `white-space: nowrap`       | Screen যতই ছোট করা হোক না কেন, Wrap হবে না             |
 
 ### Text Shadow Property
 
-| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
-| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
-| 1      | `text-shadow: 2px 2px`                 | Horizontal বরাবর 2px এবং Vertical বরাবর 2px Shadow পাবে                                      |
-| 2      | `text-shadow: 2px 2px red`                | আগের মতোই Horizontal বরাবর 2px এবং Vertical বরাবর 2px Shadow পাবে , সাথে কালার যোগ হবে                                       |
-| 3      | `text-shadow: 2px 2px 5px red`              | চারটা Value দিলে, ৩য় Value Blur করবে                                       |
+| **No** | **Property Name and Value**    | **Role/Action/Used For**                                                               |
+| ------ | ------------------------------ | -------------------------------------------------------------------------------------- |
+| 1      | `text-shadow: 2px 2px`         | Horizontal বরাবর 2px এবং Vertical বরাবর 2px Shadow পাবে                                |
+| 2      | `text-shadow: 2px 2px red`     | আগের মতোই Horizontal বরাবর 2px এবং Vertical বরাবর 2px Shadow পাবে , সাথে কালার যোগ হবে |
+| 3      | `text-shadow: 2px 2px 5px red` | চারটা Value দিলে, ৩য় Value Blur করবে                                                   |
 
 - একাধিক Text Shadow Effect-ও একই Property এর মধ্যে ব্যবহার করা যায়। যেমনঃ
+
 ```css
 h1 {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 ```
+
 ![text shadow](./chapter-08/images/text-shadow.png)
 
 ## CSS Fonts
+
 - Website এর জন্য উপযুক্ত Font নির্বচন খুব গুরুত্বপূর্ণ। কারন পুরো Website এর সৌন্দর্য অনেকাংশে এই Font এর উপর নির্ভরশীল।
-- এছাড়া Font আপনার Website এর Brand Identity তৈরি করে। 
+- এছাড়া Font আপনার Website এর Brand Identity তৈরি করে।
 
 ### Generic Font
+
 - CSS-এ পাঁচটি জেনেরিক Font Family রয়েছে:
+
   - **Serif:** সেরিফ ফন্টের প্রতিটি অক্ষরের প্রান্তে একটি ছোট স্ট্রোক থাকে। They create a sense of formality and elegance.
-  - **Sans-serif:** Sans-serif ফন্টে Clean Line থাকে (কোন  স্ট্রোক সংযুক্ত নেই)। They create a modern and minimalistic look.
-  - **Monospace:** Monospace ফন্টে সব Letters এর Fixed Width থাকে। They create a mechanical look. 
+  - **Sans-serif:** Sans-serif ফন্টে Clean Line থাকে (কোন স্ট্রোক সংযুক্ত নেই)। They create a modern and minimalistic look.
+  - **Monospace:** Monospace ফন্টে সব Letters এর Fixed Width থাকে। They create a mechanical look.
   - **Cursive:** কার্সিভ ফন্ট মানুষের হাতের লেখার অনুকরণ করে।
   - **Fantasy:** ফ্যান্টাসি ফন্ট হল Decorative ফন্ট।
 
@@ -1729,6 +1744,7 @@ h1 {
 ![font 2](./chapter-08/images/font-2.png)
 
 Image Courtesy: W3 School
+
 - `font-family` Property ব্যবহার করে Font দিতে হয়। এই Property এর মধ্যে একাধিক Font দেয়া যায়। প্রথম এক বা একাধিক Font আমাদের পছন্দ অনুযায়ী দিতে হয় এবং শেষ Font টি এদের সাথে মিল রেখে একটি Generic Font দিতে হয়, যাতে যদি কোন কারনে Browser আমাদের দেয়া Font টি Load করতে ব্যর্থ হয়, তাহলে অন্তত শেষের দেয়া Generic Font টি Display করতে পারে। যেমনঃ
 
 ```css
@@ -1744,8 +1760,10 @@ Image Courtesy: W3 School
   font-family: "Lucida Console", "Courier New", monospace;
 }
 ```
+
 ### CSS Web Safe Fonts
-- Web Safe Font হল এমন ফন্ট যা Universally সমস্ত ব্রাউজার এবং ডিভাইস জুড়ে ইনস্টল করা থাকে। কিছু Web Safe Fonts এর তালিকাঃ 
+
+- Web Safe Font হল এমন ফন্ট যা Universally সমস্ত ব্রাউজার এবং ডিভাইস জুড়ে ইনস্টল করা থাকে। কিছু Web Safe Fonts এর তালিকাঃ
   - Arial (sans-serif)
   - Verdana (sans-serif)
   - Tahoma (sans-serif)
@@ -1757,6 +1775,7 @@ Image Courtesy: W3 School
   - Brush Script MT (cursive)
 
 ### Fallback Fonts
+
 - যাইহোক, কোন 100% সম্পূর্ণরূপে Web Safe Fonts নেই। কোন একটি ফন্ট না পাওয়া বা সঠিকভাবে Install না হওয়ার সম্ভবনা সব সময়ই থাকে। অতএব, সর্বদা ফলব্যাক ফন্ট ব্যবহার করা খুবই গুরুত্বপূর্ণ।
 - এর মানে হল যে আপনার ফন্ট-ফ্যামিলি প্রপার্টিতে অনুরূপ "ব্যাকআপ ফন্ট" এর একটি তালিকা যোগ করা উচিত। যদি প্রথম ফন্ট কাজ না করে, ব্রাউজার পরেরটি চেষ্টা করবে, এবং পরেরটি, এবং এভাবে চলতে থাকবে। সর্বদা একটি জেনেরিক ফন্ট পরিবারের নাম দিয়ে তালিকাটি শেষ করুন।
 - উপরে যে ৫ টি Generic Font এর নাম দেয়া আছে, সেগুলোই Fallback হিসেবে Use করা উচিত।
@@ -1765,67 +1784,74 @@ Image Courtesy: W3 School
 
 - font-variant প্রপার্টি নির্দিষ্ট করে যে একটি টেক্সট small-caps ফন্টে প্রদর্শিত হবে কি না। একটি small-caps ফন্টে, সমস্ত ছোট হাতের অক্ষর বড় হাতের অক্ষরে রূপান্তরিত হয়। যাইহোক, রূপান্তরিত বড় হাতের অক্ষরগুলি Text এর মূল বড় হাতের অক্ষরের তুলনায় ছোট হয়।
 
-| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
-| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
-| 1      | `font-style: italic`                 | Text Italic করার জন্য                                       |
-| 2      | `font-weight: bold`                | Text Bold করার জন্য                                       |
-| 3      | `font-variant: small-caps`              | Text গুলো Capital হবে কিন্তু Font Size আগের মতোই থাকবে অর্থাৎ বড় হবে না                                     |
-| 4      | `font-size: 20px`                 | Text এর Font Size দেয়ার জন্য                                      |
-
+| **No** | **Property Name and Value** | **Role/Action/Used For**                                                |
+| ------ | --------------------------- | ----------------------------------------------------------------------- |
+| 1      | `font-style: italic`        | Text Italic করার জন্য                                                   |
+| 2      | `font-weight: bold`         | Text Bold করার জন্য                                                     |
+| 3      | `font-variant: small-caps`  | Text গুলো Capital হবে কিন্তু Font Size আগের মতোই থাকবে অর্থাৎ বড় হবে না |
+| 4      | `font-size: 20px`           | Text এর Font Size দেয়ার জন্য                                            |
 
 ### কিভাবে Google Font ব্যবহার করতে হয়
+
 - Google Font ফ্রি এবং ১০০০ এরও বেশি Fonts আছে।
 
 দুইভাবে Google Font ব্যবহার করা যায়ঃ
+
 - Head Element এ `<link>` tag টি ব্যবহার করে।
 - CSS ফাইলে `@import` rule ব্যবহার করে।
-যেমনঃ 
+  যেমনঃ
+
 ```html
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 ```
-
 
 ### Enabling Font Effect on Google Fonts
 
-- প্রথমে Google API-এ `effect=effectname` add করুন, তারপর যে Element এ Effect টি ব্যবহার করা হবে সেই Element এ Clas অ্যাড করতে হবে। ক্লাসের নাম সবসময় `font-effect-` দিয়ে শুরু হবে এবং `effectname` দিয়ে শেষ হবে। যেমনঃ 
+- প্রথমে Google API-এ `effect=effectname` add করুন, তারপর যে Element এ Effect টি ব্যবহার করা হবে সেই Element এ Clas অ্যাড করতে হবে। ক্লাসের নাম সবসময় `font-effect-` দিয়ে শুরু হবে এবং `effectname` দিয়ে শেষ হবে। যেমনঃ
 
 ```html
 <head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
-<style>
-body {
-  font-family: "Sofia", sans-serif;
-  font-size: 30px;
-}
-</style>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Sofia&effect=fire"
+  />
+  <style>
+    body {
+      font-family: "Sofia", sans-serif;
+      font-size: 30px;
+    }
+  </style>
 </head>
 <body>
-
-<h1 class="font-effect-fire">Sofia on Fire</h1>
-
+  <h1 class="font-effect-fire">Sofia on Fire</h1>
 </body>
 ```
-Output: 
+
+Output:
 
 ![effect](./chapter-08/images/effect.png)
 
-- সবগুলো Effect Name দেখতে নিচের লিংকে Visit করুন। 
-[Click to See The Effect Name](https://developers.google.com/fonts/docs/getting_started)
+- সবগুলো Effect Name দেখতে নিচের লিংকে Visit করুন।
+  [Click to See The Effect Name](https://developers.google.com/fonts/docs/getting_started)
 
 ### Font Pairings
-- সুন্দর Design করার জন্য Font Pairing খুব গুরুত্বপূর্ণ। 
+
+- সুন্দর Design করার জন্য Font Pairing খুব গুরুত্বপূর্ণ।
 - একটা Website এ কোন Font এর সাথে কোন Font ভালো Suit করবে এই Combination করাকে Font Pairing বলে। যেমন ধরুনঃ Heading এ যদি A font দেয়া হয়, তাহলে Normal Text এ কি ফন্ট দিতে Design টা ভালো দেখাবে, এই বিষয়টাই হলো Font Pairing.
 
 ### Font Shortand Property
 
 - `font: font-style(optional) font-variant(optional) font-weight(optional) font-size(required)/line-height font-family(required);`
-- এখানে `font-size` এবং `font-family` কেবল Required, বাকি সব Property Optional. যেমনঃ 
+- এখানে `font-size` এবং `font-family` কেবল Required, বাকি সব Property Optional. যেমনঃ
 
 ```css
 p.b {
@@ -1834,7 +1860,8 @@ p.b {
 ```
 
 ## CSS Icons
-- বিভিন্ন Icon Library দ্বারা আমারা Website এ Icon অ্যাড করতে পারি। যেমনঃ Google Icon, Font Awesome, Bootstrap Icon ইত্যাদি। 
+
+- বিভিন্ন Icon Library দ্বারা আমারা Website এ Icon অ্যাড করতে পারি। যেমনঃ Google Icon, Font Awesome, Bootstrap Icon ইত্যাদি।
 
 ### Bootstrap Icon
 
@@ -1844,43 +1871,43 @@ p.b {
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
 </div>
 
-
 # Chapter-09: CSS Display
+
 - [CSS Display](#css-display)
 
 ## CSS Display
 
-- Layout Control করার জন্য CSS Display Property অনেক গুরুত্বপূর্ণ। 
+- Layout Control করার জন্য CSS Display Property অনেক গুরুত্বপূর্ণ।
 - প্রতিটি HTML Element এর একটি ডিফল্ট ডিসপ্লে Value থাকে। Defualt Value গুলো হলোঃ Inline এবং Block.
 - Display Property এইচটিএমএল এলিমেন্টের ডিফল্ট Display Value পরিবর্তন করতে ব্যবহৃত হয়।
 
 ## Block Element
-- A block-level element ALWAYS starts on a new line and takes up the full width available. (একটি Block Level Element নতুন লাইন দিয়ে শুরু হয় এবং যতটুকু Space Available আছে তার সবটাই দখল করে। ) Examples of block-level elements are `<div>`, `<p> ইত্যাদি। 
+
+- A block-level element ALWAYS starts on a new line and takes up the full width available. (একটি Block Level Element নতুন লাইন দিয়ে শুরু হয় এবং যতটুকু Space Available আছে তার সবটাই দখল করে। ) Examples of block-level elements are `<div>`, `<p> ইত্যাদি।
 
 ## Inline Element
+
 - An inline element DOES NOT start on a new line and only takes up as much width as necessary. (Inline Element নতুন লাইন দিয়ে শুরু হয় না এবং যতটুকু জায়গা প্রয়জন কেবল ততটুকু জায়গাই দখল করে)
- Examples of inline elements are `<span>`, `<a>`, `<img>` ইত্যাদি।
+  Examples of inline elements are `<span>`, `<a>`, `<img>` ইত্যাদি।
 
 ## একনজরে Display Property এর সমস্ত Values
 
-| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
-| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
-| 1      | inline                 | Inline Element এর মতো কাজ করে                                       |
-| 2      | block                | Block Element এর মতো কাজ করে                                       |
-| 3      | flex              | Flex Container তৈরি করার জন্য                                    |
-| 4      | grid                 | Grid Container তৈরি করার জন্য                                      |
-| 5      | inline-block                 | Inline Element এর মতোই কাজ করে তবে এই Element এ Width এবং Height দেয়া যায়                                      |
-| 6      | none                 | Element টি Completely removed করা হয় DOM থেকে                                      |
+| **No** | **Property Name and Value** | **Role/Action/Used For**                                                  |
+| ------ | --------------------------- | ------------------------------------------------------------------------- |
+| 1      | inline                      | Inline Element এর মতো কাজ করে                                             |
+| 2      | block                       | Block Element এর মতো কাজ করে                                              |
+| 3      | flex                        | Flex Container তৈরি করার জন্য                                             |
+| 4      | grid                        | Grid Container তৈরি করার জন্য                                             |
+| 5      | inline-block                | Inline Element এর মতোই কাজ করে তবে এই Element এ Width এবং Height দেয়া যায় |
+| 6      | none                        | Element টি Completely removed করা হয় DOM থেকে                             |
 
 ## `display: none` এবং `visibility: hidden` এর মধ্যে পার্থক্য
 
-- `display: none` এবং `visibility: hidden` দুইটিই Element কে Hide করে। পার্থক্য হলো `display: none` এমনভাবে কাজ করে যেন Element টি নেই, কিন্তু `visibility: hidden` এর কারনে Element টি Hide হলেও এর জায়গা ঠিকই দখল করে থাকে, ফলে DOM এর Layout এর কোন পরিবর্তন হয় না। 
-
+- `display: none` এবং `visibility: hidden` দুইটিই Element কে Hide করে। পার্থক্য হলো `display: none` এমনভাবে কাজ করে যেন Element টি নেই, কিন্তু `visibility: hidden` এর কারনে Element টি Hide হলেও এর জায়গা ঠিকই দখল করে থাকে, ফলে DOM এর Layout এর কোন পরিবর্তন হয় না।
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
 </div>
-
 
 # Chapter-10: CSS Max-width, Min-width, Max-height, Min-height
 
@@ -1891,9 +1918,10 @@ p.b {
 
 ## CSS Max-width
 
-- Max Width এর অনেক প্রয়োগ রয়েছে। ধরুনঃ একটি Div Element কে Width দেয়া হলো 700px. এখন যখন কোন কারনে Screen Size 700px এর কম হয়ে যায়, তখন Browser একটি Scroll Bar অ্যাড করে, যা UI এর Design এর Quality Low করে। এইখেত্রে যদি Width ব্যবহার না করে Max Width ব্যবহার করা যায়, তাহলে Screen যখন 700px এর চেয়ে ছোট হয়ে যাবে তখন ঐ Element-ও Screen এর সাথে সাথে ছোট হবে, ফলে Scroll Bar অ্যাড হবে না। 
+- Max Width এর অনেক প্রয়োগ রয়েছে। ধরুনঃ একটি Div Element কে Width দেয়া হলো 700px. এখন যখন কোন কারনে Screen Size 700px এর কম হয়ে যায়, তখন Browser একটি Scroll Bar অ্যাড করে, যা UI এর Design এর Quality Low করে। এইখেত্রে যদি Width ব্যবহার না করে Max Width ব্যবহার করা যায়, তাহলে Screen যখন 700px এর চেয়ে ছোট হয়ে যাবে তখন ঐ Element-ও Screen এর সাথে সাথে ছোট হবে, ফলে Scroll Bar অ্যাড হবে না।
 
 ## CSS Min-width
+
 - If the content is smaller than the minimum width, the minimum width will be applied.
 - If the content is larger than the minimum width, the `min-width` property has no effect.
 
@@ -1908,7 +1936,6 @@ p.b {
 
 - If the content is smaller than the minimum height, the minimum height will be applied.
 - If the content is larger than the minimum height, the min-height property has no effect.
-
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
@@ -1930,7 +1957,9 @@ p.b {
   - [Example of CSS Overflow Property](#example-of-css-overflow-property)
 
 ## CSS Position
-- CSS এ Position Property এর 5 টা Value আছেঃ 
+
+- CSS এ Position Property এর 5 টা Value আছেঃ
+
   - Static (default) - Element এর normal/default positioning behavior.
   - Relative
   - Absolute
@@ -1938,7 +1967,6 @@ p.b {
   - Sticky
 
 - Element এ যখন কোন Position এর Value Static বাদে অন্য বাকি 4 টার যেকোনো একটা দেয়া হয়, তখন `left`, `right`, `top`, `bottom` এগুলো Activate হয়, অর্থাৎ এগুলো কাজ করে, অন্যথায় এই Property গুলো কাজ করে না।
-
 
 ### Position Property Values
 
