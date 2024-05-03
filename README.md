@@ -48,7 +48,7 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |  [02](#project-02-simple-website-layout-with-float)  |   [Simple Website Layout with CSS Float](#project-02-simple-website-layout-with-float)   |     Watch Now     |                           Live Demo                           |
 | [03](#project-03-simple-website-layout-with-flexbox) | [Simple Website Layout with CSS Flexbox](#project-03-simple-website-layout-with-flexbox) |     Watch Now     |                           Live Demo                           |
 |                          04                          |                                                                                          |     Watch Now     |                           Live Demo                           |
-|      [05](#project-05-simple-3d-animation-page)      |             [Simple 3D Animation Page](#project-05-simple-3d-animation-page)             |  [Watch Now](#)   | [Live Demo](https://codepen.io/travelerabdulalim/pen/zYjPVQp) |
+|      [05](#project-05-simple-3d-animation-page)      |             [Simple 3D Animation Page](#project-05-simple-3d-animation-page)             |  [Watch Now](#)   | [Live Demo](https://codepen.io/FarmerAbdulAlim/pen/zYjPVQp) |
 |                          06                          |                                                                                          |     Watch Now     |                           Live Demo                           |
 |                          07                          |                                                                                          |     Watch Now     |                           Live Demo                           |
 |                          08                          |                                                                                          |     Watch Now     |                           Live Demo                           |
@@ -1525,11 +1525,12 @@ Explanation of the different parts:
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
 </div>
 
-# Chapter-08: CSS Outline, Text, Fonts, Icons, Lists
+# Chapter-08: CSS Outline, Text, Fonts & Icons
 
 - [CSS Outline](#css-outline)
 - [CSS Text](#css-text)
 - [CSS Fonts](#css-fonts)
+- [CSS Icons](#css-icons)
 
 ## CSS Outline
 
@@ -1711,15 +1712,207 @@ h1 {
 ![text shadow](./chapter-08/images/text-shadow.png)
 
 ## CSS Fonts
+- Website এর জন্য উপযুক্ত Font নির্বচন খুব গুরুত্বপূর্ণ। কারন পুরো Website এর সৌন্দর্য অনেকাংশে এই Font এর উপর নির্ভরশীল।
+- এছাড়া Font আপনার Website এর Brand Identity তৈরি করে। 
+
+### Generic Font
+- CSS-এ পাঁচটি জেনেরিক Font Family রয়েছে:
+  - **Serif:** সেরিফ ফন্টের প্রতিটি অক্ষরের প্রান্তে একটি ছোট স্ট্রোক থাকে। They create a sense of formality and elegance.
+  - **Sans-serif:** Sans-serif ফন্টে Clean Line থাকে (কোন  স্ট্রোক সংযুক্ত নেই)। They create a modern and minimalistic look.
+  - **Monospace:** Monospace ফন্টে সব Letters এর Fixed Width থাকে। They create a mechanical look. 
+  - **Cursive:** কার্সিভ ফন্ট মানুষের হাতের লেখার অনুকরণ করে।
+  - **Fantasy:** ফ্যান্টাসি ফন্ট হল Decorative ফন্ট।
+
+- সমস্ত Font আসলে উপরের এই ৫ টি Generic Font থেকেই আসে।
+
+![font](./chapter-08/images/font.png)
+![font 2](./chapter-08/images/font-2.png)
+
+Image Courtesy: W3 School
+- `font-family` Property ব্যবহার করে Font দিতে হয়। এই Property এর মধ্যে একাধিক Font দেয়া যায়। প্রথম এক বা একাধিক Font আমাদের পছন্দ অনুযায়ী দিতে হয় এবং শেষ Font টি এদের সাথে মিল রেখে একটি Generic Font দিতে হয়, যাতে যদি কোন কারনে Browser আমাদের দেয়া Font টি Load করতে ব্যর্থ হয়, তাহলে অন্তত শেষের দেয়া Generic Font টি Display করতে পারে। যেমনঃ
+
+```css
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+```
+### CSS Web Safe Fonts
+- Web Safe Font হল এমন ফন্ট যা Universally সমস্ত ব্রাউজার এবং ডিভাইস জুড়ে ইনস্টল করা থাকে। কিছু Web Safe Fonts এর তালিকাঃ 
+  - Arial (sans-serif)
+  - Verdana (sans-serif)
+  - Tahoma (sans-serif)
+  - Trebuchet MS (sans-serif)
+  - Times New Roman (serif)
+  - Georgia (serif)
+  - Garamond (serif)
+  - Courier New (monospace)
+  - Brush Script MT (cursive)
+
+### Fallback Fonts
+- যাইহোক, কোন 100% সম্পূর্ণরূপে Web Safe Fonts নেই। কোন একটি ফন্ট না পাওয়া বা সঠিকভাবে Install না হওয়ার সম্ভবনা সব সময়ই থাকে। অতএব, সর্বদা ফলব্যাক ফন্ট ব্যবহার করা খুবই গুরুত্বপূর্ণ।
+- এর মানে হল যে আপনার ফন্ট-ফ্যামিলি প্রপার্টিতে অনুরূপ "ব্যাকআপ ফন্ট" এর একটি তালিকা যোগ করা উচিত। যদি প্রথম ফন্ট কাজ না করে, ব্রাউজার পরেরটি চেষ্টা করবে, এবং পরেরটি, এবং এভাবে চলতে থাকবে। সর্বদা একটি জেনেরিক ফন্ট পরিবারের নাম দিয়ে তালিকাটি শেষ করুন।
+- উপরে যে ৫ টি Generic Font এর নাম দেয়া আছে, সেগুলোই Fallback হিসেবে Use করা উচিত।
+
+### Some Font Properties
+
+- font-variant প্রপার্টি নির্দিষ্ট করে যে একটি টেক্সট small-caps ফন্টে প্রদর্শিত হবে কি না। একটি small-caps ফন্টে, সমস্ত ছোট হাতের অক্ষর বড় হাতের অক্ষরে রূপান্তরিত হয়। যাইহোক, রূপান্তরিত বড় হাতের অক্ষরগুলি Text এর মূল বড় হাতের অক্ষরের তুলনায় ছোট হয়।
+
+| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
+| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1      | `font-style: italic`                 | Text Italic করার জন্য                                       |
+| 2      | `font-weight: bold`                | Text Bold করার জন্য                                       |
+| 3      | `font-variant: small-caps`              | Text গুলো Capital হবে কিন্তু Font Size আগের মতোই থাকবে অর্থাৎ বড় হবে না                                     |
+| 4      | `font-size: 20px`                 | Text এর Font Size দেয়ার জন্য                                      |
+
+
+### কিভাবে Google Font ব্যবহার করতে হয়
+- Google Font ফ্রি এবং ১০০০ এরও বেশি Fonts আছে।
+
+দুইভাবে Google Font ব্যবহার করা যায়ঃ
+- Head Element এ `<link>` tag টি ব্যবহার করে।
+- CSS ফাইলে `@import` rule ব্যবহার করে।
+যেমনঃ 
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+```
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+```
+
+
+### Enabling Font Effect on Google Fonts
+
+- প্রথমে Google API-এ `effect=effectname` add করুন, তারপর যে Element এ Effect টি ব্যবহার করা হবে সেই Element এ Clas অ্যাড করতে হবে। ক্লাসের নাম সবসময় `font-effect-` দিয়ে শুরু হবে এবং `effectname` দিয়ে শেষ হবে। যেমনঃ 
+
+```html
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="font-effect-fire">Sofia on Fire</h1>
+
+</body>
+```
+Output: 
+
+![effect](./chapter-08/images/effect.png)
+
+- সবগুলো Effect Name দেখতে নিচের লিংকে Visit করুন। 
+[Click to See The Effect Name](https://developers.google.com/fonts/docs/getting_started)
+
+### Font Pairings
+- সুন্দর Design করার জন্য Font Pairing খুব গুরুত্বপূর্ণ। 
+- একটা Website এ কোন Font এর সাথে কোন Font ভালো Suit করবে এই Combination করাকে Font Pairing বলে। যেমন ধরুনঃ Heading এ যদি A font দেয়া হয়, তাহলে Normal Text এ কি ফন্ট দিতে Design টা ভালো দেখাবে, এই বিষয়টাই হলো Font Pairing.
+
+### Font Shortand Property
+
+- `font: font-style(optional) font-variant(optional) font-weight(optional) font-size(required)/line-height font-family(required);`
+- এখানে `font-size` এবং `font-family` কেবল Required, বাকি সব Property Optional. যেমনঃ 
+
+```css
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+```
 
 ## CSS Icons
+- বিভিন্ন Icon Library দ্বারা আমারা Website এ Icon অ্যাড করতে পারি। যেমনঃ Google Icon, Font Awesome, Bootstrap Icon ইত্যাদি। 
 
-## CSS List
+### Bootstrap Icon
+
+### Google Icon
+
+<div align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</div>
 
 
-# Chapter-09: CSS Table and Display
+# Chapter-09: CSS Display
+- [CSS Display](#css-display)
+
+## CSS Display
+
+- Layout Control করার জন্য CSS Display Property অনেক গুরুত্বপূর্ণ। 
+- প্রতিটি HTML Element এর একটি ডিফল্ট ডিসপ্লে Value থাকে। Defualt Value গুলো হলোঃ Inline এবং Block.
+- Display Property এইচটিএমএল এলিমেন্টের ডিফল্ট Display Value পরিবর্তন করতে ব্যবহৃত হয়।
+
+## Block Element
+- A block-level element ALWAYS starts on a new line and takes up the full width available. (একটি Block Level Element নতুন লাইন দিয়ে শুরু হয় এবং যতটুকু Space Available আছে তার সবটাই দখল করে। ) Examples of block-level elements are `<div>`, `<p> ইত্যাদি। 
+
+## Inline Element
+- An inline element DOES NOT start on a new line and only takes up as much width as necessary. (Inline Element নতুন লাইন দিয়ে শুরু হয় না এবং যতটুকু জায়গা প্রয়জন কেবল ততটুকু জায়গাই দখল করে)
+ Examples of inline elements are `<span>`, `<a>`, `<img>` ইত্যাদি।
+
+## একনজরে Display Property এর সমস্ত Values
+
+| **No** | **Property Name and Value**                 | **Role/Action/Used For**                                                 |
+| ------ | ------------------------------------------- | ------------------------------------------------------------------------ |
+| 1      | inline                 | Inline Element এর মতো কাজ করে                                       |
+| 2      | block                | Block Element এর মতো কাজ করে                                       |
+| 3      | flex              | Flex Container তৈরি করার জন্য                                    |
+| 4      | grid                 | Grid Container তৈরি করার জন্য                                      |
+| 5      | inline-block                 | Inline Element এর মতোই কাজ করে তবে এই Element এ Width এবং Height দেয়া যায়                                      |
+| 6      | none                 | Element টি Completely removed করা হয় DOM থেকে                                      |
+
+## `display: none` এবং `visibility: hidden` এর মধ্যে পার্থক্য
+
+- `display: none` এবং `visibility: hidden` দুইটিই Element কে Hide করে। পার্থক্য হলো `display: none` এমনভাবে কাজ করে যেন Element টি নেই, কিন্তু `visibility: hidden` এর কারনে Element টি Hide হলেও এর জায়গা ঠিকই দখল করে থাকে, ফলে DOM এর Layout এর কোন পরিবর্তন হয় না। 
+
+
+<div align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</div>
+
 
 # Chapter-10: CSS Max-width, Min-width, Max-height, Min-height
+
+- [CSS Max-width](#css-max-width)
+- [CSS Min-width](#css-min-width)
+- [CSS Max-height](#css-max-height)
+- [CSS Min-height](#css-min-height)
+
+## CSS Max-width
+
+- Max Width এর অনেক প্রয়োগ রয়েছে। ধরুনঃ একটি Div Element কে Width দেয়া হলো 700px. এখন যখন কোন কারনে Screen Size 700px এর কম হয়ে যায়, তখন Browser একটি Scroll Bar অ্যাড করে, যা UI এর Design এর Quality Low করে। এইখেত্রে যদি Width ব্যবহার না করে Max Width ব্যবহার করা যায়, তাহলে Screen যখন 700px এর চেয়ে ছোট হয়ে যাবে তখন ঐ Element-ও Screen এর সাথে সাথে ছোট হবে, ফলে Scroll Bar অ্যাড হবে না। 
+
+## CSS Min-width
+- If the content is smaller than the minimum width, the minimum width will be applied.
+- If the content is larger than the minimum width, the `min-width` property has no effect.
+
+## CSS Max-height
+
+- If the content is larger than the maximum height, it will overflow. How the container will handle the overflowing content is defined by the `overflow` property.
+- If the content is smaller than the maximum height, the `max-height` property has no effect.
+
+- The value of the `max-height` property overrides the height property.
+
+## CSS Min-height
+
+- If the content is smaller than the minimum height, the minimum height will be applied.
+- If the content is larger than the minimum height, the min-height property has no effect.
+
+
+<div align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</div>
 
 # Chapter-11: CSS Position, Z-index, Overflow
 
@@ -1737,6 +1930,15 @@ h1 {
   - [Example of CSS Overflow Property](#example-of-css-overflow-property)
 
 ## CSS Position
+- CSS এ Position Property এর 5 টা Value আছেঃ 
+  - Static (default) - Element এর normal/default positioning behavior.
+  - Relative
+  - Absolute
+  - Fixed
+  - Sticky
+
+- Element এ যখন কোন Position এর Value Static বাদে অন্য বাকি 4 টার যেকোনো একটা দেয়া হয়, তখন `left`, `right`, `top`, `bottom` এগুলো Activate হয়, অর্থাৎ এগুলো কাজ করে, অন্যথায় এই Property গুলো কাজ করে না।
+
 
 ### Position Property Values
 
@@ -1760,7 +1962,7 @@ The element is positioned relative to its first positioned (not static) ancestor
 
 #### Example of Absolute Property
 
-[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/vYjOJWd)
+[Open Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/vYjOJWd)
 
 ### Fixed
 
@@ -1769,7 +1971,7 @@ Fixed Propertyও Absolute এর মত কোন একটা Parent Element �
 
 #### Example of Fixed Property
 
-[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/oNdXeEe)
+[Open Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/oNdXeEe)
 
 ### Relative
 
@@ -1777,7 +1979,7 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
 
 #### Example of Relative Property
 
-[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/dyeozmZ)
+[Open Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/dyeozmZ)
 
 ### Sticky
 
@@ -1788,7 +1990,7 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
 
 #### Example of Sticky Property
 
-[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/abGOyjJ)
+[Open Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/abGOyjJ)
 
 ## CSS Z-index Property
 
@@ -1800,7 +2002,7 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
 
 ### Example of Z-index Property
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/jOxPQGZ)
+[Open Live Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/jOxPQGZ)
 
 ## CSS Overflow
 
@@ -1818,7 +2020,7 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
 
 ### Example of CSS Overflow Property
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/MWGaJXB)
+[Open Live Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/MWGaJXB)
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
@@ -2454,7 +2656,7 @@ Example:
 
 #### Implementation Codes of the Above Topics
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/JjvJpEO)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/JjvJpEO)
 
 #### CSS - The ':first-child' Pseudo-class
 
@@ -2482,7 +2684,7 @@ p:first-child {
 
 এখানে Paragraph 1 এবং Paragraph 4 Select হবে।
 
-[Open Example in CodePen](https://codepen.io/travelerabdulalim/pen/GRdEQeV)
+[Open Example in CodePen](https://codepen.io/FarmerAbdulAlim/pen/GRdEQeV)
 
 #### Match The First `<i>` Element in All `<p>` Elements
 
@@ -2505,7 +2707,7 @@ p i:first-child {
 এখানে লক্ষ্য করুন, Div Element এর মধ্যে যে প্রথম i element আছে, সেটা কিন্তু Select হয় নাই।
 
 Example Source Code:
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/KKRqLxM)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/KKRqLxM)
 
 #### Match all `<i>` elements in all first child `<p>` elements
 
@@ -2551,7 +2753,7 @@ Screenshot:
 
 Example Codes:
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/XWqgLyo)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/XWqgLyo)
 
 ### All CSS Pseudo Classes
 
@@ -2631,7 +2833,7 @@ Example:
 
 ![target](./chapter-14-css-selectors/images/2.png)
 
-[Open Example Project in CodePend](https://codepen.io/travelerabdulalim/pen/qBYXBMz)
+[Open Example Project in CodePend](https://codepen.io/FarmerAbdulAlim/pen/qBYXBMz)
 
 #### Pseudo-class `:checked`
 
@@ -2666,7 +2868,7 @@ Screenshot:
 
 ![checked](./chapter-14-css-selectors/images/3.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/ZEoJYXN)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/ZEoJYXN)
 
 #### Pseudo-class `:enabled` and `:disabled`
 
@@ -2702,7 +2904,7 @@ Screenshot:
 
 ![enabled](./chapter-14-css-selectors/images/4.png)
 
-[Open in Codepen](https://codepen.io/travelerabdulalim/pen/qBYXdWm)
+[Open in Codepen](https://codepen.io/FarmerAbdulAlim/pen/qBYXdWm)
 
 #### `:focus` Pseudo-class
 
@@ -2729,7 +2931,7 @@ Screenshot:
 
 ![focus](./chapter-14-css-selectors/images/5.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/NWMvNyK)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/NWMvNyK)
 
 #### `:in-range` and `:out-of-range` Pseudo-class
 
@@ -2757,7 +2959,7 @@ Screenshot:
 
 ![in-range](./chapter-14-css-selectors/images/6.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/jOxLqdq)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/jOxLqdq)
 
 #### Valid and Invalid Pseud-class
 
@@ -2783,7 +2985,7 @@ Screenshot:
 
 ![valid](./chapter-14-css-selectors/images/7.png)
 
-[Open in Codepen](https://codepen.io/travelerabdulalim/pen/abGyEyb)
+[Open in Codepen](https://codepen.io/FarmerAbdulAlim/pen/abGyEyb)
 
 #### Optional and Required Pseudo-class
 
@@ -2810,7 +3012,7 @@ Screenshot:
 
 ![optional](./chapter-14-css-selectors/images/8.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/bGMrajK)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/bGMrajK)
 
 #### Read-only and Read-write Pseudo-class
 
@@ -2841,7 +3043,7 @@ Screenshot:
 
 ![read-only](./chapter-14-css-selectors/images/9.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/MWGvQgg)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/MWGvQgg)
 
 #### Empty Pseudo-class
 
@@ -2866,7 +3068,7 @@ Screenshot:
 
 ![empty](./chapter-14-css-selectors/images/10.png)
 
-[Open in CodPen](https://codepen.io/travelerabdulalim/pen/yLjoveB)
+[Open in CodPen](https://codepen.io/FarmerAbdulAlim/pen/yLjoveB)
 
 #### First-child and Last-child Pseudo-class
 
@@ -2901,7 +3103,7 @@ Screenshot:
 
 ![first and last child](./chapter-14-css-selectors/images/11.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/yLjovoN)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/yLjovoN)
 
 #### First-of-type and Last-of-type Pseudo-class
 
@@ -2938,7 +3140,7 @@ Screenshot:
 
 ![first-of-type](./chapter-14-css-selectors/images/12.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/xxjLYyP)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/xxjLYyP)
 
 #### :not Pseudo-class
 
@@ -3001,7 +3203,7 @@ Screenshot:
 
 ![nth](./chapter-14-css-selectors/images/14.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/abGyYdG)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/abGyYdG)
 
 #### nth-last-child() Pseudo-class
 
@@ -3035,7 +3237,7 @@ Screenshot:
 
 ![nth-last](./chapter-14-css-selectors/images/15.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/rNvzdMp)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/rNvzdMp)
 
 #### nth-of-type() Pseudo-class
 
@@ -3084,7 +3286,7 @@ Screenshot:
 
 ![nth-of-type](./chapter-14-css-selectors/images/16.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/wvjqmQg)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/wvjqmQg)
 
 #### nth-of-last-type()
 
@@ -3119,7 +3321,7 @@ Screenshot:
 
 ![only-of-type](./chapter-14-css-selectors/images/17.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/XWqaqdG)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/XWqaqdG)
 
 #### only-child Pseudo-class
 
@@ -3150,7 +3352,7 @@ Screenshot:
 
 ![only-child](./chapter-14-css-selectors/images/18.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/LYmjmyp)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/LYmjmyp)
 
 ### 04. All CSS Pseudo Elements
 
@@ -3207,7 +3409,7 @@ p::selection {
 
 #### Source Codes
 
-[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/YzLxLJV)
+[Open Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/YzLxLJV)
 
 #### Marker Pseudo Element
 
@@ -3239,7 +3441,7 @@ Screenshot:
 
 ![marker](./chapter-14-css-selectors/images/20.png)
 
-[Open in Codepen](https://codepen.io/travelerabdulalim/pen/abGyGXd)
+[Open in Codepen](https://codepen.io/FarmerAbdulAlim/pen/abGyGXd)
 
 ### 05. Attribute Selectors
 
@@ -3313,7 +3515,7 @@ a[href*="google"] {
 
 #### Open in Codepen
 
-[Open in Codepen](https://codepen.io/travelerabdulalim/pen/eYrEKBJ)
+[Open in Codepen](https://codepen.io/FarmerAbdulAlim/pen/eYrEKBJ)
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
@@ -3637,11 +3839,11 @@ Note: Practice the properties as more as you can!
 
 ### CSS Grid Layout Example-01
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/rNvLeXL)
+[Open Live Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/rNvLeXL)
 
 ### Full Responsive with Auto-fit and Minmax in Grid
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/gOzMMvN)
+[Open Live Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/gOzMMvN)
 
 ### CSS Grid Tips
 
@@ -3825,7 +4027,7 @@ Output Screenshot:
 
 ### Linear Gradient Source Codes
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/gOzMQYd)
+[Open Live Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/gOzMQYd)
 
 ## Radial Gradients
 
@@ -4038,7 +4240,7 @@ Screenshot:
 
 ### Radial Gradients Source Codes of All Examples
 
-[Open Live Project in CodePen](https://codepen.io/travelerabdulalim/pen/poVELjM)
+[Open Live Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/poVELjM)
 
 ## Conic Gradients
 
@@ -4273,7 +4475,7 @@ Screenshot:
 
 ## Open 2D Transforms Source Codes in CodePen
 
-[Open Project in CodePen](https://codepen.io/travelerabdulalim/pen/YzLrbYE)
+[Open Project in CodePen](https://codepen.io/FarmerAbdulAlim/pen/YzLrbYE)
 
 ## CSS 3D Transforms
 
@@ -4317,7 +4519,7 @@ Screenshot:
 
 ### Book Opening and Door Opening Live Project
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/xxjPqKy)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/xxjPqKy)
 
 ### Perspective Origin
 
@@ -4333,7 +4535,7 @@ Screenshot:
 
 ![translatez](./chapter-22-css-2d-and-3d-transforms/images/13.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/poVdVKL)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/poVdVKL)
 
 ### ScaleZ()
 
@@ -4344,7 +4546,7 @@ Screenshot:
 
 ![scalez](./chapter-22-css-2d-and-3d-transforms/images/14.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/MWGOXKL)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/MWGOXKL)
 
 ### CSS Tranform Style Property
 
@@ -4356,7 +4558,7 @@ Screenshot:
 
 ![transtyle](./chapter-22-css-2d-and-3d-transforms/images/15.png)
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/bGMYjeP)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/bGMYjeP)
 
 ### Random Tips
 
@@ -4435,7 +4637,7 @@ div {
   - `alternative` ব্যবহার করলে প্রথমে সোজাভাবে তারপর উল্টাভাবে animation হবে। এভাবে যতগুলো Iteration দেয়া থাকবে ততবার চলতে থাকবে।
     `alternative-reverse` ব্যবহার করলে প্রথমে উল্টাভাবে তারপর সোজাভাবে animation হতে থাকবে। এভাবে যতগুলো Iteration দেয়া থাকবে ততবার চলতে থাকবে।
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/ZEommZJ)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/ZEommZJ)
 
 ### Specify the Speed Curve of the Animation
 
@@ -4447,7 +4649,7 @@ div {
 - `ease-out`, Animation এর শেষে Speed Slow থাকে।
 - `ease-in-out`, Animation এর শুরু থেকে শেষ পর্যন্ত Speed Slow থাকে।
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/yLjQZJG)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/yLjQZJG)
 
 ### Animation Fill Mode Property
 
@@ -4479,11 +4681,11 @@ div {
 ### Project Screenshot
 
 _Click the following image to view Project_
-[![Project 2](./project-02-simple-website-layout-with-basic-css/images/layout1.png)](https://codepen.io/travelerabdulalim/pen/QWrrWgV)
+[![Project 2](./project-02-simple-website-layout-with-basic-css/images/layout1.png)](https://codepen.io/FarmerAbdulAlim/pen/QWrrWgV)
 
 ### Live Project Link
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/QWrrWgV)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/QWrrWgV)
 
 ### Video Explanation
 
@@ -4544,11 +4746,11 @@ Coming Soon...
 ### Project Screenshot
 
 _Click the following image to view Project_
-[![Project 2](./project-04-simple-website-layout-with-css-grid/images/grid-layout.png)](https://codepen.io/travelerabdulalim/pen/poVVaYa)
+[![Project 2](./project-04-simple-website-layout-with-css-grid/images/grid-layout.png)](https://codepen.io/FarmerAbdulAlim/pen/poVVaYa)
 
 ### Live Project Link
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/poVVaYa)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/poVVaYa)
 
 ### Video Explanation
 
@@ -4575,11 +4777,11 @@ Coming Soon...
 ### Project Screenshot
 
 _Click the following image to view Project_
-[![Project 5](./project-05-simple-3d-animation-page/images/project5.png)](https://codepen.io/travelerabdulalim/pen/zYjPVQp)
+[![Project 5](./project-05-simple-3d-animation-page/images/project5.png)](https://codepen.io/FarmerAbdulAlim/pen/zYjPVQp)
 
 ### Live Project Link
 
-[Open in CodePen](https://codepen.io/travelerabdulalim/pen/zYjPVQp)
+[Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/zYjPVQp)
 
 ### Video Explanation
 
