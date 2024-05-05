@@ -1958,6 +1958,8 @@ p.b {
 
 ## CSS Position
 
+- কোন একটি Element কে Move করানোর জন্য CSS Position Property ব্যবহার করা হয়।
+
 - CSS এ Position Property এর 5 টা Value আছেঃ
 
   - Static (default) - Element এর normal/default positioning behavior.
