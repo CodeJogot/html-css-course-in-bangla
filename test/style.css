@@ -1,25 +1,18 @@
-table,
-      td,
-      th {
-        border: 1px solid blue;
-      }
-
-      table {
-        border-collapse: collapse;
-      }
-      td,
-      th {
-        padding: 10px;
-        text-align: center;
-      }
-    
-
-#first-row {
-    background-color: brown;
-    color: white;
+.container {
+  position: relative;
+  background-color: black;
 }
-#m14 {
-    background-color: red;
-    font-weight: bold;
-    color: white;
+
+.container div {
+  width: 200px;
+  height: 200px;
+}
+.box1 {
+  background-color: #27ae60;
+}
+.box2 {
+  background-color: #8e44ad;
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
 }

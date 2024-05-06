@@ -2026,8 +2026,8 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
 
 ### How Z-index Works
 
-- The `z-index` property specifies the stack order of an element. An element can have a positive or negative stack order.
-- z-index only works on `positioned elements` (position: absolute, position: relative, position: fixed, or position: sticky) and `flex items` (elements that are direct children of display: flex elements).
+- `z-index` Property একটি Element এর স্ট্যাক অর্ডার নির্দিষ্ট করে। একটি Element এর Positive বা Negative স্ট্যাক অর্ডার থাকতে পারে।
+- `z-index` শুধুমাত্র Positioned Elements (position: absolute, position: relative, position: fixed, or position: sticky) এবং `flex-items` (যে Elements গুলো Directly `display:flex` element এর Children) এ কাজ করে।
 - An element with greater stack order is always above an element with a lower stack order. অর্থাৎ যে Element এর Z-index যত বেশি সে Element Stack এর তত উপরে থাকবে।
 
 ### Example of Z-index Property
@@ -2083,9 +2083,9 @@ The element is positioned relative to its normal position, so "left:20px" adds 2
 
 ## CSS Float Property
 
-**Note: CSS Float Property is now deprecated in modern web-programming concept.**
+- CSS `float` property কোন একটা Element কে তাঁর Container এর ডানে বা বামে নিয়ে যায়। এবং Text বা অন্যান্য Elements যাতে ঐ Floated Element কে Wrap করতে পারে বা জড়িয়ে ধরে থাকতে পারে সেই Permission দেয়।
 
-CSS `float` property কোন একটা Element কে তাঁর Container এর ডানে বা বামে নিয়ে যায়। এবং Text বা অন্যান্য Elements যাতে ঐ Floated Element কে Wrap করতে পারে বা জড়িয়ে ধরে থাকতে পারে সেই Permission দেয়।
+**Note: CSS Float Property is now deprecated in modern web-programming concept.**
 
 **Float Value**
 
