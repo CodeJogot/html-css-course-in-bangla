@@ -19,7 +19,7 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |          [10](#chapter-10-css-max-width-min-width-max-height-min-height)          |                  [CSS Max-width, Min-width, Max-height and Min-height](#chapter-10-css-max-width-min-width-max-height-min-height)                   |     Watch Now     |
 |                  [11](#chapter-11-css-position-z-index-overflow)                  |                                    [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                                     |     Watch Now     |
 |                   [12](#chapter-12-css-float-display-alignment)                   |                                     [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                                     |     Watch Now     |
-|                           [13](#chapter-13-css-flexbox)                           |                                                       [CSS Flexbox](#chapter-13-css-flexbox)                                                        |     Watch Now     |
+|                           [13](#chapter-13)                           |                                                       [CSS Flexbox](#chapter-13)                                                        |     Watch Now     |
 |                          [14](#chapter-14-css-selectors)                          |                                                     [CSS Selectors](#chapter-14-css-selectors)                                                      |     Watch Now     |
 |                      [15](#chapter-15-css-text-fonts--icons)                      |                                           [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                                            |     Watch Now     |
 |            [16](#chapter-16-css-links-lists-tables-display--max-width)            |                        [CSS Links, Lists, Tables, Display, Max-width](#chapter-16-css-links-lists-tables-display--max-width)                        |     Watch Now     |
@@ -2313,6 +2313,8 @@ div {
 
 ## CSS Flexbox
 
+- Flexible Box থেকে Flexbox নামকরন। 
+
 ### What is Flexbox?
 
 Flexbox is a CSS box model to easily **layout**, **align** and **distribute** space among items within a **container** either horizontally or vertically.
@@ -2338,7 +2340,7 @@ Before the Flexbox Layout module, there were four layout modes:
 
 নিচে একটি Flex Container তৈরি করে দেখানো হলোঃ
 
-![Flex Container](./chapter-13-css-flexbox/images/flex-container.png)
+![Flex Container](./chapter-13/images/flex-container.png)
 
 এখানে Flex Container হলো Blue Area Element. এবং তিনটি Flex Items হলো 1, 2 এবং 3.
 
@@ -2378,11 +2380,11 @@ Example: [Open in CodePen](https://codepen.io/CodeJogot/pen/WNaaXwJ)
 - The `justify-content: space-around;` flex items গুলোর শুরু ও শেষে সমান Space নিয়ে তাদের Horizontally মাঝখানে রাখে ।
 - The `justify-content: space-between;` flex items গুলোর শুধু মাঝে সমান Space নিয়ে তাদের Horizontally মাঝখানে রাখে ।
 
-![center](./chapter-13-css-flexbox/images/center.png)
-![flex start](./chapter-13-css-flexbox/images/flex-start.png)
-![flex end](./chapter-13-css-flexbox/images/flex-end.png)
-![space around](./chapter-13-css-flexbox/images/space-around.png)
-![space between](./chapter-13-css-flexbox/images/space-between.png)
+![center](./chapter-13/images/center.png)
+![flex start](./chapter-13/images/flex-start.png)
+![flex end](./chapter-13/images/flex-end.png)
+![space around](./chapter-13/images/space-around.png)
+![space between](./chapter-13/images/space-between.png)
 
 ### JUSTIFY CONTENT Property in Flex Example
 
@@ -2398,10 +2400,10 @@ The align-items property is used to align the flex items.
 - `align-items: stretch;` stretches the flex items to fill the container (this is default).
 - `align-items: baseline;` aligns the flex items such as their baselines aligns.
 
-![align-items: center](./chapter-13-css-flexbox/images/align-center.png)
-![align-items: flex start](./chapter-13-css-flexbox/images/align-flex-start.png)
-![align-items: flex end](./chapter-13-css-flexbox/images/align-flex-end.png)
-![align-items: baseline](./chapter-13-css-flexbox/images/align-baseline.png)
+![align-items: center](./chapter-13/images/align-center.png)
+![align-items: flex start](./chapter-13/images/align-flex-start.png)
+![align-items: flex end](./chapter-13/images/align-flex-end.png)
+![align-items: baseline](./chapter-13/images/align-baseline.png)
 
 ### ALIGN ITEMS Property in Flex Example
 
@@ -2421,9 +2423,13 @@ The align-items property is used to align the flex items.
 
 ### Align Content vs Align Items Example
 
-![align-content](./chapter-13-css-flexbox/images/align-content.png)
+![align-content](./chapter-13/images/align-content.png)
 
-![align-items](./chapter-13-css-flexbox/images/align-items.png)
+![align-items](./chapter-13/images/align-items.png)
+
+### Flexbox At A Glance
+
+![flexbox](./chapter-10/flexbox-1.png)
 
 ### কিছু গুরুত্বপূর্ণ Flex Items Property
 
@@ -2450,7 +2456,14 @@ The align-items property is used to align the flex items.
 
 - `flex` property হলো `flex-grow`, `flex-shrink` এবং `flex-basis` এর shorthand property. যেমন, `flex: 1 1 200px;`
 
-### A Basic Website Layout Using CSS Flexbox
+### Useful Resources to Learn Flexbox More
+
+- [Download Flexbox CheatSheet](./chapter-13/resources/flexboxsheet.pdf)
+- [Tutorial From CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Complete Guide From FreeCodeCamp](https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/)
+- [A Comprehensive Tutorial From CodeJogot](https://youtu.be/4HTy7Pbp8Es)
+- [Another Flexbox Tutorial From CodeJogot](https://youtu.be/REc8_1DdL64)
+
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
