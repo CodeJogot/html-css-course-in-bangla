@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    gap: 5px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m m n n n n n r r r r"
+    "m m m f f f f f f f f f"
+    ;
+}
+.container > div {
+    background-color: #e67e22;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > div:nth-child(even) {
+    background-color: #27ae60;
+}
+.header {
+    grid-area: h;
+}
+.menu {
+    grid-area: m;
+}
+.main {
+    grid-area: n;
+}
+.right {
+    grid-area: r;
+}
+.footer {
+    grid-area: f;
+}

@@ -20,7 +20,7 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |                  [11](#chapter-11-css-position-z-index-overflow)                  |                                    [CSS Position, Z-index, Overflow](#chapter-11-css-position-z-index-overflow)                                     |     Watch Now     |
 |                   [12](#chapter-12-css-float-display-alignment)                   |                                     [CSS Float, Display and Alignment](#chapter-12-css-float-display-alignment)                                     |     Watch Now     |
 |                           [13](#chapter-13)                           |                                                       [CSS Flexbox](#chapter-13)                                                        |     Watch Now     |
-|                          [14](#chapter-14-css-selectors)                          |                                                     [CSS Selectors](#chapter-14-css-selectors)                                                      |     Watch Now     |
+|                          [14](#chapter-14)                          |                                                     [CSS Selectors](#chapter-14)                                                      |     Watch Now     |
 |                      [15](#chapter-15-css-text-fonts--icons)                      |                                           [CSS Text, Fonts and Icons](#chapter-15-css-text-fonts--icons)                                            |     Watch Now     |
 |            [16](#chapter-16-css-links-lists-tables-display--max-width)            |                        [CSS Links, Lists, Tables, Display, Max-width](#chapter-16-css-links-lists-tables-display--max-width)                        |     Watch Now     |
 |               [17](#chapter-17-css-image-gallery-and-image-sprites)               |                               [CSS Image Gallery and Image Sprites](#chapter-17-css-image-gallery-and-image-sprites)                                |     Watch Now     |
@@ -1170,7 +1170,7 @@ Photo Courtesy: W3 School
 
 - CSS Selector HTML Elements কে Select করে Style করে। তারমানে, CSS Selector এর কাজ হলো HTML Elements কে Select করা
 
-CSS Selector সম্পর্কে [_Chapter-14_](#chapter-14-css-selectors) এ বিস্তারিত আলচনা করা হয়েছে।
+CSS Selector সম্পর্কে [_Chapter-14_](#chapter-14) এ বিস্তারিত আলচনা করা হয়েছে।
 
 আমরা এখানে শুধুমাত্র Simple Selector নিয়ে আলোচনা করবো। ঐসব Selector কে Simple Selector বলে যারা HTML Elements কে Name, ID এবং Class দ্বারা Select করে।
 
@@ -2463,7 +2463,7 @@ The align-items property is used to align the flex items.
 - [A Complete Guide From FreeCodeCamp](https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/)
 - [A Comprehensive Tutorial From CodeJogot](https://youtu.be/4HTy7Pbp8Es)
 - [Another Flexbox Tutorial From CodeJogot](https://youtu.be/REc8_1DdL64)
-
+- [Tutorial From W3 School](https://www.w3schools.com/css/css3_flexbox.asp)
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
@@ -2792,7 +2792,7 @@ p:first-child i {
 
 Screenshot:
 
-![1](./chapter-14-css-selectors/images/1.png)
+![1](./chapter-14/images/1.png)
 
 Example Codes:
 
@@ -2874,7 +2874,7 @@ Example:
 
 #### Screenshot
 
-![target](./chapter-14-css-selectors/images/2.png)
+![target](./chapter-14/images/2.png)
 
 [Open Example Project in CodePend](https://codepen.io/FarmerAbdulAlim/pen/qBYXBMz)
 
@@ -2909,7 +2909,7 @@ input:checked {
 
 Screenshot:
 
-![checked](./chapter-14-css-selectors/images/3.png)
+![checked](./chapter-14/images/3.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/ZEoJYXN)
 
@@ -2945,7 +2945,7 @@ input[type="text"]:disabled {
 
 Screenshot:
 
-![enabled](./chapter-14-css-selectors/images/4.png)
+![enabled](./chapter-14/images/4.png)
 
 [Open in Codepen](https://codepen.io/FarmerAbdulAlim/pen/qBYXdWm)
 
@@ -2972,7 +2972,7 @@ input:focus {
 
 Screenshot:
 
-![focus](./chapter-14-css-selectors/images/5.png)
+![focus](./chapter-14/images/5.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/NWMvNyK)
 
@@ -3000,7 +3000,7 @@ input:out-of-range {
 
 Screenshot:
 
-![in-range](./chapter-14-css-selectors/images/6.png)
+![in-range](./chapter-14/images/6.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/jOxLqdq)
 
@@ -3026,7 +3026,7 @@ input:invalid {
 
 Screenshot:
 
-![valid](./chapter-14-css-selectors/images/7.png)
+![valid](./chapter-14/images/7.png)
 
 [Open in Codepen](https://codepen.io/FarmerAbdulAlim/pen/abGyEyb)
 
@@ -3053,7 +3053,7 @@ input:optional {
 
 Screenshot:
 
-![optional](./chapter-14-css-selectors/images/8.png)
+![optional](./chapter-14/images/8.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/bGMrajK)
 
@@ -3084,7 +3084,7 @@ input:read-write {
 
 Screenshot:
 
-![read-only](./chapter-14-css-selectors/images/9.png)
+![read-only](./chapter-14/images/9.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/MWGvQgg)
 
@@ -3109,7 +3109,7 @@ p:empty {
 
 Screenshot:
 
-![empty](./chapter-14-css-selectors/images/10.png)
+![empty](./chapter-14/images/10.png)
 
 [Open in CodPen](https://codepen.io/FarmerAbdulAlim/pen/yLjoveB)
 
@@ -3144,7 +3144,7 @@ p:last-child {
 
 Screenshot:
 
-![first and last child](./chapter-14-css-selectors/images/11.png)
+![first and last child](./chapter-14/images/11.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/yLjovoN)
 
@@ -3181,7 +3181,7 @@ p:last-of-type {
 
 Screenshot:
 
-![first-of-type](./chapter-14-css-selectors/images/12.png)
+![first-of-type](./chapter-14/images/12.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/xxjLYyP)
 
@@ -3212,7 +3212,7 @@ p {
 
 Screenshot:
 
-![not](./chapter-14-css-selectors/images/13.png)
+![not](./chapter-14/images/13.png)
 
 #### :nth-child() Pseudo-class
 
@@ -3244,7 +3244,7 @@ p:nth-child(2) {
 
 Screenshot:
 
-![nth](./chapter-14-css-selectors/images/14.png)
+![nth](./chapter-14/images/14.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/abGyYdG)
 
@@ -3278,7 +3278,7 @@ p:nth-last-child(2) {
 
 Screenshot:
 
-![nth-last](./chapter-14-css-selectors/images/15.png)
+![nth-last](./chapter-14/images/15.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/rNvzdMp)
 
@@ -3327,7 +3327,7 @@ li:nth-of-type(2) {
 
 Screenshot:
 
-![nth-of-type](./chapter-14-css-selectors/images/16.png)
+![nth-of-type](./chapter-14/images/16.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/wvjqmQg)
 
@@ -3362,7 +3362,7 @@ p:only-of-type {
 
 Screenshot:
 
-![only-of-type](./chapter-14-css-selectors/images/17.png)
+![only-of-type](./chapter-14/images/17.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/XWqaqdG)
 
@@ -3393,7 +3393,7 @@ p:only-child {
 
 Screenshot:
 
-![only-child](./chapter-14-css-selectors/images/18.png)
+![only-child](./chapter-14/images/18.png)
 
 [Open in CodePen](https://codepen.io/FarmerAbdulAlim/pen/LYmjmyp)
 
@@ -3448,7 +3448,7 @@ p::selection {
 
 #### Screenshot
 
-![pseudo-elements](./chapter-14-css-selectors/images/19.png)
+![pseudo-elements](./chapter-14/images/19.png)
 
 #### Source Codes
 
@@ -3482,7 +3482,7 @@ Example:
 
 Screenshot:
 
-![marker](./chapter-14-css-selectors/images/20.png)
+![marker](./chapter-14/images/20.png)
 
 [Open in Codepen](https://codepen.io/FarmerAbdulAlim/pen/abGyGXd)
 
@@ -3510,14 +3510,14 @@ Note: This table has some type because of vs-code extensions, plz visit https://
   >
   <a href="http://google.com">Google</a>
   <img
-    src="/chapter-14-css-selectors/images/logo.png"
+    src="/chapter-14/images/logo.png"
     title="Codejogot Logo"
     alt="CodeJogot"
     width="300px"
     height="300px"
   />
   <img
-    src="/chapter-14-css-selectors/images/fb-cover.png"
+    src="/chapter-14/images/fb-cover.png"
     title=" at Dhaka"
     alt="CodeJogot"
     width="300px"
@@ -3554,7 +3554,7 @@ a[href*="google"] {
 
 #### Screenshot
 
-![attr](./chapter-14-css-selectors/images/21.png)
+![attr](./chapter-14/images/21.png)
 
 #### Open in Codepen
 
@@ -3953,7 +3953,7 @@ Credit: W3Schools
 
 ### Basic Concepts of CSS Gradients
 
-- CSS gradients let you display smooth transitions between two or more specified colors.
+- CSS Gradient দিয়ে দুই বা ততোধিক রঙের মধ্যে Smooth Transition (এক রং থেকে অন্য রং এ পরিবর্তন হওয়াকে Transition বলে) করা হয়। 
 
 ### Types of Gradients
 
@@ -3963,7 +3963,7 @@ Credit: W3Schools
 
 ## Linear Gradients
 
-- Linear Gradients তৈরি করতে অন্তত ২ টি Colors লাগবে। ধরি, `background-image: linear-gradient(red, blue);` তাহলে লাল রং থেকে নীল রং Transition হবে, উপর থেকে নিচ বরাবর (Top to Bottom), যেটা By default প্রপার্টি, আমরা চাইলে এই By default প্রপার্টিকে পরিবর্তন করতে পারি।
+- Linear Gradients তৈরি করতে অন্তত ২ টি Colors লাগবে। ধরি, `background-image: linear-gradient(red, blue);` তাহলে লাল রং ধিরে ধিরে নীল রং Transition হবে, উপর থেকে নিচ বরাবর (Top to Bottom), যেটা By default প্রপার্টি, আমরা চাইলে Transition এর Direction পরিবর্তন করতে পারি।
 
 ### Syntax of Linear Gradients
 
@@ -4004,7 +4004,7 @@ Output Screenshot:
 ### Direction - 180deg
 
 যদি Direction এর উপর আমরা আরও বেশি Control নিতে চাই, তাহলে আমাদের যে Pre-defined Directions (to bottom, to top, to right, to left, to bottom right, etc.) আছে, এগুলোর বদলে আমরা Angle ব্যবহার করতে পারি। A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".
-যেহেতু `to bottom` হলো by default property, তাই `180deg` একইভাবে by default property. অর্থাৎ প্রথম ও দ্বিতীয় Color এর মধ্যে যদি একটা Line টানা যায়, সেই Line ভূমির সাথে 180 Degree কোন করে থাকবে, এইটা by default. এখন তুমি চাইলে এই Degree কম বেশি করতে পারো।
+যেহেতু `to bottom` হলো by default property, তাই `180deg` একইভাবে by default property. অর্থাৎ প্রথম ও দ্বিতীয় Color এর মধ্যে যদি একটা Line টানা যায়, সেই Line ভূমির সাথে 180 Degree কোন করে থাকবে, এইটা by default. এখন আপনি চাইলে এই Degree কম বেশি করতে পারেন।
 
 Example: `background-image: linear-gradient(180deg, red, yellow);`
 
@@ -4030,7 +4030,7 @@ Output Screenshot:
 
 ### Direction - 20% 70%
 
-**Example: `background-image: linear-gradient(red 20%, yellow 70%);` এর অর্থ হলো Position 20% থেকে Position 70% পর্যন্ত Red থেকে Yellow Color এ Transition হবে। এবং 0 থেকে 20% Solid Red ও 70% থেকে 100% Solid Yellow Color থাকবে। Position ও Percentage এর বিষয়টা খুব ভালো করে খেয়াল করো এবং বুঝার চেষ্টা করো, কারন এই বিষয়ে খুব একটা ভালো Tutorial Online এ নেই বললেই চলে।**
+**Example: `background-image: linear-gradient(red 20%, yellow 70%);` এর অর্থ হলো Position 20% থেকে Position 70% পর্যন্ত Red থেকে Yellow Color এ Transition হবে। এবং 0 থেকে 20% Solid Red ও 70% থেকে 100% Solid Yellow Color থাকবে। Position ও Percentage এর বিষয়টা খুব ভালো করে খেয়াল করেন এবং বুঝার চেষ্টা করেন, কারন এই বিষয়ে খুব একটা ভালো Tutorial Online এ নেই বললেই চলে।**
 
 Output Screenshot:
 
@@ -4052,7 +4052,7 @@ Example: `background-image: linear-gradient(to top right, red 20%, green 20% 80%
 
 ### Using Transparency as Direction
 
-অর্থাৎ এখানে আসলে একটা Color ই থাকবে যার Value একদম ০ থেকে বাড়তে বাড়তে ১০০% হবে। এক্ষেত্রে আমরা rgba() function ব্যবহার করতে পারি, এই Function এর Last Parameter এ 0 দেওয়া মানে Full Transparency, 1 দেওয়া মানে Full Color (No Transparency).
+অর্থাৎ এখানে আসলে একটা Color ই থাকবে যার Value একদম ০ থেকে বাড়তে বাড়তে ১০০% হবে। এক্ষেত্রে আমরা rgba() function ব্যবহার করতে পারি, এই Function এর Last Parameter এ 0 দেওয়া মানে Full Transparent বা No Color, 1 দেওয়া মানে Full Color (No Transparency).
 
 Example: `background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));`
 
@@ -4114,7 +4114,7 @@ Screenshot:
 background-image: radial-gradient(red 5%, yellow 15%, green 60%);
 ```
 
-**যেমন এখানে Red 5% এবং Yellow 15% এর অর্থ হলো 5% থেকে 15% পর্যন্ত Red ধীরে ধীরে Yellow তে Transition হবে। আবার Yellow 15% এবং Green 60% এর মানে হলো, Yellow 15% থেকে 60% পর্যন্ত Yellow ধীরে ধীরে Green এ Transition হবে। এখানে লক্ষণীয় হলো, 0-5% পর্যন্ত Solid Red Color থাকবে এবং 60%-100% পর্যন্ত Solid Green Color থাকবে। এই বিষয়টা ভালো করে বুঝে নাও, কারন Online এ এই বিষয়ে ভালো মানের Tutorial খুজে পাইনি।**
+**যেমন এখানে Red 5% এবং Yellow 15% এর অর্থ হলো 5% থেকে 15% পর্যন্ত Red ধীরে ধীরে Yellow তে Transition হবে। আবার Yellow 15% এবং Green 60% এর মানে হলো, Yellow 15% থেকে 60% পর্যন্ত Yellow ধীরে ধীরে Green এ Transition হবে। এখানে লক্ষণীয় হলো, 0-5% পর্যন্ত Solid Red Color থাকবে এবং 60%-100% পর্যন্ত Solid Green Color থাকবে।**
 
 Screenshot:
 
@@ -4464,6 +4464,11 @@ border-radius: 50%;
 Screenshot:
 
 ![Repeating Conic](./chapter-21-css-gradients/img-conic/10.png)
+
+## CSS Gradient Creator
+
+- নিচের Website এ গিয়ে আপনার পছন্দের Gradient তৈরি করতে পারেন, এবং Code Copy Paste করে Website এ কাজে লাগাতে পারেন।
+- https://cssgradient.io/
 
 <div align="right">
     <b><a href="#learn-html-and-css-in-60-chapters">↥ Go to Top</a></b>
