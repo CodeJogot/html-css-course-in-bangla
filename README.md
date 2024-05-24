@@ -3953,6 +3953,7 @@ Credit: W3Schools
 
 ### Basic Concepts of CSS Gradients
 
+- কোন Background এ একাধিক রং ব্যবহার করতে Gradient Use করতে হয়।
 - CSS Gradient দিয়ে দুই বা ততোধিক রঙের মধ্যে Smooth Transition (এক রং থেকে অন্য রং এ পরিবর্তন হওয়াকে Transition বলে) করা হয়। 
 
 ### Types of Gradients
@@ -4484,6 +4485,7 @@ Screenshot:
 ## Introduction To CSS 2D Transforms
 
 - CSS Transform আমাদেরকে কোন একটা element কে Move, Rotate, Scale এবং Skew করতে সাহায্য করে ।
+- CSS transitions allows you to change property values smoothly, over a given duration.
 
 ## 2D Transforms Methods At A Glance
 
