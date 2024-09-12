@@ -30,7 +30,7 @@ While you complete the 30-chapter module, jump in the [Projects Section](#20-htm
 |                          [21](#chapter-21-css-gradient)                           |                                                      [CSS Gradients](#chapter-21-css-gradient)                                                      |     Watch Now     |
 |                    [22](#chapter-22-css-2d-and-3d-transforms)                     |                                          [CSS 2D and 3D Transforms](#chapter-22-css-2d-and-3d-transforms)                                           |     Watch Now     |
 |                         [23](#chapter-23-css-animations)                          |                                                    [CSS Animations](#chapter-23-css-animations)                                                     |     Watch Now     |
-|                                        24                                         |                                                                                                                                                     |     Watch Now     |
+|                                        [24](#chapter-24-css-media-queries-sass-syntactically-awesome-stylesheets)                                         |             [CSS Media Queries, Saas(Syntactically Awesome Stylesheets)](#chapter-24-css-media-queries-sass-syntactically-awesome-stylesheets)                                                                                                                                        |     Watch Now     |
 |                                        25                                         |                                                                                                                                                     |     Watch Now     |
 |                                        26                                         |                                                                                                                                                     |     Watch Now     |
 |                                        27                                         |                                                                                                                                                     |     Watch Now     |
@@ -4751,7 +4751,7 @@ Coming Soon...
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
 </h3>
 
-# Chapter-24: CSS Media Queries
+# Chapter-24: CSS Media Queries, Sass (Syntactically Awesome Stylesheets)
 
 - [CSS Media Queries](#css-media-queries)
 - [Sass (Syntactically Awesome Stylesheets)](#sass-syntactically-awesome-stylesheets)
