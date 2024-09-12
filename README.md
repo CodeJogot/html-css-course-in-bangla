@@ -4747,7 +4747,508 @@ Coming Soon...
 
 [Source Codes](./project-02-simple-website-layout-with-basic-css/)
 
-[<h3 align="center">Back to Project Section</h3>](#20-html--css-projects)
+<h3 align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</h3>
+
+# Chapter-24: CSS Media Queries
+
+- [CSS Media Queries](#css-media-queries)
+- [Sass (Syntactically Awesome Stylesheets)](#sass-syntactically-awesome-stylesheets)
+
+## CSS Media Queries
+
+### Table of Contents
+1. [Introduction to CSS Media Queries](#introduction-to-css-media-queries)
+2. [Why Use Media Queries?](#why-use-media-queries)
+3. [Syntax of Media Queries](#syntax-of-media-queries)
+4. [Common Media Query Features](#common-media-query-features)
+   - [width and height](#width-and-height)
+   - [orientation](#orientation)
+   - [resolution](#resolution)
+   - [aspect-ratio](#aspect-ratio)
+5. [Using Multiple Media Queries](#using-multiple-media-queries)
+6. [Real-life Example of Using Media Queries](#real-life-example-of-using-media-queries)
+
+
+### 1. Introduction to CSS Media Queries
+
+**CSS Media Queries** হল CSS এর একটি technique যা আমাদের website এর layout এবং content কে বিভিন্ন device এর screen size, resolution, orientation (যেমন landscape বা portrait), ইত্যাদির উপর ভিত্তি করে adjust করতে সাহায্য করে। ধরুন, আপনার একটি webpage আছে যা desktop এ সুন্দরভাবে display হচ্ছে, কিন্তু যখন আপনি mobile এ সেটি দেখেন, তখন সবকিছু খুব ছোট দেখা যায়, বা layout ঠিকমতো fit হয় না। এই সমস্যা সমাধানের জন্য **Media Queries** ব্যবহার করা হয়, যা বিভিন্ন screen size এবং device অনুযায়ী আলাদা আলাদা CSS rules apply করতে দেয়। 
+
+একটি responsive website তৈরি করতে **Media Queries** অপরিহার্য। Responsive মানে এমন একটি website যা বিভিন্ন device এর screen size অনুযায়ী নিজেকে adjust করে। এটি user experience উন্নত করে এবং website কে আরও user-friendly করে তোলে।
+
+### 2. Why Use Media Queries?
+
+**Media Queries** ব্যবহার করার মূল কারণ হলো responsive design তৈরি করা। Responsive design এমন একটি approach, যেখানে একটি website বিভিন্ন device এ (mobile, tablet, desktop) ভিন্ন ভিন্ন ভাবে present হয়, কিন্তু content এবং functionality একই থাকে। কেন Media Queries ব্যবহার করা উচিত:
+
+1. **Responsive Design:** আপনার website এর layout এবং elements dynamically পরিবর্তন করা যায় device এর screen size এর উপর ভিত্তি করে।
+  
+2. **User Experience উন্নত করা:** Mobile এবং tablet user এর জন্য বিশেষ করে Media Queries ব্যবহার করে website এর look এবং feel সুন্দর করা যায়।
+  
+3. **Mobile-First Approach:** এখনকার দিনে বেশিরভাগ user mobile থেকে website access করে। Media Queries ব্যবহার করে, আমরা mobile-first approach নিতে পারি, যা mobile device এ website কে সুন্দরভাবে display করে।
+  
+4. **Performance Optimization:** Media Queries ব্যবহার করে unnecessary elements hide করা যায় smaller devices এ, যা website এর performance উন্নত করে।
+
+### 3. Syntax of Media Queries
+
+**Media Queries** এর মূল syntax টা খুবই simple। এটিতে `@media` keyword ব্যবহার করা হয়, এবং আমরা `media-type` এবং `media-features` ব্যবহার করে নির্দিষ্ট condition নির্ধারণ করি, যেটির উপর ভিত্তি করে CSS rules apply হবে।
+
+```css
+@media media-type and (media-feature) {
+    /* CSS rules */
+}
+```
+
+- **`media-type`:** এটি কোন media তে CSS apply হবে তা নির্ধারণ করে। যেমন `screen`, `print` ইত্যাদি।
+- **`media-feature`:** এটি device এর screen width, height, resolution, orientation ইত্যাদির উপর নির্ভর করে CSS apply করতে সাহায্য করে।
+
+##### Example:
+
+```css
+/* যদি screen width 600px বা এর কম হয়, তখন background color পরিবর্তন হবে */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+}
+```
+
+এখানে `@media screen and (max-width: 600px)` এর অর্থ, যখন screen এর width 600px বা এর কম হবে তখন CSS rule apply হবে। অর্থাৎ, mobile devices এ এই rule প্রযোজ্য হবে, যেখানে screen এর width সাধারণত ছোট।
+
+### 4. Common Media Query Features
+
+**Media Queries** এর মাধ্যমে আমরা বিভিন্ন media features ব্যবহার করে device-specific CSS apply করতে পারি। নিচে কিছু সাধারণ media features আলোচনা করা হলো, যা বিভিন্ন ধরনের devices এর সাথে কাজ করতে সাহায্য করে:
+
+#### 4.1 width and height
+
+**`width`** এবং **`height`** properties ব্যবহার করে আমরা device এর screen width এবং height অনুযায়ী CSS rules apply করতে পারি। 
+
+##### Example:
+
+```css
+/* যদি screen এর max-width 768px হয়, তখন CSS rule প্রযোজ্য হবে */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;  /* Mobile এ font size বড় হবে */
+    }
+}
+```
+
+**ব্যাখ্যা:** এই query অনুযায়ী, যদি screen এর width 768px বা তার কম হয় (যেমন tablet), তাহলে body এর font size 16px হবে। 
+
+#### 4.2 orientation
+
+**`orientation`** property ব্যবহার করে আমরা device এর orientation অনুযায়ী CSS rules apply করতে পারি। Orientation বলতে বোঝায়, device টি portrait mode (উচ্চতা বেশি) নাকি landscape mode (প্রস্থ বেশি) তে আছে।
+
+##### Example:
+
+```css
+/* যদি device landscape orientation এ থাকে, তখন background color lightblue হবে */
+@media screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
+}
+```
+
+**ব্যাখ্যা:** এই CSS rule অনুযায়ী, যখন device টি landscape orientation এ থাকে, তখন body এর background color lightblue হবে।
+
+#### 4.3 resolution
+
+**`resolution`** property ব্যবহার করে আমরা high-resolution devices এর জন্য specific styles apply করতে পারি, যেমন Retina displays। 
+
+##### Example:
+
+```css
+/* যদি device এর resolution কমপক্ষে 300dpi হয়, তখন images এর width 100% হবে */
+@media screen and (min-resolution: 300dpi) {
+    img {
+        width: 100%;  /* High-resolution screen এর জন্য images responsive হবে */
+    }
+}
+```
+
+#### 4.4 aspect-ratio
+
+**`aspect-ratio`** property screen এর width এবং height এর ratio অনুযায়ী CSS rules apply করে।
+
+##### Example:
+
+```css
+/* যদি screen এর aspect ratio 16:9 হয়, তাহলে video element এর max-width 100% হবে */
+@media screen and (aspect-ratio: 16/9) {
+    video {
+        max-width: 100%;
+    }
+}
+```
+
+**ব্যাখ্যা:** এই rule অনুযায়ী, 16:9 aspect ratio বিশিষ্ট screens (যেমন টেলিভিশন, widescreen monitors) এ video element 100% width নিবে।
+
+### 5. Using Multiple Media Queries
+
+**Multiple Media Queries** একসাথে ব্যবহার করে আমরা একাধিক conditions এর উপর ভিত্তি করে CSS rules apply করতে পারি। Media queries কে chain করা যায় `and`, `or`, এবং `not` operators ব্যবহার করে।
+
+##### Example:
+
+```css
+/* যদি screen এর width 600px থেকে 1200px এর মধ্যে হয়, তাহলে background color lightgreen হবে */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+```
+
+**ব্যাখ্যা:** এখানে screen এর width যদি 600px এবং 1200px এর মধ্যে হয়, তাহলে body এর background color lightgreen হবে। অর্থাৎ, এই range এর মধ্যে থাকা screens এর জন্য এই rule apply হবে।
+
+### 6. Real-life Example of Using Media Queries
+
+#### Scenario: Creating a Responsive Layout for Multiple Devices
+
+ধরুন, আপনি এমন একটি webpage তৈরি করতে চান যেখানে mobile, tablet, এবং desktop devices এর জন্য responsive design থাকবে। নিচে একটি উদাহরণ দেওয়া হলো:
+
+##### Example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Default styles for desktop devices */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: #e4e4e4;
+            padding: 20px;
+        }
+
+        /* Styles for tablets (768px or less) */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Styles for mobile devices (600px or less) */
+        @media screen and (max-width: 600px) {
+            header {
+                font-size: 1.2em;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .sidebar,
+            .content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Web Design</h1>
+    </header>
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </aside>
+        <section class="content">
+            <h2>Main Content</h2>
+            <p>This is
+
+ the main content of the page.</p>
+        </section>
+    </main>
+</body>
+</html>
+```
+
+**Explanation:**
+
+1. **Desktop Layout:** Default grid layout ব্যবহার করে sidebar এবং main content কে side-by-side দেখানো হয়েছে।
+2. **Tablet Layout:** 768px বা এর চেয়ে ছোট screens এর জন্য grid layout কে one-column layout এ পরিবর্তন করা হয়েছে।
+3. **Mobile Layout:** 600px বা এর চেয়ে ছোট screens এর জন্য padding কমানো হয়েছে এবং header এর font size adjust করা হয়েছে।
+
+## Sass (Syntactically Awesome Stylesheets)
+
+### Table of Contents
+1. [Introduction to Sass](#introduction-to-sass)
+2. [Why Use Sass?](#why-use-sass)
+3. [Installation and Setup](#installation-and-setup)
+4. [Sass Syntax](#sass-syntax)
+   - [Nesting](#nesting)
+   - [Variables](#variables)
+   - [Partials and Import](#partials-and-import)
+   - [Mixins](#mixins)
+   - [Inheritance](#inheritance)
+   - [Functions](#functions)
+5. [Real-life Example of Using Sass](#real-life-example-of-using-sass)
+6. [Conclusion](#conclusion)
+
+### 1. Introduction to Sass
+
+**Sass (Syntactically Awesome Stylesheets)** হল CSS এর একটি extension, যা CSS এর চেয়ে অনেক বেশি powerful এবং maintainable stylesheets তৈরি করতে সাহায্য করে। Sass এর মাধ্যমে CSS এর syntax আরো উন্নত এবং flexible হয়ে ওঠে, যার ফলে বড় projects এর জন্য stylesheets লিখতে এবং manage করতে সুবিধা হয়। 
+
+Sass মূলত CSS কে dynamic করতে সাহায্য করে এবং এতে variables, nesting, inheritance, functions ইত্যাদির মতো feature রয়েছে, যা CSS এ সরাসরি ব্যবহার করা যায় না।
+
+Source: [Sass Official Documentation](https://sass-lang.com/)
+
+### 2. Why Use Sass?
+
+Sass ব্যবহার করার অনেক কারণ রয়েছে, যা CSS এর তুলনায় বেশ কয়েকটি সুবিধা প্রদান করে:
+
+1. **Variables Support:** Sass এ variables ব্যবহার করে একাধিক জায়গায় একই value বারবার ব্যবহার করা যায়, যা code repetition কমায়।
+  
+2. **Nesting:** CSS selectors কে hierarchy অনুযায়ী nested করে লেখা যায়, যা code structure কে পরিষ্কার এবং পড়তে সহজ করে তোলে।
+  
+3. **Partials and Imports:** বড় stylesheets কে ছোট ছোট অংশে ভাগ করে রাখা যায় এবং পরে প্রয়োজন অনুযায়ী import করা যায়।
+  
+4. **Mixins and Functions:** Sass এ complex CSS rules কে re-useable বানানো যায় এবং functions ব্যবহার করে calculations বা conditions implement করা যায়।
+  
+5. **Maintainability:** বড় projects এর জন্য Sass একটি কার্যকরী solution, কারণ এটি CSS এর তুলনায় সহজে manageable এবং maintainable।
+
+### 3. Installation and Setup
+
+Sass ব্যবহার শুরু করার জন্য প্রথমে Sass কে install করতে হবে। Sass install করার বিভিন্ন পদ্ধতি রয়েছে:
+
+1. **Using Node.js/npm:**
+
+   যদি আপনার system এ Node.js এবং npm install করা থাকে, তাহলে নিচের command দিয়ে Sass install করতে পারেন:
+
+   ```bash
+   npm install -g sass
+   ```
+
+2. **Using Command Line:**
+
+   Sass কে সরাসরি terminal থেকে command দিয়ে compile করা যায়:
+
+   ```bash
+   sass input.scss output.css
+   ```
+
+3. **Using Preprocessors (like Koala, Scout):**
+
+   Sass compile করার জন্য graphical tools ব্যবহার করা যেতে পারে, যেমন Koala বা Scout।
+
+### 4. Sass Syntax
+
+Sass এ দুটি ধরনের syntax রয়েছে: **SCSS** এবং **Sass**। SCSS হচ্ছে CSS এর মতো syntax, যেখানে brackets এবং semicolons ব্যবহার করা হয়। অন্যদিকে, Sass হচ্ছে indent-based, যেখানে brackets বা semicolons দরকার হয় না। 
+
+আমরা এখানে SCSS syntax ব্যবহার করব, কারণ এটি CSS এর মতো দেখতে এবং সহজে adapt করা যায়।
+
+#### 4.1 Nesting
+
+**Nesting** হল Sass এর একটি powerful feature, যা CSS selectors কে nested structure এ লিখতে দেয়, অর্থাৎ parent-child relationships সহজে বোঝা যায়।
+
+##### Example:
+
+```scss
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+```
+
+**Explanation:** এখানে আমরা CSS rules কে nested করে লিখেছি, যা parent-child relationship কে পরিষ্কারভাবে প্রকাশ করে।
+
+#### 4.2 Variables
+
+Sass এ **variables** ব্যবহার করে CSS values (যেমন: colors, fonts, dimensions) কে একটি single place এ define করা যায় এবং পরে multiple places এ reuse করা যায়।
+
+##### Example:
+
+```scss
+$primary-color: #3498db;
+$padding: 16px;
+
+button {
+    background-color: $primary-color;
+    padding: $padding;
+}
+```
+
+**Explanation:** এখানে আমরা `$primary-color` এবং `$padding` নামে variables ব্যবহার করেছি, যা পরে CSS rules এ ব্যবহার করা হয়েছে।
+
+#### 4.3 Partials and Import
+
+Sass এ বড় stylesheets কে ছোট ছোট টুকরোতে ভাগ করে রাখতে **partials** এবং **import** ব্যবহার করা হয়। Partials files এর নামের আগে `_` underscore ব্যবহার করা হয় এবং এগুলো সরাসরি CSS এ compile হয় না, কিন্তু অন্য Sass files এ import করা যায়।
+
+##### Example:
+
+```scss
+// _buttons.scss
+button {
+    background-color: $primary-color;
+    padding: $padding;
+}
+
+// main.scss
+@import 'buttons';
+```
+
+**Explanation:** এখানে `_buttons.scss` নামে একটি partial file তৈরি করা হয়েছে এবং `main.scss` এ import করা হয়েছে।
+
+#### 4.4 Mixins
+
+**Mixins** Sass এর reusable code blocks তৈরি করতে ব্যবহার করা হয়, যেখানে CSS rules এবং logic define করা যায় এবং পরে প্রয়োজন অনুযায়ী apply করা যায়।
+
+##### Example:
+
+```scss
+@mixin button-styles($color) {
+    background-color: $color;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button {
+    @include button-styles(#3498db);
+}
+```
+
+**Explanation:** এখানে আমরা `button-styles` নামে একটি mixin তৈরি করেছি, যা পরে `button` element এ apply করা হয়েছে।
+
+#### 4.5 Inheritance
+
+Sass এ **inheritance** ব্যবহার করে একটি class এর styles অন্য class এ extend করা যায়।
+
+##### Example:
+
+```scss
+%button-shared {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.primary-btn {
+    @extend %button-shared;
+    background-color: #3498db;
+}
+
+.secondary-btn {
+    @extend %button-shared;
+    background-color: #2ecc71;
+}
+```
+
+**Explanation:** এখানে `%button-shared` একটি placeholder selector, যেটি `primary-btn` এবং `secondary-btn` এর styles এ extend করা হয়েছে।
+
+#### 4.6 Functions
+
+Sass এ **functions** ব্যবহার করে CSS properties এর উপর calculation এবং logical operations করা যায়।
+
+##### Example:
+
+```scss
+@function calculate-padding($padding, $factor) {
+    @return $padding * $factor;
+}
+
+.box {
+    padding: calculate-padding(10px, 2);  // Returns 20px
+}
+```
+
+**Explanation:** এখানে `calculate-padding` নামে একটি function তৈরি করা হয়েছে, যা calculation করে padding এর value return করে।
+
+### 5. Real-life Example of Using Sass
+
+#### Scenario: Creating a Themed Button Using Variables and Mixins
+
+ধরুন, আপনি একটি website এ বিভিন্ন ধরনের button তৈরি করতে চান, যেখানে primary এবং secondary button থাকবে। Sass ব্যবহার করে আমরা variables, mixins, এবং nesting এর সাহায্যে button এর styles define করতে পারি।
+
+##### Example:
+
+```scss
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$padding: 10px 20px;
+
+// Mixin for buttons
+@mixin button-styles($color) {
+    background-color: $color;
+    padding: $padding;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($color, 10%);
+    }
+}
+
+// Using the mixin for different buttons
+.primary-btn {
+    @include button-styles($primary-color);
+}
+
+.secondary-btn {
+    @include button-styles($secondary-color);
+}
+```
+
+**Explanation:**
+1. **Variables:** Primary এবং secondary colors এবং padding values কে variables দিয়ে define করা হয়েছে।
+2. **Mixin:** `button-styles` নামে একটি mixin তৈরি করা হয়েছে, যা button এর common styles define করে।
+3. **Nesting and Hover Effect:** Button এর hover effect apply করা হয়েছে।
+
+### 6. Conclusion
+
+**Sass (Syntactically Awesome Stylesheets)** CSS এর উপর ভিত্তি করে একটি powerful extension, যা CSS এর limitations দূর করে এবং বড় projects এর জন্য stylesheets লিখতে এবং maintain করতে সহজ করে তোলে। Variables, mixins, functions, এবং nesting এর মতো features ব্যবহার করে Sass আমাদের CSS code আরো readable, maintainable, এবং reusable করে। এটি modern web development এর জন্য একটি অত্যন্ত কার্যকরী tool, বিশেষ করে যখন responsive এবং complex designs নিয়ে কাজ করা হয়।
+
+
+
+<h3 align="right">
+    <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
+</h3>
+
+
+
 
 # Project-03: Simple Website Layout with Flexbox
 

@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.scrolling-text p {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.scrolling-text a {
+  text-decoration: none;
+}
+
+/* Different sections with different colors */
+.section-1 {
+  color: #FF6347; /* Tomato */
+}
+
+.section-2 {
+  color: #4682B4; /* SteelBlue */
+}
+
+.section-3 {
+  color: #32CD32; /* LimeGreen */
+}
