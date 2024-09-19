@@ -1,12 +1,4 @@
-.box h1 {
-  color: red;
-}
-.box h1 span {
-  font-style: italic;
-}
-.box h2 {
-  color: gold;
-}
-.box h3 {
-  color: black;
+body {
+  background-color: #333;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -4755,6 +4755,7 @@ Coming Soon...
 
 - [CSS Media Queries](#css-media-queries)
 - [Sass (Syntactically Awesome Stylesheets)](#sass-syntactically-awesome-stylesheets)
+- [Sass Assignment](#sass-assignment)
 
 ## CSS Media Queries
 
@@ -5019,6 +5020,7 @@ Coming Soon...
 5. [Real-life Example of Using Sass](#real-life-example-of-using-sass)
 6. [SCSS to CSS Conversion: A Project Example](#scss-to-css-conversion-a-project-example)
 7. [Conclusion](#conclusion)
+
 
 ---
 
@@ -5665,6 +5667,48 @@ footer p {
 ### Conclusion
 
 **Sass** CSS এর উপরে ভিত্তি করে একটি শক্তিশালী extension, যা বড় এবং জটিল projects এর জন্য CSS code কে সহজ, maintainable, এবং reusable করে তোলে। Variables, mixins, functions, loops, এবং conditions এর মাধ্যমে Sass ব্যবহার করে modern, responsive এবং maintainable CSS code তৈরি করা যায়। Beginner দের জন্য এটি CSS এর তুলনায় কিছুটা advanced হলেও, একবার Sass শেখা হয়ে গেলে CSS নিয়ে কাজ করা অনেক সহজ হয়ে যায়।
+
+
+## Sass Assignment
+
+### **Sass Project: Simple Responsive Card Layout – Step-by-Step Instructions**
+
+#### **Step 1: প্রোজেক্ট ফাইল সেটআপ:**
+- একটি নতুন ফোল্ডার তৈরি করুন `responsive-card-project` নামে।
+- এর মধ্যে `index.html`, `styles.scss`, এবং `styles.css` নামে তিনটি ফাইল তৈরি করুন।
+
+#### **Step 2: HTML কোড লেখা:**
+- `index.html` ফাইলে Basic HTML Structure লিখুন।
+- এরপর `card-container` নামে একটি ডিভের মধ্যে ৩টি `card` এলিমেন্ট যোগ করুন। প্রতিটি Card এ একটি Image, Title, Description, এবং একটি Button থাকবে।
+- স্টাইল করার জন্য `styles.css` ফাইলটি HTML এ যুক্ত করুন।
+
+#### **Step 3: Sass ভ্যারিয়েবল ডিক্লেয়ার:**
+- `styles.scss` ফাইলের শুরুতে Color এবং Spacing এর জন্য কিছু Sass Variables ডিক্লেয়ার করুন। যেমন: প্রাইমারি কালার, সেকেন্ডারি কালার, ব্যাকগ্রাউন্ড কালার, প্যাডিং ইত্যাদি।
+
+#### **Step 4: Mixin তৈরি:**  
+- একটি Mixin তৈরি করুন যেটা ভিন্ন ভিন্ন ডিভাইসের জন্য মিডিয়া কুয়েরি সেট করতে সাহায্য করবে।  
+- উদাহরণস্বরূপ, একটি Mixin বানান যা 'small' এবং 'medium' ডিভাইসের জন্য Responsive ডিজাইন করবে।
+
+#### **Step 5: Card Layout এর স্টাইলিং:**  
+- `.card-container` ক্লাসের জন্য Flexbox ব্যবহার করে লেআউট তৈরি করুন।
+- `.card` ক্লাসের জন্য ব্যাকগ্রাউন্ড কালার, প্যাডিং, বর্ডার রেডিয়াস, এবং শ্যাডো যোগ করুন।
+- নেস্টিং ব্যবহার করে `.card` এর ভেতরের `.card-image`, `.card-title`, `.card-description`, এবং `.card-button` এর জন্য স্টাইল সেট করুন।
+
+#### **Step 6: Responsive Design এর জন্য Media Queries:**  
+- আগের Step-এ তৈরি করা Mixin ব্যবহার করে মিডিয়া কুয়েরি প্রয়োগ করুন।
+- ছোট স্ক্রীনে `.card-container` এর লেআউট পরিবর্তন করে কলাম আকারে দেখান।
+
+#### **Step 7: Button এর Hover Effect:**  
+- `.card-button` এর জন্য Hover Effect তৈরি করুন, যেখানে Button-এর ব্যাকগ্রাউন্ড কালার ডার্ক হবে। 
+- এই কাজটি করার জন্য Sass এর Built-in Function (`darken`) ব্যবহার করুন।
+
+#### **Step 8: Sass কোড কম্পাইল:**  
+- `styles.scss` ফাইলটি CSS এ কম্পাইল করুন এবং `styles.css` ফাইলটিতে সেভ করুন।
+- টার্মিনালে নিচের কমান্ডটি ব্যবহার করুন:
+  ```bash
+  sass styles.scss styles.css
+  ```
+
 
 
 <h3 align="right">
