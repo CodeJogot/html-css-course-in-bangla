@@ -211,23 +211,60 @@ CSS এর Details Version History দেখতে [এখানে](https://www
 
 ## HTML Basics
 
-- **`<!DOCTYPE html>`** is used to **tell** the browser, this is an HTML5 document.
-- **`<html>`** is the **container** of all HTML elements. This tag is used to **indicate** the beginning and end of all HTML elements in an HTML Document.
+নিচে **HTML Basic Tags** এর একটি তালিকা টেবিল আকারে দেয়া হলো, যেখানে প্রতিটি tag এর বর্ণনা এবং উদাহরণ সংক্ষেপে উল্লেখ করা হয়েছে।
 
-- **`<head>`** element is used to give **browser and search engine** informations about the page.
-- **`<title>`** element specifies a title for the HTML page (which is shown in the browser's title bar and in the page's tab).
-- **`<body>`** element is the container for all the visible contents such as headings, paragraphs, images, hyperlinks, tables, lists, etc in the webpage.
-- The **`<em>`** element is used to define emphasized text. By default, emphasized text is
-  displayed in _italic_.
-- The **`<strong>`** element is used to represent important content. Browsers, by default, render strong content in **bold**.
-- The **`<i>`** and **`<b>`** elements are considered deprecated because HTML should not be used for styling. That’s the role of CSS.
-- Headings are represented using **`<h1>`**, **`<h2>`**, **`<h3>`**, **`<h4>`**, **`<h5>`**, **`<h6>`**. Every web page should have one and only one **`<h1>`** element. Headings should have a natural hierarchy and should not be skipped.
-- Entities are used to display special characters such as angle brackets, copyright symbol, etc. The most important entities are: **`&nbsp;`** (non-breaking space), **`&lt;`** (less than sign), **`&gt;`** (greater than sign) and **`&copy;`** (copyright symbol).
-- The **`<div>`** and **`<span>`** elements are generic containers used for styling purposes. Divs are block-level elements, spans are inline elements. A block-level element starts on a new line and takes up the entire available horizontal space.
-- Semantic elements help us write markup that is more meaningful and descriptive to search engines, screen readers and other software. So, use **`<div>`** and **`<span>`** elements when no other semantic element is appropriate.
-- The semantic elements in HTML5 are: **`<header>`, `<footer>`, `<nav>`, `<main>`, `<aside>`, `<article>`, `<section>`, `<figure>`, `<time>` and `<mark>.`**
+| HTML Tag      | Description                            | Example                                              |
+|---------------|----------------------------------------|------------------------------------------------------|
+| `<html>`      | পুরো HTML document কে wrap করে          | `<html lang="en"> ... </html>`                        |
+| `<head>`      | Page এর metadata রাখে                   | `<head> ... </head>`                                  |
+| `<title>`     | Browser tab এর title সেট করে            | `<title>My First Page</title>`                        |
+| `<body>`      | Page এর main content থাকে               | `<body> ... </body>`                                  |
+| `<h1>` to `<h6>` | Headings তৈরি করে (h1 সবচেয়ে বড়, h6 সবচেয়ে ছোট) | `<h1>Main Heading</h1>`                               |
+| `<p>`         | Paragraph তৈরি করে                     | `<p>This is a paragraph.</p>`                         |
+| `<a>`         | Hyperlink তৈরি করে, **href** attribute দিয়ে link দেয় | `<a href="https://example.com">Visit Example</a>`   |
+| `<img>`       | Image display করে, **src** ও **alt** attribute থাকে | `<img src="image.jpg" alt="Sample Image">`          |
+| `<ul>`        | Unordered list তৈরি করে                | `<ul><li>Item 1</li><li>Item 2</li></ul>`             |
+| `<ol>`        | Ordered list তৈরি করে                  | `<ol><li>Item 1</li><li>Item 2</li></ol>`             |
+| `<li>`        | List item তৈরি করে                     | `<li>List Item</li>`                                  |
+| `<div>`       | Block-level container তৈরি করে         | `<div>Content here</div>`                             |
+| `<span>`      | Inline container তৈরি করে              | `<span>Text here</span>`                              |
+| `<br>`        | Line break তৈরি করে                    | `This is a line.<br>This is a new line.`              |
+| `<hr>`        | Horizontal line তৈরি করে               | `<hr>`                                                |
+| `<form>`      | User input নেয়ার জন্য form তৈরি করে   | `<form> ... </form>`                                  |
+| `<input>`     | User এর data input এর জন্য             | `<input type="text" name="username">`                 |
+| `<label>`     | Input field এর label দেয়               | `<label for="name">Name:</label>`                     |
+| `<button>`    | Button তৈরি করে                        | `<button>Click Me</button>`                           |
+| `<table>`     | Table তৈরি করে                         | `<table> ... </table>`                                |
+| `<tr>`        | Table row তৈরি করে                     | `<tr> ... </tr>`                                      |
+| `<th>`        | Table header তৈরি করে                  | `<th>Header</th>`                                     |
+| `<td>`        | Table data cell তৈরি করে               | `<td>Data</td>`                                       |
+| `<strong>`    | Text bold করতে ব্যবহার হয়              | `<strong>Bold Text</strong>`                          |
+| `<em>`        | Text italic করতে ব্যবহার হয়            | `<em>Italic Text</em>`                                |
+| `<link>`      | External resources (যেমন CSS) link করতে | `<link rel="stylesheet" href="style.css">`           |
+| `<script>`    | JavaScript কোড বা external JS ফাইল যুক্ত করতে | `<script src="script.js"></script>`               |
+| `<meta>`      | Metadata দেয়                           | `<meta charset="UTF-8">`                              |
 
-  **An Example of Basic HTML Boilerplate is**
+### Explanation:
+- **Structural Tags**: যেমন `<html>`, `<head>`, `<body>`, এগুলো একটি HTML document এর structure তৈরি করে।
+- **Text Formatting Tags**: যেমন `<h1>` থেকে `<h6>`, `<p>`, `<strong>`, `<em>`, এগুলো বিভিন্ন ভাবে text কে format করতে ব্যবহার করা হয়।
+- **Media and Links Tags**: যেমন `<a>`, `<img>`, এগুলো link এবং image যুক্ত করতে ব্যবহৃত হয়।
+- **Forms and Inputs**: যেমন `<form>`, `<input>`, `<label>`, এগুলো ব্যবহার করে user এর কাছ থেকে data collect করা যায়।
+- **Lists and Tables**: যেমন `<ul>`, `<ol>`, `<table>`, এগুলো ordered ও unordered lists এবং টেবিল তৈরি করতে ব্যবহার করা হয়।
+
+### Metadata কি?
+
+**Metadata** হল এমন তথ্য যা একটি **HTML document** সম্পর্কে অতিরিক্ত তথ্য সরবরাহ করে। এটি browser এবং search engines কে document সম্পর্কে গুরুত্বপূর্ণ তথ্য জানাতে সাহায্য করে। সাধারণত **metadata** কে `<head>` tag এর ভিতরে রাখা হয় এবং এটি page এর title, character encoding, description, keywords ইত্যাদি সম্পর্কে তথ্য বহন করে।
+
+#### উদাহরণ:
+
+- **`<meta charset="UTF-8">`**: এটি character encoding সেট করে। **UTF-8** encoding এর মাধ্যমে বিভিন্ন ভাষার character গুলো সঠিকভাবে display করা যায়।
+- **`<meta name="viewport" content="width=device-width, initial-scale=1.0">`**: এটি responsive design এর জন্য ব্যবহার করা হয়, যার ফলে page বিভিন্ন device (যেমন মোবাইল, ট্যাবলেট) এ সঠিক ভাবে display হয়।
+- **`<meta name="description" content="This is an example page description">`**: এটি page এর সংক্ষিপ্ত বর্ণনা দেয়, যা **search engines** page কে index করার সময় ব্যবহার করে।
+
+**Metadata** মূলত page এর **SEO (Search Engine Optimization)** উন্নত করতে এবং browser কে page এর কিছু অতিরিক্ত তথ্য জানাতে সাহায্য করে। এটি document এর মূল content এর অংশ নয়, কিন্তু এটি document এর তথ্য সঠিকভাবে প্রক্রিয়াকরণের জন্য গুরুত্বপূর্ণ।
+
+
+**An Example of Basic HTML Boilerplate is**
 
 ```html
 <!DOCTYPE html>
