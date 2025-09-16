@@ -213,38 +213,39 @@ CSS এর Details Version History দেখতে [এখানে](https://www
 
 নিচে **HTML Basic Tags** এর একটি তালিকা টেবিল আকারে দেয়া হলো, যেখানে প্রতিটি tag এর বর্ণনা এবং উদাহরণ সংক্ষেপে উল্লেখ করা হয়েছে।
 
-| HTML Tag      | Description                            | Example                                              |
-|---------------|----------------------------------------|------------------------------------------------------|
-| `<html>`      | পুরো HTML document কে wrap করে          | `<html lang="en"> ... </html>`                        |
-| `<head>`      | Page এর metadata রাখে                   | `<head> ... </head>`                                  |
-| `<title>`     | Browser tab এর title সেট করে            | `<title>My First Page</title>`                        |
-| `<body>`      | Page এর main content থাকে               | `<body> ... </body>`                                  |
-| `<h1>` to `<h6>` | Headings তৈরি করে (h1 সবচেয়ে বড়, h6 সবচেয়ে ছোট) | `<h1>Main Heading</h1>`                               |
-| `<p>`         | Paragraph তৈরি করে                     | `<p>This is a paragraph.</p>`                         |
-| `<a>`         | Hyperlink তৈরি করে, **href** attribute দিয়ে link দেয় | `<a href="https://example.com">Visit Example</a>`   |
-| `<img>`       | Image display করে, **src** ও **alt** attribute থাকে | `<img src="image.jpg" alt="Sample Image">`          |
-| `<ul>`        | Unordered list তৈরি করে                | `<ul><li>Item 1</li><li>Item 2</li></ul>`             |
-| `<ol>`        | Ordered list তৈরি করে                  | `<ol><li>Item 1</li><li>Item 2</li></ol>`             |
-| `<li>`        | List item তৈরি করে                     | `<li>List Item</li>`                                  |
-| `<div>`       | Block-level container তৈরি করে         | `<div>Content here</div>`                             |
-| `<span>`      | Inline container তৈরি করে              | `<span>Text here</span>`                              |
-| `<br>`        | Line break তৈরি করে                    | `This is a line.<br>This is a new line.`              |
-| `<hr>`        | Horizontal line তৈরি করে               | `<hr>`                                                |
-| `<form>`      | User input নেয়ার জন্য form তৈরি করে   | `<form> ... </form>`                                  |
-| `<input>`     | User এর data input এর জন্য             | `<input type="text" name="username">`                 |
-| `<label>`     | Input field এর label দেয়               | `<label for="name">Name:</label>`                     |
-| `<button>`    | Button তৈরি করে                        | `<button>Click Me</button>`                           |
-| `<table>`     | Table তৈরি করে                         | `<table> ... </table>`                                |
-| `<tr>`        | Table row তৈরি করে                     | `<tr> ... </tr>`                                      |
-| `<th>`        | Table header তৈরি করে                  | `<th>Header</th>`                                     |
-| `<td>`        | Table data cell তৈরি করে               | `<td>Data</td>`                                       |
-| `<strong>`    | Text bold করতে ব্যবহার হয়              | `<strong>Bold Text</strong>`                          |
-| `<em>`        | Text italic করতে ব্যবহার হয়            | `<em>Italic Text</em>`                                |
-| `<link>`      | External resources (যেমন CSS) link করতে | `<link rel="stylesheet" href="style.css">`           |
-| `<script>`    | JavaScript কোড বা external JS ফাইল যুক্ত করতে | `<script src="script.js"></script>`               |
-| `<meta>`      | Metadata দেয়                           | `<meta charset="UTF-8">`                              |
+| HTML Tag         | Description                                            | Example                                           |
+| ---------------- | ------------------------------------------------------ | ------------------------------------------------- |
+| `<html>`         | পুরো HTML document কে wrap করে                         | `<html lang="en"> ... </html>`                    |
+| `<head>`         | Page এর metadata রাখে                                  | `<head> ... </head>`                              |
+| `<title>`        | Browser tab এর title সেট করে                           | `<title>My First Page</title>`                    |
+| `<body>`         | Page এর main content থাকে                              | `<body> ... </body>`                              |
+| `<h1>` to `<h6>` | Headings তৈরি করে (h1 সবচেয়ে বড়, h6 সবচেয়ে ছোট)      | `<h1>Main Heading</h1>`                           |
+| `<p>`            | Paragraph তৈরি করে                                     | `<p>This is a paragraph.</p>`                     |
+| `<a>`            | Hyperlink তৈরি করে, **href** attribute দিয়ে link দেয় | `<a href="https://example.com">Visit Example</a>` |
+| `<img>`          | Image display করে, **src** ও **alt** attribute থাকে    | `<img src="image.jpg" alt="Sample Image">`        |
+| `<ul>`           | Unordered list তৈরি করে                                | `<ul><li>Item 1</li><li>Item 2</li></ul>`         |
+| `<ol>`           | Ordered list তৈরি করে                                  | `<ol><li>Item 1</li><li>Item 2</li></ol>`         |
+| `<li>`           | List item তৈরি করে                                     | `<li>List Item</li>`                              |
+| `<div>`          | Block-level container তৈরি করে                         | `<div>Content here</div>`                         |
+| `<span>`         | Inline container তৈরি করে                              | `<span>Text here</span>`                          |
+| `<br>`           | Line break তৈরি করে                                    | `This is a line.<br>This is a new line.`          |
+| `<hr>`           | Horizontal line তৈরি করে                               | `<hr>`                                            |
+| `<form>`         | User input নেয়ার জন্য form তৈরি করে                   | `<form> ... </form>`                              |
+| `<input>`        | User এর data input এর জন্য                             | `<input type="text" name="username">`             |
+| `<label>`        | Input field এর label দেয়                              | `<label for="name">Name:</label>`                 |
+| `<button>`       | Button তৈরি করে                                        | `<button>Click Me</button>`                       |
+| `<table>`        | Table তৈরি করে                                         | `<table> ... </table>`                            |
+| `<tr>`           | Table row তৈরি করে                                     | `<tr> ... </tr>`                                  |
+| `<th>`           | Table header তৈরি করে                                  | `<th>Header</th>`                                 |
+| `<td>`           | Table data cell তৈরি করে                               | `<td>Data</td>`                                   |
+| `<strong>`       | Text bold করতে ব্যবহার হয়                             | `<strong>Bold Text</strong>`                      |
+| `<em>`           | Text italic করতে ব্যবহার হয়                           | `<em>Italic Text</em>`                            |
+| `<link>`         | External resources (যেমন CSS) link করতে                | `<link rel="stylesheet" href="style.css">`        |
+| `<script>`       | JavaScript কোড বা external JS ফাইল যুক্ত করতে          | `<script src="script.js"></script>`               |
+| `<meta>`         | Metadata দেয়                                          | `<meta charset="UTF-8">`                          |
 
 ### Explanation:
+
 - **Structural Tags**: যেমন `<html>`, `<head>`, `<body>`, এগুলো একটি HTML document এর structure তৈরি করে।
 - **Text Formatting Tags**: যেমন `<h1>` থেকে `<h6>`, `<p>`, `<strong>`, `<em>`, এগুলো বিভিন্ন ভাবে text কে format করতে ব্যবহার করা হয়।
 - **Media and Links Tags**: যেমন `<a>`, `<img>`, এগুলো link এবং image যুক্ত করতে ব্যবহৃত হয়।
@@ -262,7 +263,6 @@ CSS এর Details Version History দেখতে [এখানে](https://www
 - **`<meta name="description" content="This is an example page description">`**: এটি page এর সংক্ষিপ্ত বর্ণনা দেয়, যা **search engines** page কে index করার সময় ব্যবহার করে।
 
 **Metadata** মূলত page এর **SEO (Search Engine Optimization)** উন্নত করতে এবং browser কে page এর কিছু অতিরিক্ত তথ্য জানাতে সাহায্য করে। এটি document এর মূল content এর অংশ নয়, কিন্তু এটি document এর তথ্য সঠিকভাবে প্রক্রিয়াকরণের জন্য গুরুত্বপূর্ণ।
-
 
 **An Example of Basic HTML Boilerplate is**
 
@@ -5040,8 +5040,8 @@ Coming Soon...
 
 ## Sass (Syntactically Awesome Stylesheets)
 
-
 ### Table of Contents
+
 1. [Introduction to Sass](#introduction-to-sass)
 2. [Why Use Sass?](#why-use-sass)
 3. [Installation and Setup](#installation-and-setup)
@@ -5058,12 +5058,14 @@ Coming Soon...
 6. [SCSS to CSS Conversion: A Project Example](#scss-to-css-conversion-a-project-example)
 7. [Conclusion](#conclusion)
 
-
 ---
 
 ### 1. Introduction to Sass
 
-**Sass (Syntactically Awesome Stylesheets)** হলো CSS এর একটি extension, যা CSS code আরও সহজ, maintainable এবং powerful করতে সহায়ক। এটি আপনাকে variables, nesting, mixins, inheritance, functions, এবং আরও অনেক সুবিধা প্রদান করে, যা traditional CSS এ পাওয়া যায় না। এখানে আমরা Sass এর বিভিন্ন ফিচার এবং ব্যবহারিক উদাহরণ আলোচনা করব।
+- **Sass (Syntactically Awesome Stylesheets)** হলো CSS এর একটি extension, যা CSS code আরও সহজ, maintainable এবং powerful করতে সহায়ক। এটি আপনাকে variables, nesting, mixins, inheritance, functions, এবং আরও অনেক সুবিধা প্রদান করে, যা traditional CSS এ পাওয়া যায় না।
+  এখানে আমরা Sass এর বিভিন্ন ফিচার এবং ব্যবহারিক উদাহরণ আলোচনা করব।
+
+- Sass হলো একটা CSS preprocessor. আপনি .scss বা .sass ফাইলে shorthand, variables, nesting, mixins, functions ইত্যাদি power-features ব্যবহার করেন। তারপর compiler সেই Sass কে সাধারণ CSS এ convert করে দেয়—browser শুধু CSS-ই বোঝে। সহজ কথা: Sass লিখুন → Compiler চালান → CSS তৈরি হবে → Browser CSS চালাবে।
 
 ---
 
@@ -5071,17 +5073,17 @@ Coming Soon...
 
 বড় বা ছোট যেকোনো project এ Sass ব্যবহার করার অনেক কারণ আছে, বিশেষ করে CSS এর limitations কাটিয়ে ওঠার জন্য। নিচে কিছু কারণ আলোচনা করা হলো:
 
-1. **Code Reuse:** Sass এ variables এবং mixins ব্যবহার করে একই ধরনের CSS properties বারবার লিখতে হয় না, আমরা এগুলো একবার define করে অনেক জায়গায় ব্যবহার করতে পারি। 
+1. **Code Reuse:** Sass এ variables এবং mixins ব্যবহার করে একই ধরনের CSS properties বারবার লিখতে হয় না, আমরা এগুলো একবার define করে অনেক জায়গায় ব্যবহার করতে পারি।
 
    ##### Example:
 
    ```scss
-   $primary-color: #3498db;   // Variable
+   $primary-color: #3498db; // Variable
    $font-size-large: 18px;
 
    body {
-       color: $primary-color;
-       font-size: $font-size-large;
+     color: $primary-color;
+     font-size: $font-size-large;
    }
    ```
 
@@ -5115,6 +5117,14 @@ Sass ব্যবহার শুরু করার আগে এটি আপ�
 
    **Explanation:** এখানে `input.scss` হচ্ছে Sass file এবং `output.css` হচ্ছে final CSS file। Sass automatically SCSS file কে CSS এ compile করে দেয়।
 
+3. Watch Mode(Live Compile):
+
+```bash
+  sass --watch input.scss output.css
+```
+
+4. আপনি যদি ৩ নং Command না চালান, সেক্ষেত্রে VS Code এ `SASS Live Compiler` নামে Extension টি Install করতে পারেন।
+
 #### Method 2: Using a GUI Preprocessor (Koala, Scout)
 
 যদি আপনি command line ব্যবহার না করতে চান, তাহলে Koala বা Scout এর মতো graphical tools ব্যবহার করতে পারেন, যা সহজে Sass files কে compile করে CSS এ রূপান্তরিত করে।
@@ -5133,56 +5143,56 @@ Sass এর SCSS syntax সহজে CSS এর মতোই ব্যবহা�
 
 ```scss
 nav {
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
-        li {
-            display: inline-block;
+    li {
+      display: inline-block;
 
-            a {
-                text-decoration: none;
-                color: #333;
+      a {
+        text-decoration: none;
+        color: #333;
 
-                &:hover {
-                    color: #000;
-                }
-            }
+        &:hover {
+          color: #000;
         }
+      }
     }
+  }
 }
 ```
 
-**Explanation:** 
+**Explanation:**
 
-- আমরা HTML structure অনুযায়ী CSS rules কে nested করেছি। এটি CSS code কে পরিষ্কার এবং structured করে। 
+- আমরা HTML structure অনুযায়ী CSS rules কে nested করেছি। এটি CSS code কে পরিষ্কার এবং structured করে।
 - `&:hover` selector `a` element এর hover state handle করছে, যেখানে `&` current element কে নির্দেশ করছে।
 
 ---
 
 #### 4.2 Variables
 
-Sass এ **variables** ব্যবহার করে আমরা বারবার একই value লিখতে না গিয়ে একবার define করে multiple জায়গায় ব্যবহার করতে পারি। 
+Sass এ **variables** ব্যবহার করে আমরা বারবার একই value লিখতে না গিয়ে একবার define করে multiple জায়গায় ব্যবহার করতে পারি।
 
 ##### Example:
 
 ```scss
-$primary-color: #3498db;  // Primary color variable
+$primary-color: #3498db; // Primary color variable
 $padding-size: 15px;
 
 button {
-    background-color: $primary-color;
-    padding: $padding-size;
-    border: none;
-    border-radius: 5px;
-    color: white;
+  background-color: $primary-color;
+  padding: $padding-size;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
 ```
 
 **Explanation:**
 
-- `$primary-color` এবং `$padding-size` নামে variables তৈরি করা হয়েছে। 
+- `$primary-color` এবং `$padding-size` নামে variables তৈরি করা হয়েছে।
 - এরপর, button element এ এগুলো ব্যবহার করা হয়েছে। ফলে, যদি পরে color বা padding change করতে হয়, কেবল variable change করলেই হবে, পুরো code change করতে হবে না।
 
 ---
@@ -5200,21 +5210,21 @@ $padding-size: 15px;
 
 // _buttons.scss
 button {
-    background-color: $primary-color;
-    padding: $padding-size;
-    border: none;
-    color: white;
+  background-color: $primary-color;
+  padding: $padding-size;
+  border: none;
+  color: white;
 }
 
 // main.scss
-@import 'variables';
-@import 'buttons';
+@import "variables";
+@import "buttons";
 ```
 
 **Explanation:**
 
 - `_variables.scss` এবং `_buttons.scss` নামে দুইটি partial file তৈরি করা হয়েছে।
-- `main.scss` file এ এই দুটি partial file কে import করা হয়েছে। 
+- `main.scss` file এ এই দুটি partial file কে import করা হয়েছে।
 - এই পদ্ধতিতে বড় stylesheets গুলোকে ছোট অংশে ভাগ করে রাখা যায়, যা management এবং maintenance সহজ করে।
 
 ---
@@ -5227,18 +5237,18 @@ button {
 
 ```scss
 @mixin button-styles($color) {
-    background-color: $color;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
+  background-color: $color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
 }
 
 .primary-btn {
-    @include button-styles(#3498db);
+  @include button-styles(#3498db);
 }
 
 .secondary-btn {
-    @include button-styles(#2ecc71);
+  @include button-styles(#2ecc71);
 }
 ```
 
@@ -5257,22 +5267,22 @@ Sass এ **Inheritance** ব্যবহার করে আমরা একট�
 
 ```scss
 %button-base {
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
 }
 
 .primary-btn {
-    @extend %button-base;
-    background-color: #3498db;
-    color: white;
+  @extend %button-base;
+  background-color: #3498db;
+  color: white;
 }
 
 .secondary-btn {
-    @extend %button-base;
-    background-color: #2ecc71;
-    color: white;
+  @extend %button-base;
+  background-color: #2ecc71;
+  color: white;
 }
 ```
 
@@ -5291,17 +5301,17 @@ Sass এ **functions** ব্যবহার করে CSS properties এর উ
 
 ```scss
 @function calculate-padding($padding, $factor) {
-    @return $padding * $factor;
+  @return $padding * $factor;
 }
 
 .container {
-    padding: calculate-padding(10px, 2);  // Returns 20px
+  padding: calculate-padding(10px, 2); // Returns 20px
 }
 ```
 
 **Explanation:**
 
-- `calculate-padding` নামে একটি function তৈরি করা হয়েছে, যা padding এর উপর calculation করে। 
+- `calculate-padding` নামে একটি function তৈরি করা হয়েছে, যা padding এর উপর calculation করে।
 - পরে `container` class এ function ব্যবহার করে padding এর value set করা হয়েছে।
 
 ---
@@ -5316,9 +5326,7 @@ Sass এ **If/Else** statement ব্যবহার করে CSS properties �
 $theme: dark;
 
 body {
-  @if $theme ==
-
- dark {
+  @if $theme == dark {
     background-color: #333;
     color: white;
   } @else {
@@ -5329,6 +5337,7 @@ body {
 ```
 
 **Explanation:**
+
 - এখানে `$theme` নামে একটি variable তৈরি করা হয়েছে।
 - If condition এর মাধ্যমে check করা হচ্ছে, যদি `$theme` এর value `dark` হয়, তাহলে background এবং color সেট করা হবে। অন্যথায়, else block এর code run হবে।
 
@@ -5349,13 +5358,18 @@ Sass এ **loops** ব্যবহার করে আমরা repetitive CSS c
 ```
 
 **Explanation:**
+
 - এখানে `@for` loop ব্যবহার করে 1 থেকে 5 পর্যন্ত একটি loop চালানো হয়েছে।
 - `#{$i}` এর মাধ্যমে class name এবং margin dynamically তৈরি করা হয়েছে। এটি output করবে `.margin-1`, `.margin-2`, ইত্যাদি।
 
 ##### Each Loop Example:
 
 ```scss
-$colors: (primary: #3498db, secondary: #2ecc71, danger: #e74c3c);
+$colors: (
+  primary: #3498db,
+  secondary: #2ecc71,
+  danger: #e74c3c,
+);
 
 @each $name, $color in $colors {
   .btn-#{$name} {
@@ -5365,6 +5379,7 @@ $colors: (primary: #3498db, secondary: #2ecc71, danger: #e74c3c);
 ```
 
 **Explanation:**
+
 - এখানে `@each` loop ব্যবহার করে একটি map এর উপর loop চালানো হয়েছে, যেখানে key-value pair ব্যবহার করা হয়েছে।
 - Interpolation এর মাধ্যমে `.btn-primary`, `.btn-secondary` ইত্যাদি class এবং তাদের background-color generate করা হয়েছে।
 
@@ -5402,7 +5417,7 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    
+
     @include responsive($breakpoint) {
       flex-direction: column;
     }
@@ -5454,7 +5469,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
+
   &.primary {
     background-color: $primary-color;
     color: white;
@@ -5521,7 +5536,7 @@ body {
 
 ### Step 6: Creating a Project with Multiple SCSS Files
 
-নিচে একটি **SCSS-based প্রোজেক্ট** তৈরি করার পুরো প্রক্রিয়া দেখানো হয়েছে। এই প্রজেক্টে কয়েকটি SCSS file তৈরি করা হয়েছে এবং শেষে সেগুলো `main.scss` এ import করা হয়েছে। 
+নিচে একটি **SCSS-based প্রোজেক্ট** তৈরি করার পুরো প্রক্রিয়া দেখানো হয়েছে। এই প্রজেক্টে কয়েকটি SCSS file তৈরি করা হয়েছে এবং শেষে সেগুলো `main.scss` এ import করা হয়েছে।
 
 #### Project Structure:
 
@@ -5539,7 +5554,7 @@ project-folder/
     └── main.css (Generated from main.scss)
 ```
 
-#### Step 1: _variables.scss
+#### Step 1: \_variables.scss
 
 ```scss
 // _variables.scss
@@ -5550,7 +5565,7 @@ $font-size-small: 14px;
 $breakpoint: 768px;
 ```
 
-#### Step 2: _mixins.scss
+#### Step 2: \_mixins.scss
 
 ```scss
 // _mixins.scss
@@ -5569,7 +5584,7 @@ $breakpoint: 768px;
 }
 ```
 
-#### Step 3: _header.scss
+#### Step 3: \_header.scss
 
 ```scss
 // _header.scss
@@ -5594,7 +5609,7 @@ header {
         a {
           color: white;
           text-decoration: none;
-          
+
           &:hover {
             color: $secondary-color;
           }
@@ -5605,7 +5620,7 @@ header {
 }
 ```
 
-#### Step 4: _footer.scss
+#### Step 4: \_footer.scss
 
 ```scss
 // _footer.scss
@@ -5625,10 +5640,10 @@ footer {
 
 ```scss
 // main.scss
-@import 'variables';
-@import 'mixins';
-@import 'header';
-@import 'footer';
+@import "variables";
+@import "mixins";
+@import "header";
+@import "footer";
 ```
 
 ##### SCSS to CSS Conversion Command:
@@ -5705,48 +5720,53 @@ footer p {
 
 **Sass** CSS এর উপরে ভিত্তি করে একটি শক্তিশালী extension, যা বড় এবং জটিল projects এর জন্য CSS code কে সহজ, maintainable, এবং reusable করে তোলে। Variables, mixins, functions, loops, এবং conditions এর মাধ্যমে Sass ব্যবহার করে modern, responsive এবং maintainable CSS code তৈরি করা যায়। Beginner দের জন্য এটি CSS এর তুলনায় কিছুটা advanced হলেও, একবার Sass শেখা হয়ে গেলে CSS নিয়ে কাজ করা অনেক সহজ হয়ে যায়।
 
-
 ## Sass Assignment
 
 ### **Sass Project: Simple Responsive Card Layout – Step-by-Step Instructions**
 
 #### **Step 1: প্রোজেক্ট ফাইল সেটআপ:**
+
 - একটি নতুন ফোল্ডার তৈরি করুন `responsive-card-project` নামে।
 - এর মধ্যে `index.html`, `styles.scss`, এবং `styles.css` নামে তিনটি ফাইল তৈরি করুন।
 
 #### **Step 2: HTML কোড লেখা:**
+
 - `index.html` ফাইলে Basic HTML Structure লিখুন।
 - এরপর `card-container` নামে একটি ডিভের মধ্যে ৩টি `card` এলিমেন্ট যোগ করুন। প্রতিটি Card এ একটি Image, Title, Description, এবং একটি Button থাকবে।
 - স্টাইল করার জন্য `styles.css` ফাইলটি HTML এ যুক্ত করুন।
 
 #### **Step 3: Sass ভ্যারিয়েবল ডিক্লেয়ার:**
+
 - `styles.scss` ফাইলের শুরুতে Color এবং Spacing এর জন্য কিছু Sass Variables ডিক্লেয়ার করুন। যেমন: প্রাইমারি কালার, সেকেন্ডারি কালার, ব্যাকগ্রাউন্ড কালার, প্যাডিং ইত্যাদি।
 
-#### **Step 4: Mixin তৈরি:**  
-- একটি Mixin তৈরি করুন যেটা ভিন্ন ভিন্ন ডিভাইসের জন্য মিডিয়া কুয়েরি সেট করতে সাহায্য করবে।  
+#### **Step 4: Mixin তৈরি:**
+
+- একটি Mixin তৈরি করুন যেটা ভিন্ন ভিন্ন ডিভাইসের জন্য মিডিয়া কুয়েরি সেট করতে সাহায্য করবে।
 - উদাহরণস্বরূপ, একটি Mixin বানান যা 'small' এবং 'medium' ডিভাইসের জন্য Responsive ডিজাইন করবে।
 
-#### **Step 5: Card Layout এর স্টাইলিং:**  
+#### **Step 5: Card Layout এর স্টাইলিং:**
+
 - `.card-container` ক্লাসের জন্য Flexbox ব্যবহার করে লেআউট তৈরি করুন।
 - `.card` ক্লাসের জন্য ব্যাকগ্রাউন্ড কালার, প্যাডিং, বর্ডার রেডিয়াস, এবং শ্যাডো যোগ করুন।
 - নেস্টিং ব্যবহার করে `.card` এর ভেতরের `.card-image`, `.card-title`, `.card-description`, এবং `.card-button` এর জন্য স্টাইল সেট করুন।
 
-#### **Step 6: Responsive Design এর জন্য Media Queries:**  
+#### **Step 6: Responsive Design এর জন্য Media Queries:**
+
 - আগের Step-এ তৈরি করা Mixin ব্যবহার করে মিডিয়া কুয়েরি প্রয়োগ করুন।
 - ছোট স্ক্রীনে `.card-container` এর লেআউট পরিবর্তন করে কলাম আকারে দেখান।
 
-#### **Step 7: Button এর Hover Effect:**  
-- `.card-button` এর জন্য Hover Effect তৈরি করুন, যেখানে Button-এর ব্যাকগ্রাউন্ড কালার ডার্ক হবে। 
+#### **Step 7: Button এর Hover Effect:**
+
+- `.card-button` এর জন্য Hover Effect তৈরি করুন, যেখানে Button-এর ব্যাকগ্রাউন্ড কালার ডার্ক হবে।
 - এই কাজটি করার জন্য Sass এর Built-in Function (`darken`) ব্যবহার করুন।
 
-#### **Step 8: Sass কোড কম্পাইল:**  
+#### **Step 8: Sass কোড কম্পাইল:**
+
 - `styles.scss` ফাইলটি CSS এ কম্পাইল করুন এবং `styles.css` ফাইলটিতে সেভ করুন।
 - টার্মিনালে নিচের কমান্ডটি ব্যবহার করুন:
   ```bash
   sass styles.scss styles.css
   ```
-
-
 
 <h3 align="right">
     <b><a href="#learn-html-and-css-in-30-chapters">↥ Go to Top</a></b>
